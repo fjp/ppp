@@ -1,3 +1,5 @@
+# Chapter 1 - Computers, People, and Programming - Review Questions
+
 1. What is software?
 
 Sofware runs on hardware and is a collection of code instructions that are intended to solve a problem.
@@ -27,6 +29,8 @@ If a bug leads to a server outage that might be used by many people can lead to 
 
 5. Where does software play an important role? List some examples. 
 
+ Most computers work out of our sight and are part of the systems that keep our civilization going. Some fill rooms; others are smaller than a small coin. Many of the most interesting computers don’t directly interact with a human through a keyboard, mouse, or similar gadget.
+
 Software is important in all kinds of fields: 
 
 - Medicine
@@ -55,16 +59,44 @@ In this context, as in many others, it is essential that programming is an expre
 
 8. Where in the design, construction, and use of a ship is software used? 
 
+- Design: A ship or engine is desigined with the help of computer software creating, architectural and engineering drawings, general calculations, visualization of spaces and parts, and simulations of the performance of parts.
+- Construction: A modern shipyard is heavily computerized. The assembly of a ship is carefully planned using computers, and the work is guided by computers. 
+Welding is done by robots. In particular, a modern double-hulled tanker couldn’t be built without little welding robots to do the welding from within the space between the hulls. 
+There just isn’t room for a human in there. Cutting steel plates for a ship was one of the world’s first CAD/CAM (computer-aided design and computer-aided manufacture) applications.
+- The engine: The engine has electronic fuel injection and is controlled by a few dozen computers. For a 100,000-horsepower engine, that’s a nontrivial task. 
+For example, the engine management computers continuously adjust fuel mix to minimize the pollution that would result from a badly tuned engine. 
+Many of the pumps associated with the engine (and other parts of the ship) are themselves computerized.
+- Management: Ships sail where there is cargo to pick up and to deliver. 
+The scheduling of fleets of ships is a continuing process (computerized, of course) so that routings change with the weather, with supply and demand, and with space and loading capacity of harbors. 
+There are even websites where you can watch the position of major merchant vessels at any time. 
+- Monitoring: An oceangoing ship is largely autonomous; that is, its crew can handle most contingencies likely to arise before the next port. However, they are also part of a globe-spanning network. The crew has access to reasonably accurate weather information (from and through — comput- erized — satellites). They have a GPS (global positioning system) and computer-controlled and computer-enhanced radar. If the crew needs a rest, most systems (including the engine, radar, etc.) can be monitored (via satellite) from a shipping-line control room. If anything unusual is spotted, or if the connection “back home” is broken, the crew is notified.
+
 9. What is a server farm?
 
+A “server farm” is a collection of computers providing web services.
+Every major company runs programs on the web to interact with its users/customers. 
+Examples are Amazon (book and other sales), and eBay (online auctions). Millions of companies, organizations, and individuals also have a presence on the web, which is hosted in a server farm.
+Google uses its erver farm to provide people with answers to their search queries. 
+This kind of computer use is often referred to as information processing. It focuses on data — often lots of data. 
 
 10. What kinds of queries do you ask online? List some.
+
+
 
 11. What are some uses of software in science? List some.
 
 
 
 12. What are some uses of software in medicine? List some.
+
+CAT (computed axial tomography) scanner and operating theater for computer-aided surgery (also called “robot-assisted surgery” or “robotic surgery”).
+The scanners basi- cally are computers; the pulses they send out are controlled by a computer, and the readings of the relevant body part are converted to (three-dimensional) images by quite sophisticated algorithms.
+For computer-aided surgery a wide variety of imaging techniques are used to let the surgeon see the inside of the patient. 
+With the aid of a computer a surgeon can use tools that are too fine for a human hand to hold or in a place where a human hand could not reach without unnecessary cutting.
+The computer can also help steady the surgeon’s “hand” to allow for more delicate work than would otherwise be possible. Finally, a “robotic” system can be operated remotely, thus making it possible for a doctor to help someone remotely (over the internet).
+
+Instant access to patient records. Knowing the medical history of a patient (earlier illnesses, medicines tried earlier, allergies, hereditary problems, general health, current medication, etc.) 
+simplifies the problem of diagnosis and minimizes the chance of mistakes.
 
 
 
@@ -100,7 +132,12 @@ Bugs that are introduced while programming are sometimes difficult to spot and c
 A software program that is not tested will be difficult to debug if it consists of a large code base. Other difficulties with testing are forgotten tests that would've solved a unseen bug.
 Writing useful tests is difficult and takes time to master. 
 
+
+Information processing, such as providing answers to (Google) search queries, leads to challenges in the organization and transmission of data and 
+lots of interesting work on how to present vast amounts of data in a comprehensible form: “user interface” is a very important aspect of handling data.
+
 18. What are some uses of software that make your life easier?
+
 
 
 19. What are some uses of software that make your life more difficult?

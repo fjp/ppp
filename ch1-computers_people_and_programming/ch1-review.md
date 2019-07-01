@@ -56,6 +56,8 @@ mathematicians, sales support personnel, troubleshooters, network designers, met
 
 7. What’s the difference between computer science and programming? 
 
+Programming is one of the fundamental topics that underlie everything in computer-related fields, and it has a natural place in a balanced course of computer science.
+
 Computer since is a study or science that describes theories such as program algorithms and data structures. 
 Programming is a tool; it is a fundamental tool for expressing solutions to fundamental and practical problems so that they can be tested, 
 improved through experiment, and used. Programming is where ideas and theories meet reality. 
@@ -102,7 +104,13 @@ This kind of computer use is often referred to as information processing. It foc
 
 11. What are some uses of software in science? List some.
 
-
+Finally, research — science itself — relies heavily on computers. The telescopes that probe the secrets of distant stars could not be designed, built, 
+or operated without computers, and the masses of data they produce couldn’t be analyzed and understood without computers. 
+An individual biology field researcher may not be heavily computerized (unless, of course, a camera, a digital tape recorder, a telephone, etc. are used), 
+but back in the lab, the data has to be stored, analyzed, checked against computer models, and communicated to fellow scientists. 
+Modern chemistry and biology — including medical research — use computers to an extent undreamed of a few years ago and still unimagined by most people. 
+The human genome was sequenced by computers. Or — let’s be precise — the human genome was sequenced by humans using computers. 
+In all of these examples, we see computers as something that enables us to do something we would have had a harder time doing without computers.
 
 12. What are some uses of software in medicine? List some.
 
@@ -115,10 +123,9 @@ The computer can also help steady the surgeon’s “hand” to allow for more d
 Instant access to patient records. Knowing the medical history of a patient (earlier illnesses, medicines tried earlier, allergies, hereditary problems, general health, current medication, etc.) 
 simplifies the problem of diagnosis and minimizes the chance of mistakes.
 
-
-
 13. What are some uses of software in entertainment? List some. 
 
+Hollywood and Pixar use software for 3D animations. MP3 players and phones are small computers that run software that can be used to play music and watch videos.
 
 
 14. What general properties do we expect from good software? 
@@ -175,7 +182,10 @@ lots of interesting work on how to present vast amounts of data in a comprehensi
 
 18. What are some uses of software that make your life easier?
 
-
+Our civilization runs on software. Improving software and finding new uses for software are two of the ways an individual can help improve the lives of many. Programming plays an essential role in that.
+There are multiple computers that run software in my car which help me find my goal, stay in the lane when I press the gas pedal too much or brake too hard.
+Google's servers provide me with the answers I search for and guide me to the web server that has the information I requested.
+My phone helps me to stay connected with my girlfriend, family and friends. 
 
 19. What are some uses of software that make your life more difficult?
 

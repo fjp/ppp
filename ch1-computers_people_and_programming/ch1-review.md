@@ -87,10 +87,21 @@ We can describe the process of developing a program as having four stages:
 3. Programming: Express the solution to the problem (the design) in code. Write the code in a way that meets all constraints (time, space, money, reliability, and so on). Make sure that the code is correct and maintainable.
 4. Testing: Make sure the system works correctly under all circumstances required by systematically trying it out.
 
+Programming plus testing is often called implementation.
+
+
+
 17. Why can software development be difficult? List some reasons. 
+
+Programming itself is more or less simple. The difficult part about software development is problem solving. 
+Solving difficult problems requires the steps described in the prvious question. In the analysis of the problem things can go wrong such as misunderstanding of what the user exactly wants.
+Designing a program can be difficult because of a chosen design that works for simple tasks but has to be adapted to work more generically. 
+Bugs that are introduced while programming are sometimes difficult to spot and can lead to unfulfilled constraints (time, space, money, reliability, etc.). 
+A software program that is not tested will be difficult to debug if it consists of a large code base. Other difficulties with testing are forgotten tests that would've solved a unseen bug.
+Writing useful tests is difficult and takes time to master. 
 
 18. What are some uses of software that make your life easier?
 
 
-9. What are some uses of software that make your life more difficult?
+19. What are some uses of software that make your life more difficult?
 

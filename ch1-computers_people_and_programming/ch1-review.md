@@ -19,6 +19,7 @@ Software is important to help develop products that make our lifes easier in the
 Software is important in the design and construction of machines. The produced machines run themselfes software which controls them. 
 Software programs are programmed to process data and find useful information in this data. Software is important for monitoring, such as the heart rate of a human.
 
+
 4. What could go wrong if some software fails? List some examples. 
 
 Errors in software can injure people or lead to death. Other errors are costly due to damaged or lost hardware such as mars rovers. 
@@ -49,6 +50,10 @@ Software is important in all kinds of fields:
 These are jobs commonly heard of but with a broad meaning. Software is realted to all kinds of jobs and used in many industries.
 Banking industry, doctors use it to analyze patient data and logistic companys to plan their routs.
 
+Programmers, (program) designers, testers, animators, focus group managers, experimental psychologists, user interface designers, analysts, system administrators, 
+customer relations people, sound engineers, project managers, quality engineers, statisticians, hardware interface engineers, requirements engineers, safety officers, 
+mathematicians, sales support personnel, troubleshooters, network designers, methodologists, software tools managers, software librarians, etc.
+
 7. What’s the difference between computer science and programming? 
 
 Computer since is a study or science that describes theories such as program algorithms and data structures. 
@@ -56,6 +61,14 @@ Programming is a tool; it is a fundamental tool for expressing solutions to fund
 improved through experiment, and used. Programming is where ideas and theories meet reality. 
 This is where computer science can become an experimental discipline, rather than pure theory, and impact the world. 
 In this context, as in many others, it is essential that programming is an expression of well-tried practices as well as the theories.
+
+A 1995 U.S. government “blue book” defines computer science like this: “The systematic study of computing systems and computation. 
+The body of knowledge resulting from this discipline contains theories for understanding computing systems and methods; design methodology, algorithms, and tools; 
+methods for the testing of concepts; methods of analysis and verification; and knowledge representation and implementation.”
+
+Wikipedia defines it as: “Computer science, or computing science, is the study of the theoretical foundations of information and computa- tion and their implementation and application in computer systems. 
+Computer science has many sub-fields; some emphasize the computation of specific results (such as computer graphics), while others (such as computational complexity theory) relate to properties of computational problems. 
+Still others focus on the challenges in implementing computations. For example, programming language theory studies approaches to describing computations, while computer programming applies specific programming languages to solve specific computational problems.”
 
 8. Where in the design, construction, and use of a ship is software used? 
 
@@ -81,7 +94,11 @@ This kind of computer use is often referred to as information processing. It foc
 
 10. What kinds of queries do you ask online? List some.
 
-
+- C++ programming questions, such as C++11 features.
+- Weather queris for my current location.
+- Home automation and robotics questions that interest me.
+- News queries
+- ...
 
 11. What are some uses of software in science? List some.
 
@@ -106,10 +123,30 @@ simplifies the problem of diagnosis and minimizes the chance of mistakes.
 
 14. What general properties do we expect from good software? 
 
+What do we want from our programs? What do we want in general, as opposed to a particular feature of a particular program? We want **correctness** and as part of that, **reliability**. 
+If the program doesn’t do what it is supposed to do, and do so in a way so that we can rely on it, it is at best a serious nuisance, at worst a danger. 
+We want it to be **well designed** so that it addresses a real need well. We also want it to be **affordablei**.
+Our code must be maintainable; that is, its structure must be such that someone who didn’t write it can understand it and make changes. 
+A successful program “lives” for a long time (often for decades) and will be changed again and again. 
+For example, it will be moved to new hardware, it will have new features added, it will be modified to use new I/O facilities (screens, video, sound), to interact using new natural languages, etc. 
+Only a failed program will never be modified. To be maintainable, a program must be simple relative to its requirements, and the code must directly represent the ideas expressed.
 
 
 15. What does a software developer look like?
 
+Hollywood and similar “popular culture” sources of disinformation have assigned largely negative images to programmers.
+For example, we have all seen the solitary, fat, ugly nerd with no social skills who is obsessed with video games and breaking into other people’s computers.
+
+There creation of a successful piece of software, computerized gadget, or system involves dozens, hundreds, or thousands of people performing a bewildering set of roles: 
+for example, programmers, (program) designers, testers, animators, focus group managers, experimental psychologists, user interface designers, analysts, system administrators, 
+customer relations people, sound engineers, project managers, quality engineers, statisticians, hardware interface engineers, requirements engineers, safety officers, mathematicians, 
+sales support personnel, troubleshooters, network designers, methodologists, software tools managers, software librarians, etc. 
+The range of roles is huge and made even more bewildering by the titles varying from organization to organization: 
+one organization’s “engineer” may be another organization’s “programmer” and yet another organization’s “developer,” “member of technical staff,” or “architect.”
+
+The myth of a programmer being isolated is just that: a myth. People who like to work on their own choose areas of work where that is most feasible and usually complain bitterly about the number of “interruptions” and meetings. 
+People who prefer to interact with other people have an easier time because modern software development is a team activity. The implication is that social and communication skills are essential and valued far more than the stereotypes indicate. 
+On a short list of highly desirable skills for a programmer (however you realistically define programmer), you find the ability to communicate well — with people from a wide variety of backgrounds — informally, in meetings, in writing, and in formal presentations.
 
 16. What are the stages of software development?
 
@@ -121,8 +158,6 @@ We can describe the process of developing a program as having four stages:
 
 Programming plus testing is often called implementation.
 
-
-
 17. Why can software development be difficult? List some reasons. 
 
 Programming itself is more or less simple. The difficult part about software development is problem solving. 
@@ -132,6 +167,8 @@ Bugs that are introduced while programming are sometimes difficult to spot and c
 A software program that is not tested will be difficult to debug if it consists of a large code base. Other difficulties with testing are forgotten tests that would've solved a unseen bug.
 Writing useful tests is difficult and takes time to master. 
 
+“Programming is understanding”: when you can program a task, you understand it. Conversely, when you under- stand a task thoroughly, you can write a program to do it. 
+In other words, we can see programming as part of an effort to thoroughly understand a topic. A program is a precise representation of our understanding of a topic.
 
 Information processing, such as providing answers to (Google) search queries, leads to challenges in the organization and transmission of data and 
 lots of interesting work on how to present vast amounts of data in a comprehensible form: “user interface” is a very important aspect of handling data.

@@ -104,7 +104,7 @@ This kind of computer use is often referred to as information processing. It foc
 
 11. What are some uses of software in science? List some.
 
-Finally, research — science itself — relies heavily on computers. The telescopes that probe the secrets of distant stars could not be designed, built, 
+Research — science itself — relies heavily on computers. The telescopes that probe the secrets of distant stars could not be designed, built, 
 or operated without computers, and the masses of data they produce couldn’t be analyzed and understood without computers. 
 An individual biology field researcher may not be heavily computerized (unless, of course, a camera, a digital tape recorder, a telephone, etc. are used), 
 but back in the lab, the data has to be stored, analyzed, checked against computer models, and communicated to fellow scientists. 
@@ -189,3 +189,14 @@ My phone helps me to stay connected with my girlfriend, family and friends.
 
 19. What are some uses of software that make your life more difficult?
 
+- Technology has created a digital divide between generations. Seniors did not have our technology in their time, which makes it harder for them to learn how to use it now and be able to take advantage of it. 
+And even if they do have computer access, most don't know how to use it properly. It has also created a digital divide between developed countries, making undeveloped countries who do not have access to technology poorer.
+
+- Today it is easier than ever to be a victim of identity theft. The internet has made it easier for anyone to meet strangers online, who can trick people into releasing their personal information. 
+This is why so many people are getting their computers hacked and their identity stolen.
+
+- Personal communication is suffering and social skills are decreasing because people are opting to communicate through things like Facebook, Twitter and texting instead of personally interacting with each other.
+Communicating through social media is hurting relationships because it can cause misunderstandings with unintended consequences. 
+Since everything online is usually typed, people often misinterpret things, causing fallouts in friendships.
+
+- We are spending more money because we often want to have the best and latest technology, which we don?t actually need.

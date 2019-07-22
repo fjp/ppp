@@ -15,6 +15,10 @@ I picked software development for autonomous vehicles.
 3. Swap your list from exercise 2 with a friend who picked a different profession and improve his or her list. When you have both done that, compare your results. Remember: There is no perfect solution to an open-ended exercise; improvements are always possible.
 
 4. From your own experience, describe an activity that would not have been possible without computers.
+
+- Letting a car drive on its own and sitting behind the steering wheel without intervention is an activity that would not be possible without computers. 
+- Measuring my heart rate while running wit my smart watch is another example.
+
 5. Make a list of programs (software applications) that you have directly used. List only examples where you obviously interact with a program (such as when selecting a new song on an MP3 player) and not cases where there just might happen to be a computer involved (such as turning
 the steering wheel of your car).
 6. Make a list of ten activities that people do that do not involve computers

@@ -3,7 +3,17 @@
 The activity going to work involves computers in the form of traffic lights that are controlled by computers. My bike and car (depending which vehicle I choose to go to work) were designed using computers and my car contains multiple electronic control units. Before I leave the house I check the weather with my phone which involves not only my smartphone but computers that were used to determin the weather forecast. At work I enter the building using a chip card reader which uses cryptographie.   
 
 2. Pick a profession, preferably one that you have some interest in or some knowledge of. Make a list of activities done by people in that profession that involve computers.
-3. Swap your list from exercise 2 with a friend who picked a different profes- sion and improve his or her list. When you have both done that, compare your results. Remember: There is no perfect solution to an open-ended ex- ercise; improvements are always possible.
+
+I picked software development for autonomous vehicles. 
+- Developing algorithms such as trajectory planning. 
+- Calibrating sensors.
+- Modifying controller parameters.
+- Simulating the behavior before testing it on a test vehicle.
+- Testing on a test vehicle involves mutliple computers which are located not only in the vehicle.
+- Communicating with gps sattelites to locate the vehicle on the street. 
+
+3. Swap your list from exercise 2 with a friend who picked a different profession and improve his or her list. When you have both done that, compare your results. Remember: There is no perfect solution to an open-ended exercise; improvements are always possible.
+
 4. From your own experience, describe an activity that would not have been possible without computers.
 5. Make a list of programs (software applications) that you have directly used. List only examples where you obviously interact with a program (such as when selecting a new song on an MP3 player) and not cases where there just might happen to be a computer involved (such as turning
 the steering wheel of your car).

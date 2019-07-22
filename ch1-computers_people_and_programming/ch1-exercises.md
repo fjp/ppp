@@ -52,12 +52,31 @@ I want to be a computer programmer to help society by solving problems that, whe
 
 9. Write an explanation (at least 100 words, but fewer than 500) of what role other than programmer you’d like to play in the computer industry (independently of whether “programmer” is your first choice).
 
-Another role I would like to participate in the computer industy is finding algorithms to solve challenging problems. Thinking about a problem to solve it does not require one to be a programmer. Instead, a blackboard can be used to work on a solution for a problem and work on the sub tasks that need to be solved. I would like to find an approaches that can evaluate different algorithms. Another problem I would like to work on is to find the "perfect" interaction aware maneuver planner or predicting the intention of other road users with a certain probability in the future. These are just examples that I currently work on but there are other roles I would like to focus on. Making knowledge easier accesible while perserving quality. Missing information needs to be found quickly and should not lead to new open questions. 
+Another role I would like to participate in the computer industy is finding algorithms to solve challenging problems. Thinking about a problem to solve it does not require one to be a programmer. Instead, a blackboard can be used to work on a solution for a problem and work on the sub tasks that need to be solved. I would like to find an approaches that can evaluate different algorithms. Another problem I would like to work on is to find the "perfect" interaction aware maneuver planner or predicting the intention of other road users with a certain probability in the future. These are just examples that I currently work on but there are other roles I would like to focus on. Making knowledge easier accesible while perserving quality. Missing information needs to be found quickly and should not lead to new open questions. I like to be a good designer using design patterns before actually start coding without really knowning the outcome. 
 
 10. Do you think computers will ever develop to be conscious, thinking beings, capable of competing with humans? Write a short paragraph (at least 100 words) supporting your position.
 11. List some characteristics that most successful programmers share. Then list some characteristics that programmers are popularly assumed to have.
-12. Identify at least five kinds of applications for computer programs men- tioned in this chapter and pick the one that you find the most interesting and that you would most likely want to participate in someday. Write a short paragraph (at least 100 words) explaining why you chose the one
+
+- Communication skills
+- Quick learning ability
+- Deep and broad technical experience
+- Team player
+- 
+
+12. Identify at least five kinds of applications for computer programs mentioned in this chapter and pick the one that you find the most interesting and that you would most likely want to participate in someday. Write a short paragraph (at least 100 words) explaining why you chose the one
 you did.
+
+- medicine: computer axial tomography, robot-assisted surgery
+- telecommunication: Mobile phones, video conferences
+- Information data centers: Google servers
+- Transporation: Ships, cars, 
+- Monitoring and Screens
+
+I already work on self driving cars which is a topic where I am motivated to find solutions to trajectory and maneuver planning algorithms. These algorithms require solutions to predict intentions of other cars and pedestrians. Other than the field of transportation, where I currently work on self-driving cars, I would be interested to work in the field of medicine. Specifically to develop monitoring systems. For example to detect early signs of heart attacks or other diseas such as altsheimers or depressions. Thereby respecting privacy and not violating data protection rights. 
+
 13. How much memory would it take to store (a) this page of text, (b) this
 chapter, (c) all of Shakespeare’s work? Assume one byte of memory holds one character and just try to be precise to about 20%.
 14. How much memory does your computer have? Main memory? Disk?
+
+- Disk: 1 terabyte
+- Memory: 16 gigabyte 

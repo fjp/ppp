@@ -55,13 +55,31 @@ I want to be a computer programmer to help society by solving problems that, whe
 Another role I would like to participate in the computer industy is finding algorithms to solve challenging problems. Thinking about a problem to solve it does not require one to be a programmer. Instead, a blackboard can be used to work on a solution for a problem and work on the sub tasks that need to be solved. I would like to find an approaches that can evaluate different algorithms. Another problem I would like to work on is to find the "perfect" interaction aware maneuver planner or predicting the intention of other road users with a certain probability in the future. These are just examples that I currently work on but there are other roles I would like to focus on. Making knowledge easier accesible while perserving quality. Missing information needs to be found quickly and should not lead to new open questions. I like to be a good designer using design patterns before actually start coding without really knowning the outcome. 
 
 10. Do you think computers will ever develop to be conscious, thinking beings, capable of competing with humans? Write a short paragraph (at least 100 words) supporting your position.
+
 11. List some characteristics that most successful programmers share. Then list some characteristics that programmers are popularly assumed to have.
 
+Refrences: book, [medium: keepcoding](https://medium.com/@KeepCoding_/characteristics-of-good-programmers-466b7d466f68), and [scalablepath](https://www.scalablepath.com/blog/7-qualities-that-differentiate-a-good-programmer-from-a-great-programmer/).
+
 - Communication skills
-- Quick learning ability
+Good communication skills directly correlate with good development skills. A great developer is able to understand problems clearly, break them down into hypotheses and propose solutions in a coherent manner. They understand concepts quickly, or ask the right questions to understand, and don’t need to have everything written down specification document. Great offshore developers usually speak multiple languages coherently and are very comfortable with documentation in English.
+
+- Quick learning ability and willingness to learn
+This is a trait that is highly overlooked by applicants when technology is always evolving and the skills and abilities a programmer has today will likely be outdated in a few years. It’s important to be a programmer who has an interest in keeping up with the latest trends and is eager to take any opportunity to learn new skills and improve existing ones.
+
+- Problem-solving skills
+Great developers are usually independent and amazing self-learners. They have the ability to learn new technologies on their own and aren’t intimidated by new challenges. For those who have never attempted to create an application from scratch, programming can best be compared to solving an extremely difficult math equation. A good programmer thrives on being innovative and finding ways to make something work, despite the odds.
+
 - Deep and broad technical experience
 - Team player
-- 
+
+- Passion for the work
+While some programming staff can simply serve as nine-to-fivers or clock watchers, many hiring managers are interested in finding someone who will gladly put in long hours when needed. True programmers are self-proclaimed “computer geeks,” spending their time gaming, building servers, or creating apps for themselves or friends. While this passion isn’t a necessity, it’s often a way to differentiate top-shelf programmers from the rest.
+
+- Debugging Skills
+Creating code is only part of a programmer’s job. When software doesn’t work as expected, a programmer is expected to get to the root of the problem quickly and effectively. Instead of spending hours blindly making changes, search for a programmer who prefers to carefully investigate his code and research possible issues until an answer is found.
+
+- Constraints
+Every project or job has several constraints whether it be time or budget. A good programmer knows how to code in terms of time and space complexity. Since budget is really important in a lot of projects, a good programmer will create a software using fewer resources. A good programmer knows how to manage the project requirements and is very flexible.
 
 12. Identify at least five kinds of applications for computer programs mentioned in this chapter and pick the one that you find the most interesting and that you would most likely want to participate in someday. Write a short paragraph (at least 100 words) explaining why you chose the one
 you did.

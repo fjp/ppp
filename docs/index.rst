@@ -11,7 +11,6 @@ Welcome to Programming Principles and Practice using C++'s documentation!
    :caption: Contents:
 
    root_link
-   .. include:: ../ch1-computers_people_and_programming/ch1-review.md
 
 Indices and tables
 ==================

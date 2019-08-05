@@ -1,4 +1,4 @@
-Chapter 2 - Hello, World! Exercises
+# Chapter 2 - Hello, World! Exercises
 
 1. Change the program to output the two lines
 Hello, programming! Here we go!

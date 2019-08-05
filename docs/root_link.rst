@@ -1,4 +1,4 @@
-My Title
-*********
+Readme
+******
 
-.. include:: ../README.md
+.. mdinclude:: ../README.md

@@ -7,3 +7,5 @@
 
 
 {!ch2-hello_world/exercises/exercise-01/README.md!}
+
+{!ch2-hello_world/exercises/exercise-02/README.md!}

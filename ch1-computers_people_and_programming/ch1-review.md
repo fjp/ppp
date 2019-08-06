@@ -1,4 +1,4 @@
-# Chapter 1 - Computers, People, and Programming - Review Questions
+## Review
 
 1. What is software?
 

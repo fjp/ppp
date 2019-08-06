@@ -12,6 +12,8 @@ Welcome to Programming Principles and Practice using C++'s documentation!
 
 .. mdinclude:: test.md
 
+.. mdinclude:: ../README.md
+
 Indices and tables
 ==================
 

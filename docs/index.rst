@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. Welcome to Programming Principles and Practice using C++'s documentation!
-.. =========================================================================
+Welcome to
+==========
 
 .. toctree::
    :maxdepth: 2

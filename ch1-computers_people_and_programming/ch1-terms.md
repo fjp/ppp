@@ -1,3 +1,5 @@
+## Terms
+
 - affordability - One of the ideals (correcteness, reliability, well designed, affordable, maintainable) a programmer should aim for when creating a program. 
 - analysis - One of the four stages (analysis, design, programming, testing) to develop a program. What’s the problem? What does the user want? What does the user need? What can the user afford? What kind of reliability do we need? 
 - blackboard - We learn from experience and modify our behavior based on what we learn. That’s essential for effective software development. 

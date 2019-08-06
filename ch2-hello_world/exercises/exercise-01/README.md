@@ -12,19 +12,14 @@ a
 .. literalinclude:: ../ch2-hello_world/exercises/exercise-01/main.cpp
 
 b
-
-.. highlight:: c
-   .. literalinclude:: ../ch2-hello_world/exercises/exercise-01/main.cpp
-   
-c
    
 .. highlight:: cpp
 .. literalinclude:: ../ch2-hello_world/exercises/exercise-01/main.cpp
 
 
-d
+c
 
 .. literalinclude:: ../ch2-hello_world/exercises/exercise-01/main.cpp
    :language: cpp
 
-e
+d

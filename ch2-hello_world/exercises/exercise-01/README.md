@@ -12,7 +12,7 @@ Here we go!
 .. literalinclude:: ../ch2-hello_world/exercises/exercise-01/main.cpp
    :language: cpp
    :caption: helloworldextended.cpp
-   :end-before: return 0
+   :linenos:
 
 
 a

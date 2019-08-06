@@ -5,7 +5,7 @@ nav:
   - 'index.md'
 markdown_extensions:
     - markdown_include.include:
-        base_path: docs
+        base_path: . #docs
         
 # Optionally set the version of Python and requirements required to build your docs
 python:

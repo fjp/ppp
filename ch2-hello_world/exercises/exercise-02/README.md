@@ -4,7 +4,3 @@ Expanding on what you have learned, write a program that lists the in- struction
 
 
 .. literalinclude:: main.cpp
-   :language: cpp
-   :caption: main.cpp
-   :start-after: int main() {
-   :end-before: return 0

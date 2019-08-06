@@ -11,8 +11,12 @@ Here we go!
 .. include:: ../ch2-hello_world/exercises/exercise-01/main.cpp
 ```
 
-```cpp
-.. literalinclude:: ../ch2-hello_world/exercises/exercise-01/main.cpp
-```
 
 .. literalinclude:: ../ch2-hello_world/exercises/exercise-01/main.cpp
+
+
+.. literalinclude:: ../ch2-hello_world/exercises/exercise-01/main.cpp
+  :language: ruby
+  
+  .. literalinclude:: ../ch2-hello_world/exercises/exercise-01/main.cpp
+  :language: cpp

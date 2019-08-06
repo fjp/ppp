@@ -8,9 +8,9 @@ Here we go!
 ```
 
 
-.. include:: ../ch2-hello_world/exercises/exercise-01/main.cpp
+.. include:: main.cpp
    :code: cpp
    
    
-.. literalinclude:: ../ch2-hello_world/exercises/exercise-01/main.cpp
+.. literalinclude:: main.cpp
    :language: cpp

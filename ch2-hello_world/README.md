@@ -4,4 +4,4 @@
 
 
 
-{!./ch2-terms.md!}
+{!ch2-hello_world/ch2-terms.md!}

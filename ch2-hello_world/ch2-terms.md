@@ -55,7 +55,7 @@ A file that contains souce code declarations and definitions which is usally inc
 IDE - IDE (“interactive development environment” or “integrated development environment”) usually include an editor with helpful features like color coding to help distinguish between comments, keywords, and other parts of your program source code, plus other facilities to help you debug your code, compile it, and run it. To program, we use a programming language. We also use a compiler to translate our source code into object code and a linker to link our object code into an executable program. 
 In addition, we use some program to enter our source code text into the computer and to edit it. Inegrated or Interactive Development Envornment is a tool with helpful features for creating new programs. 
 
-#include - An “#include directive.” instructs the computer to make available (“to include”) facilities from a file. A preprocessor directive to include a header file that can contain required definitions for example from the standard library.
+`#include` - An “`#include` directive.” instructs the computer to make available (“to include”) facilities from a file. A preprocessor directive to include a header file that can contain required definitions for example from the standard library.
 
 ```
 #include "std_lib_facilities.h" // facilities from a header file locally available within a file relative to the current file.

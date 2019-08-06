@@ -10,9 +10,13 @@ Welcome to Programming Principles and Practice using C++'s documentation!
    :maxdepth: 2
    :caption: Contents:
 
-.. mdinclude:: test.md
-
 .. mdinclude:: ../README.md
+
+
+.. mdinclude:: ../ch1-computers_people_and_programming/README.md
+
+.. mdinclude:: ../ch2-hello_world/README.md
+
 
 Indices and tables
 ==================

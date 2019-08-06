@@ -4,6 +4,7 @@ nav:
   - 'test.md'
   - 'index.md'
 markdown_extensions:
-  - markdown-include
+  - markdown_include.include:
+      base_path: docs
   - toc:
     permalink: True

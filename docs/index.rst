@@ -10,7 +10,7 @@ Welcome to Programming Principles and Practice using C++'s documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
+.. mdinclude:: test.md
 
 Indices and tables
 ==================

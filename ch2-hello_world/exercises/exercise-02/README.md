@@ -7,3 +7,5 @@ Expanding on what you have learned, write a program that lists the instructions 
 .. literalinclude:: ../ch2-hello_world/exercises/exercise-02/main.cpp
    :language: cpp
    :caption: upstairsbathroom.cpp
+
+c

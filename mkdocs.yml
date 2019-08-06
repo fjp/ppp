@@ -1,4 +1,4 @@
 site_name: Programming Principles and Practice using C++ Solutions
-pages:
+nav:
   - 'README.md'
   - 'docs/README.md'

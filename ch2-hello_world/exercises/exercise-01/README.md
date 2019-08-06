@@ -8,5 +8,4 @@ Here we go!
 ```
    
    
-.. literalinclude:: main.cpp
-   :language: cpp
+.. mdinclude:: main.cpp

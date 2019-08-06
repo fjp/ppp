@@ -4,5 +4,5 @@ nav:
   - 'test.md'
   - 'index.md'
 markdown_extensions:
-  - markdown_include.include:
-      base_path: docs
+    - markdown_include.include:
+        base_path: docs

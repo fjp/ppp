@@ -1,7 +1,5 @@
 site_name: Programming Principles and Practice using C++ Solutions
 repo_url: https://github.com/fjp/ppp/
 nav:
-  - '../README.md'
-  - 'README.md'
   - 'test.md'
   - 'index.md'

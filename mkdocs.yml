@@ -1,5 +1,3 @@
 site_name: Programming Principles and Practice using C++ Solutions
 nav:
     - Home: '../README.md'
-    - Test: 'README.md'
-    - Test2: 'docs/README.md'

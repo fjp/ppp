@@ -1,2 +1,4 @@
 site_name: Programming Principles and Practice using C++ Solutions
-docs_dir: ../
+pages:
+  - 'README.md'
+  - 'docs/README.md'

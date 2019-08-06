@@ -10,8 +10,14 @@ Here we go!
 .. literalinclude:: ../ch2-hello_world/exercises/exercise-01/main.cpp
 
 
+.. highlight:: c
+   .. literalinclude:: ../ch2-hello_world/exercises/exercise-01/main.cpp
+   
+.. highlight:: cpp
 .. literalinclude:: ../ch2-hello_world/exercises/exercise-01/main.cpp
-  :language: ruby
+
+.. literalinclude:: ../ch2-hello_world/exercises/exercise-01/main.cpp
+   :language: ruby
   
-  .. literalinclude:: ../ch2-hello_world/exercises/exercise-01/main.cpp
-  :language: cpp
+.. literalinclude:: ../ch2-hello_world/exercises/exercise-01/main.cpp
+   :language: cpp

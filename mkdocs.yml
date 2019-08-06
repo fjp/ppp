@@ -3,3 +3,7 @@ repo_url: https://github.com/fjp/ppp/
 nav:
   - 'test.md'
   - 'index.md'
+markdown_extensions:
+  - markdown-include
+  - toc:
+    permalink: True

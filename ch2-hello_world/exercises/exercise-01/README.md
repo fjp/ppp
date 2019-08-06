@@ -11,5 +11,6 @@ Here we go!
 
 .. literalinclude:: ../ch2-hello_world/exercises/exercise-01/main.cpp
    :language: cpp
+   :caption: helloworld.cpp
 
 b

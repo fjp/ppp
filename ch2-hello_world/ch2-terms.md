@@ -1,6 +1,6 @@
 ## Chapter 2 - Terms
 
-### //
+### `//`
 
 Anything written after the token // (that’s the character /, called “slash,” twice) on a line is a comment. Comments are ignored by the compiler and written for the benefit of programmers who read the code. Double forward slashes are used for comments. Comments are meant to explain the source code to other programmers and yourself after a long not reading it for a long time.
 
@@ -8,7 +8,7 @@ Anything written after the token // (that’s the character /, called “slash,�
 // output “Hello, World!”
 ```
 
-### <<
+### `<<`
 
 Is the output operator and is used to output strings or characters to the standard output using `cout`. 
 

@@ -7,3 +7,7 @@
 .. mdinclude:: ../ch2-hello_world/exercises/exercise01/README.md
 
 .. mdinclude:: ../ch2-hello_world/exercises/exercise02/README.md
+
+.. mdinclude:: ../ch2-hello_world/exercises/exercise03/README.md
+
+.. mdinclude:: ../ch2-hello_world/exercises/exercise04/README.md

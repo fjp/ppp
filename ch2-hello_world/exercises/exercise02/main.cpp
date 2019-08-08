@@ -12,12 +12,12 @@ int main() // C++ programs start by executing the function main
     cout << "1. Definitions:\n";
     cout << "2. Define what a room is and how a bathroom looks like.\n";
     cout << "3. Define walking/moving directions (straight, left, right, turns).\n";
-    cout << "4. Define what stairs are, how to locate them and how to use them is (move up, down).\n";
+    cout << "4. Define what stairs are, how to locate them and how to use them (move up, down).\n";
     cout << "5. Define what a corridor is and how to locate it.\n";
     cout << "6. Define what a chair is and how to get up from it.\n";
     cout << "7. Define what obstacles are (tables, cats, ...) and how to avoid them.\n";
     cout << "8. Define what a light switch is, how to locate and use it and what's its use is (when to use it).\n";
-    cout << "9. Define what doors are, how to locate them realtive to your position and how to use them (open, close, walk through).\n";
+    cout << "9. Define what doors are, how to locate them relative to your position and how to use them (open, close, walk through).\n";
     cout << "10. Actions:\n";
     cout << "11. Get up from the chair.\n";
     cout << "12. Locate the corridor that leads to the upstairs bathroom.\n";

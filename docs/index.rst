@@ -17,6 +17,8 @@ Welcome to
 
 .. mdinclude:: ../ch2-hello_world/README.md
 
+.. mdinclude:: ../ch3-objects_types_and_values/README.md
+
 
 Indices and tables
 ==================

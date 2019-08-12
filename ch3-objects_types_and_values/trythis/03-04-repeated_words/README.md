@@ -40,3 +40,5 @@ repeated word: very
 which means that there were four repeated words according to this program.
 `She` and `she` are not equal here because the capitalization do not match.
 The program also did not get `good` and `good.` as equal because of the period at the end of the sentence.
+Here a word is defined to be sequence of characters that is sparated by a white-space character.
+A repeated word is defined to be a word that matches its previous word exactly regarding case sensitivity and its containing characters. 

@@ -28,13 +28,16 @@ Get the “repeated word detection program” to run. Test it with the sentence
 
 How many repeated words were there? Why? What is the definition of word used here? What is the definition of repeated word? (For example, is She she a repetition?)
 
-There output of the program is:
+The output of the program is:
 
 ```
 repeated word: He
 repeated word: He
 repeated word: did
 repeated word: very
+^D
+
+Process finished with exit code 0
 ```
 
 which means that there were four repeated words according to this program.

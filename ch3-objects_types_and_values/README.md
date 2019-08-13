@@ -4,16 +4,13 @@
 
 .. mdinclude:: ../ch3-hello_world/ch3-terms.md
 
-.. mdinclude:: ../ch3-hello_world/exercises/exercise01/README.md
-
-.. mdinclude:: ../ch3-hello_world/exercises/exercise02/README.md
-
-.. mdinclude:: ../ch3-hello_world/trythis/README.md
-
 ## Drill
 
 ## Exercises
 
+.. mdinclude:: ../ch3-hello_world/exercises/exercise01/README.md
+
+.. mdinclude:: ../ch3-hello_world/exercises/exercise02/README.md
 
 ## Try This
 

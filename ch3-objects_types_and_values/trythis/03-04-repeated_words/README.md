@@ -1,4 +1,4 @@
-### Try This - Repeated Words
+### Repeated Words
 
 
 Execute this program yourself using a piece of paper. Use the input `The cat cat jumped`. Even experienced programmers use this technique to visualize the actions of small sections of code that somehow don’t seem completely obvious.

@@ -9,3 +9,10 @@ Be careful about crucial details, such as the desired oven temperature, preheati
 Consider those instructions from the point of view of a cooking novice (if you are not one, get help from a friend who does not know how to cook). Fill in the steps that the book’s author (almost certainly an experienced cook) left out for being obvious.
 Build a glossary of terms used. (What’s a muffin pan? What does preheating do? What do you mean by “oven”?)
 Now bake some muffins and enjoy your results.
+
+
+.. literalinclude:: ../ch2-hello_world/exercises/exercise02/main.cpp
+   :language: cpp
+   :caption: muffins.cpp
+
+c

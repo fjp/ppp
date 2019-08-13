@@ -9,19 +9,17 @@ Here we go!
 
 
 
-.. literalinclude:: ../ch2-hello_world/exercises/exercise-01/main.cpp
+.. literalinclude:: ../ch2-hello_world/exercises/exercise01/main.cpp
    :language: cpp
    :caption: helloworldextended.cpp
    :linenos:
 
 
-abc
+a
 
 Same code snippet without text after it
 
-.. literalinclude:: ../ch2-hello_world/exercises/exercise-01/main.cpp
+.. literalinclude:: ../ch2-hello_world/exercises/exercise01/main.cpp
    :language: cpp
    :caption: helloworldextended.cpp
    :linenos:
-   
-abcd

@@ -4,6 +4,8 @@
 
 .. mdinclude:: ../ch2-hello_world/ch2-terms.md
 
+.. mdinclude:: ../ch2-hello_world/drill/README.md
+
 ## Exercises
 
 .. mdinclude:: ../ch2-hello_world/exercises/exercise01/README.md

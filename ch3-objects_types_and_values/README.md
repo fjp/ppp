@@ -20,5 +20,7 @@
 
 .. mdinclude:: ../ch3-objects_types_and_values/trythis/03-04-repeated_words/README.md
 
-.. mdinclude:: ../ch3-objects_types_and_values/trythis/d05-cruel_world/README.m
+.. mdinclude:: ../ch3-objects_types_and_values/trythis/05-cruel_world/README.m
+
+.. mdinclude:: ../ch3-objects_types_and_values/trythis/06-unsafe_conversion/README.m
 

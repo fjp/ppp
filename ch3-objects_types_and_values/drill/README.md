@@ -9,4 +9,10 @@ Then modify your code as follows: change the prompt to “Enter the name of the 
    :language: cpp
    :caption: letterform01.cpp
    
-c
+Executing the program results in: 
+
+``` 
+Enter the name of the person you want to write to (followed by 'enter'):
+Pia
+Dear Pia,
+``` 

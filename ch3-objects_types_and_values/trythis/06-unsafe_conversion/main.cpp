@@ -2,9 +2,9 @@
 
 int main() {
 
-    double d = 0; 
+    double d = 0;
     while (cin>>d) {          // repeat the statements below
-                              // as long as we type in numbers
+        // as long as we type in numbers
         int i = d;            // try to squeeze a double into an int
         char c = i;           // try to squeeze an int into a char
         int i2 = c;           // get the integer value of the character
@@ -12,5 +12,6 @@ int main() {
              << " i=="<< i    // convert to int
              << " i2==" << i2 // int value of char
              << " char(" << c << ")\n"; // the char
-    } 
+    }
 }
+

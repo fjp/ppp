@@ -24,3 +24,11 @@ Enter the name of the person you want to write to (followed by 'enter'):
 Pia
 Dear Pia,
 ``` 
+
+
+2. Add an introductory line or two, like “How are you? I am fine. I miss you.” 
+Be sure to indent the first line. Add a few more lines of your choosing — it’s your letter.
+
+.. literalinclude:: ../ch3-objects_types_and_values/drill/main03.cpp
+   :language: cpp
+   :caption: letterform02.cpp

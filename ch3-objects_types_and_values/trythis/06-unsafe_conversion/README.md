@@ -1,5 +1,14 @@
 ### Unsafe Conversions
 
+The following example shows a "narrowing" conversion, which puts a value into an object that is too small to hold this value.
+
+
+.. literalinclude:: ../ch3-objects-types-and-values/trythis/06-unsafe_conversion/main_char.cpp
+   :language: cpp
+   :caption: unsafeconversionchar.cpp
+   :linenos:
+
+
 Run this program with a variety of inputs. Try small values (e.g., 2 and 3); 
 try large values (larger than 127, larger than 1000); try negative values; try 56; try 89; try 128; 
 try non-integer values (e.g., 56.9 and 56.2). 

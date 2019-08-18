@@ -13,3 +13,12 @@ target_include_directories(${PROJECT_NAME}
         PRIVATE
             ${PPP_INCLUDE_DIRS}
         )
+
+project(drill02)
+
+add_executable(drill02 main02.cpp)
+
+target_include_directories(${PROJECT_NAME}
+        PRIVATE
+        ${PPP_INCLUDE_DIRS}
+        )

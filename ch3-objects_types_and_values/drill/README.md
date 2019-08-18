@@ -5,7 +5,15 @@
 Begin by typing the code from §3.1 prompting a user to enter his or her first name and writing “Hello, first_name” where first_name is the name entered by the user. 
 Then modify your code as follows: change the prompt to “Enter the name of the person you want to write to” and change the output to “Dear first_name,”. Don’t forget the comma.
 
+The following code shows the original program from §3.1.
+
 .. literalinclude:: ../ch3-objects_types_and_values/drill/main01.cpp
+   :language: cpp
+   :caption: letterformoriginal.cpp
+   
+Here is the modified version to satisfy the first drill:
+
+.. literalinclude:: ../ch3-objects_types_and_values/drill/main02.cpp
    :language: cpp
    :caption: letterform01.cpp
    

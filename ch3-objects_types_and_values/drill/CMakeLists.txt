@@ -5,9 +5,9 @@ find_package(PPP REQUIRED PATHS ${CMAKE_CURRENT_SOURCE_DIR}/../../)
 
 set(CMAKE_CXX_STANDARD 17)
 
-project(drill)
+project(drill01)
 
-add_executable(drill main.cpp)
+add_executable(drill01 main01.cpp)
 
 target_include_directories(${PROJECT_NAME}
         PRIVATE

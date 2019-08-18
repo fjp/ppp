@@ -6,6 +6,8 @@
 
 ## Drill
 
+.. mdinclude:: ../ch3-objects_types_and_values/drill/README.md
+
 ## Exercises
 
 .. mdinclude:: ../ch3-objects_types_and_values/exercises/exercise01/README.md

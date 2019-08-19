@@ -32,3 +32,19 @@ Be sure to indent the first line. Add a few more lines of your choosing â€” itâ€
 .. literalinclude:: ../ch3-objects_types_and_values/drill/letterform02.cpp
    :language: cpp
    :caption: letterform02.cpp
+
+The output will be similar to this:
+
+``` 
+Enter the name of the person you want to write to (followed by 'enter'):
+Pia
+Dear Pia,
+	How are you? I am fine. I miss you.
+I hope you had a nice day and I would've loved to spend it with you.
+Luckily, next weekend is not far away, and we will meet again.
+I am sure we will find something fun to do, like swimming, hiking or biking,
+and maybe going out into the city in the evening.
+I really look forward to seeing you again.
+
+Process finished with exit code 0
+```

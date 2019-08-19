@@ -7,13 +7,13 @@ Then modify your code as follows: change the prompt to “Enter the name of the 
 
 The following code shows the original program from §3.1.
 
-.. literalinclude:: ../ch3-objects_types_and_values/drill/main01.cpp
+.. literalinclude:: ../ch3-objects_types_and_values/drill/letterformoriginal.cpp
    :language: cpp
    :caption: letterformoriginal.cpp
    
 Here is the modified version to satisfy the first drill:
 
-.. literalinclude:: ../ch3-objects_types_and_values/drill/main02.cpp
+.. literalinclude:: ../ch3-objects_types_and_values/drill/letterform01.cpp
    :language: cpp
    :caption: letterform01.cpp
    
@@ -29,6 +29,6 @@ Dear Pia,
 2. Add an introductory line or two, like “How are you? I am fine. I miss you.” 
 Be sure to indent the first line. Add a few more lines of your choosing — it’s your letter.
 
-.. literalinclude:: ../ch3-objects_types_and_values/drill/main03.cpp
+.. literalinclude:: ../ch3-objects_types_and_values/drill/letterform02.cpp
    :language: cpp
    :caption: letterform02.cpp

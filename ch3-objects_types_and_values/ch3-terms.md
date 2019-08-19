@@ -47,7 +47,37 @@ What is done for `a=a+7` is the following:
 ### increment 
 
 
-### initialization 
+### initialization
+
+Assignments are similar to initialization which is illustrated in the following example:
+
+```
+string a = "alpha"; // a starts out with the value “alpha” a: alpha
+a = "beta"; // a gets the value “beta” (becomes “beta”) a: beta
+string b = a; // b starts out with a copy of a’s value (that is, “beta”)
+b = a+"gamma"; // b gets the value a+“gamma” (that is, “betagamma”)
+a = a+"delta"; // a gets the value a+“delta” (that is, “betadelta”)
+```
+
+Above, we use “starts out with” and “gets” to distinguish two similar, but logically
+distinct, operations:
+
+- Initialization (giving a variable its initial value)
+- Assignment (giving a variable a new value)
+
+These operations are so similar that C++ allows us to use the same notation (the `=`) for both:
+
+``
+int y = 8; // initialize y with 8
+x = 9;  // assign 9 to x
+string t = "howdy!"; // initialize t with “howdy!”
+s = "G'day";  // assign “G’day” to s
+```
+
+However, logically assignment and initialization are different. 
+You can tell the two apart by the type specification (like int or string) that always starts an initialization; 
+an assignment does not have that. In principle, an initialization always finds the variable empty. On the other hand, 
+an assignment (in principle) must clear out the old value from the variable before putting in the new value.
 
 
 ### name 

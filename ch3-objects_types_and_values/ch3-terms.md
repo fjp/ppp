@@ -67,7 +67,7 @@ distinct, operations:
 
 These operations are so similar that C++ allows us to use the same notation (the `=`) for both:
 
-``
+```
 int y = 8; // initialize y with 8
 x = 9;  // assign 9 to x
 string t = "howdy!"; // initialize t with “howdy!”

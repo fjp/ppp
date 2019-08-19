@@ -48,3 +48,30 @@ I really look forward to seeing you again.
 
 Process finished with exit code 0
 ```
+
+3. Now prompt the user for the name of another friend, and store it in friend_name. 
+Add a line to your letter: “Have you seen friend_name lately?”
+
+.. literalinclude:: ../ch3-objects_types_and_values/drill/letterform03.cpp
+   :language: cpp
+   :caption: letterform03.cpp
+
+This results in the output similar to the following:
+
+```
+Enter the name of the person you want to write to (followed by 'enter'):
+Pia
+Dear Pia,
+	How are you? I am fine. I miss you.
+I hope you had a nice day and I would've loved to spend it with you.
+Luckily, next weekend is not far away, and we will meet again.
+I am sure we will find something fun to do, like swimming, hiking or biking,
+and maybe going out into the city in the evening.
+I really look forward to seeing you again.
+Enter the name of another friend (followed by 'enter'):
+Sebastian
+Have you seen Sebastian lately?
+
+Process finished with exit code 0
+```
+

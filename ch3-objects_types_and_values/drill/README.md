@@ -180,7 +180,7 @@ Process finished with exit code 1
    
 Here is the output if the friend is under 12:
 
-```
+```bash
 Enter the age of the recipient (followed by 'enter'):
 1
 I hear you just had a birthday and you are 1 years old.
@@ -189,7 +189,7 @@ Next year you will be 2.
 
 Here is the output if the friend is 17:
 
-```
+```bash
 Enter the age of the recipient (followed by 'enter'):
 17
 I hear you just had a birthday and you are 17 years old.
@@ -198,7 +198,7 @@ Next year you will be able to vote.
 
 Here is the output if the friend is over 70:
 
-```
+```bash
 Enter the age of the recipient (followed by 'enter'):
 71
 I hear you just had a birthday and you are 17 years old.
@@ -215,3 +215,29 @@ I hope you are enjoying retirement.
    
 This code produces:
 
+```bash
+Enter the name of the person you want to write to (followed by 'enter'):
+Pia
+Dear Pia,
+	How are you? I am fine. I miss you.
+I hope you had a nice day and I would've loved to spend it with you.
+Luckily, next weekend is not far away, and we will meet again.
+I am sure we will find something fun to do, like swimming, hiking or biking,
+and maybe going out into the city in the evening.
+I really look forward to seeing you again.
+Enter the name of another friend (followed by 'enter'):
+Sebastian
+Have you seen Sebastian lately?
+Enter an 'm' if the friend is male and and 'f' if the friend is female (followed by 'enter'):
+m
+If you see Sebastian please ask him to call me.
+Enter the age of the recipient (followed by 'enter'):
+29
+I hear you just had a birthday and you are 29 years old.
+Yours sincerely,
+
+
+Franz
+
+Process finished with exit code 0
+```

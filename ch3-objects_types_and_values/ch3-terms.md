@@ -6,15 +6,11 @@
 An assignment is an operator, denoted by the `=` sign. This operator assings a new value (literal) to a variable. 
 For example:
 
-```
+```cpp
 int a = 3; // a starts out with the value 3
-
 a = 4; // a gets the value 4 (“becomes 4”)
-
 int b = a; // b starts out with a copy of a’s value (that is, 4)
-
 b = a+5; // b gets the value a+5 (that is, 9) a:
-
 a = a+7; // a gets the value a+7 (that is, 11)
 ```
 
@@ -51,7 +47,7 @@ What is done for `a=a+7` is the following:
 
 Assignments are similar to initialization which is illustrated in the following example:
 
-```
+```cpp
 string a = "alpha"; // a starts out with the value “alpha” a: alpha
 a = "beta"; // a gets the value “beta” (becomes “beta”) a: beta
 string b = a; // b starts out with a copy of a’s value (that is, “beta”)
@@ -67,7 +63,7 @@ distinct, operations:
 
 These operations are so similar that C++ allows us to use the same notation (the `=`) for both:
 
-```
+```cpp
 int y = 8; // initialize y with 8
 x = 9;  // assign 9 to x
 string t = "howdy!"; // initialize t with “howdy!”

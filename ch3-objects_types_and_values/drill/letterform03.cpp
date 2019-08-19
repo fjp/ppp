@@ -15,5 +15,13 @@ int main() {
     cout << "and maybe going out into the city in the evening.\n";
     cout << "I really look forward to seeing you again.\n";
 
+    /// 3.
+    cout << "Enter the name of another friend (followed by 'enter'):\n";
+    string friend_name;
+    cin >> friend_name;
+    cout << "Have you seen " << friend_name << " lately?\n";
+
+
     return 0;
+
 }

@@ -6,4 +6,6 @@ int main() {
     string first_name; // first_name is a variable of type string
     cin >> first_name; // read characters into first_name
     cout << "Dear " << first_name << ",\n";
+
+    return 0;
 }

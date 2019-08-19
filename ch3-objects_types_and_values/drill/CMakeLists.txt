@@ -31,3 +31,22 @@ target_include_directories(${PROJECT_NAME}
         PRIVATE
         ${PPP_INCLUDE_DIRS}
         )
+
+project(letterform03)
+
+add_executable(letterform03 letterform03.cpp)
+
+target_include_directories(${PROJECT_NAME}
+        PRIVATE
+        ${PPP_INCLUDE_DIRS}
+        )
+
+
+project(letterform04)
+
+add_executable(letterform04 letterform04.cpp)
+
+target_include_directories(${PROJECT_NAME}
+        PRIVATE
+        ${PPP_INCLUDE_DIRS}
+        )

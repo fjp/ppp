@@ -165,3 +165,53 @@ error: you're kidding!
 
 Process finished with exit code 1
 ```
+
+6. Add this to your letter:
+- If your friend is under 12, write “Next year you will be age+1.”
+- If your friend is 17, write “Next year you will be able to vote.”
+- If your friend is over 70, write “I hope you are enjoying retirement.”
+
+    Check your program to make sure it responds appropriately to each kind of value.
+   
+.. literalinclude:: ../ch3-objects_types_and_values/drill/letterform06.cpp
+   :language: cpp
+   :caption: letterform06.cpp
+   
+   
+Here is the output if the friend is under 12:
+
+```
+Enter the age of the recipient (followed by 'enter'):
+1
+I hear you just had a birthday and you are 1 years old.
+Next year you will be 2.
+```
+
+Here is the output if the friend is 17:
+
+```
+Enter the age of the recipient (followed by 'enter'):
+17
+I hear you just had a birthday and you are 17 years old.
+Next year you will be able to vote.
+```
+
+Here is the output if the friend is over 70:
+
+```
+Enter the age of the recipient (followed by 'enter'):
+71
+I hear you just had a birthday and you are 17 years old.
+I hope you are enjoying retirement.
+```
+   
+   
+7. Add “Yours sincerely,” followed by two blank lines for a signature, followed by your name.
+
+.. literalinclude:: ../ch3-objects_types_and_values/drill/letterform07.cpp
+   :language: cpp
+   :caption: letterform07.cpp
+   
+   
+This code produces:
+

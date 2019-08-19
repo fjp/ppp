@@ -1,10 +1,12 @@
 # Chapter 3 - Objects, Types and Values
 
+.. mdinclude:: ../ch3-objects_types_and_values/drill/README.md
+
 .. mdinclude:: ../ch3-objects_types_and_values/ch3-review.md
 
 .. mdinclude:: ../ch3-objects_types_and_values/ch3-terms.md
 
-.. mdinclude:: ../ch3-objects_types_and_values/drill/README.md
+
 
 ## Try This
 

@@ -50,3 +50,12 @@ target_include_directories(${PROJECT_NAME}
         PRIVATE
         ${PPP_INCLUDE_DIRS}
         )
+
+project(letterform05)
+
+add_executable(letterform05 letterform05.cpp)
+
+target_include_directories(${PROJECT_NAME}
+        PRIVATE
+        ${PPP_INCLUDE_DIRS}
+        )

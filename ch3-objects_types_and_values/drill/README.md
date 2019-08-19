@@ -19,7 +19,7 @@ Here is the modified version to satisfy the first drill:
    
 Executing the program results in: 
 
-``` 
+```bash
 Enter the name of the person you want to write to (followed by 'enter'):
 Pia
 Dear Pia,
@@ -35,7 +35,7 @@ Be sure to indent the first line. Add a few more lines of your choosing — it�
 
 The output will be similar to this:
 
-``` 
+```bash
 Enter the name of the person you want to write to (followed by 'enter'):
 Pia
 Dear Pia,
@@ -58,7 +58,7 @@ Add a line to your letter: “Have you seen friend_name lately?”
 
 This results in the output similar to the following:
 
-```
+```bash
 Enter the name of the person you want to write to (followed by 'enter'):
 Pia
 Dear Pia,
@@ -88,7 +88,7 @@ Assign the value entered to the variable `friend_sex`. Then use two if-statement
    
 Entering the following results in this output:
 
-```
+```bash
 Enter the name of the person you want to write to (followed by 'enter'):
 Pia
 Dear Pia,
@@ -106,3 +106,62 @@ m
 If you see Sebastian please ask him to call me.
 ```
 
+5. Prompt the user to enter the age of the recipient and assign it to an int variable age. 
+Have your program write “I hear you just had a birthday and you are age years old.” 
+If age is 0 or less or 110 or more, call simple_error("you're kidding!") using simple_error() from std_lib_facilities.h.
+
+.. literalinclude:: ../ch3-objects_types_and_values/drill/letterform05.cpp
+   :language: cpp
+   :caption: letterform05.cpp
+   
+
+The output when the age is inbetween 0 and 110:
+
+```bash
+Enter the name of the person you want to write to (followed by 'enter'):
+Pia
+Dear Pia,
+	How are you? I am fine. I miss you.
+I hope you had a nice day and I would've loved to spend it with you.
+Luckily, next weekend is not far away, and we will meet again.
+I am sure we will find something fun to do, like swimming, hiking or biking,
+and maybe going out into the city in the evening.
+I really look forward to seeing you again.
+Enter the name of another friend (followed by 'enter'):
+Sebastian
+Have you seen Sebastian lately?
+Enter an 'm' if the friend is male and and 'f' if the friend is female (followed by 'enter'):
+m
+If you see Sebastian please ask him to call me.
+Enter the age of the recipient (followed by 'enter'):
+29
+I hear you just had a birthday and you are 29 years old.
+```
+
+Erroneous input results in:
+
+```bash
+Enter the name of the person you want to write to (followed by 'enter'):
+Pia
+Dear Pia,
+	How are you? I am fine. I miss you.
+I hope you had a nice day and I would've loved to spend it with you.
+Luckily, next weekend is not far away, and we will meet again.
+I am sure we will find something fun to do, like swimming, hiking or biking,
+and maybe going out into the city in the evening.
+I really look forward to seeing you again.
+Enter the name of another friend (followed by 'enter'):
+Sebastian
+Have you seen Sebastian lately?
+Enter an 'm' if the friend is male and and 'f' if the friend is female (followed by 'enter'):
+m
+If you see Sebastian please ask him to call me.
+Enter the age of the recipient (followed by 'enter'):
+0
+I hear you just had a birthday and you are 0 years old.
+Please enter a character to exit
+error: you're kidding!
+^D
+
+Process finished with exit code 1
+```

@@ -174,8 +174,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'ProgrammingPrinciplesandPracticeusingC', 'Programming Principles and Practice using C++ Documentation',
-     author, 'ProgrammingPrinciplesandPracticeusingC', 'One line description of project.',
+    (master_doc, 'ProgrammingPrinciplesandPracticeusingCpp', 'Programming Principles and Practice using C++ Documentation',
+     author, 'ProgrammingPrinciplesandPracticeusingCpp', 'One line description of project.',
      'Miscellaneous'),
 ]
 

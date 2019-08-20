@@ -130,6 +130,7 @@ For example, in many application domains `*=` and `/=` are referred to as “sca
 
 ### initialization
 
+An initialization gives a variable its initial value. 
 Assignments are similar to initialization which is illustrated in the following example:
 
 ```cpp

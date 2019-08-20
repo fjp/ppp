@@ -84,8 +84,9 @@ A declaration is a statement that gives a name to an object.
 ### decrement
 
 
-### definition 
+### definition
 
+A definition is a declaration that sets aside memory for an object.
 
 ### increment 
 

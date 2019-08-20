@@ -199,6 +199,22 @@ An object is some memory that holds a value of a given type.
 
 ### operation 
 
+The type of a variable determines what operations we can apply to it and what they mean. 
+For example:
+
+```cpp
+int count; // >> reads an integer into count
+cin >> count; 
+string name; 
+cin >> name; // >> reads a string into name
+int c2 = count+2; // + adds integers
+string s2 = name + " Jr. "; // + appends characters
+int c3 = count–2; // – subtracts integers
+string s3 = name – " Jr. "; // error: – isn’t defined for strings
+```
+
+By “error” we mean that the compiler will reject a program trying to subtract strings. 
+The compiler knows exactly which operations can be applied to each variable and can therefore prevent many mistakes.
 
 ### operator 
 

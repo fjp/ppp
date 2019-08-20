@@ -164,6 +164,8 @@ an assignment (in principle) must clear out the old value from the variable befo
 
 ### name 
 
+We name our variables so that we can remember them and refer to them from other parts of a program. 
+In a C++ program, a name starts with a letter and contains only letters, digits, and underscores.
 
 ### narrowing
 

@@ -221,7 +221,7 @@ The compiler knows exactly which operations can be applied to each variable and 
 An operator is a function that has one ore two operands of the same or possibly different type, which yields a result.
 
 | assignment | increment, decrement | arithmetic | logical  | comparison | member access | other    |
-|:----------:|:--------------------:|:----------:|:--------:|:----------:|:-------------:|:--------:-
+|:----------:|:--------------------:|:----------:|:--------:|:----------:|:-------------:|:--------:|
 | `a = b`    | `++a`                | `+a`       | `!a`     | `a == b`   |   `a[b]`      | `a(...)` |
 | `a += b`   | `--a`                | `-a`       | `a && b` | `a != b`   |   `*a`        | `a, b`   |
 | `a -= b`   | `a++`                | `a + b`    | `a II b` | `a < b`    |   `&a`        | `? :`    |

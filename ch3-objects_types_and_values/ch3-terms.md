@@ -123,7 +123,10 @@ b –= 9; // means b = b–9
 c *= 2; // means c = c*2
 ```
 
-In general, for any binary operator `oper`, `a oper= b` means `a = a oper b`.
+In general, for any binary operator `oper`, `a oper= b` means `a = a oper b`. For starters, 
+that rule gives us operators `+=`, `–=`, `*=`, `/=`, and `%=`. 
+This provides a pleasantly compact notation that directly reflects our ideas. 
+For example, in many application domains `*=` and `/=` are referred to as “scaling.”
 
 ### initialization
 

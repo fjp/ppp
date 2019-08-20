@@ -167,6 +167,28 @@ an assignment (in principle) must clear out the old value from the variable befo
 We name our variables so that we can remember them and refer to them from other parts of a program. 
 In a C++ program, a name starts with a letter and contains only letters, digits, and underscores.
 
+```cpp
+x 
+number_of_elements 
+Fourier_transform
+z2
+Polygon
+```
+
+The following are not names:
+
+```cpp
+2x              // a name must start with a letter
+time$to$market  // $ is not a letter, digit, or underscore
+Start menu      // space is not a letter, digit, or underscore
+```
+
+When we say “not names,” we mean that a C++ compiler will not accept them as names.
+If you read system code or machine-generated code, you might see names starting with underscores, 
+such as `_foo`. Never write those yourself; such names are reserved for implementation and system entities. 
+By avoiding leading underscores, you will never find your names clashing with some name that the implementation generated.
+Names are case sensitive; that is, uppercase and lowercase letters are distinct, so `x` and `X` are different names.
+
 ### narrowing
 
 Unsafe conversions are also called “narrowing” conversions, because they put a value into an object that may be too small (“narrow”) to hold it.

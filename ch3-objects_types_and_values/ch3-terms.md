@@ -3,7 +3,7 @@
 
 ### assignment
 
-An assignment is an operator, denoted by the `=` sign. This operator assings a new value (literal) to a variable. 
+An assignment is an operator, denoted by the `=` sign. This operator assings a new value to a variable. 
 For example:
 
 ```cpp

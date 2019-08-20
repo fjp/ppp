@@ -229,7 +229,7 @@ An operator is a function that has one ore two operands of the same or possibly 
 | `a /= b`   |                      | `a * b`    |          | `a <= b`   |   `a.b`       |          |
 | `a %= b`   |                      | `a / b`    |          | `a >= b`   |   `a->*b`     |          |
 | `a &= b`   |                      | `a % b`    |          | `a <=> b`  |   `a.*b`      |          |
-| `a |= b`   |                      | `~a`       |          |            |               |          |
+| `a I= b`   |                      | `~a`       |          |            |               |          |
 | `a ^= b`   |                      | `a & b`    |          |            |               |          |
 | `a <<= b`  |                      | `a | b`    |          |            |               |          |
 | `a >>= b`  |                      | `a ^ b`    |          |            |               |          |

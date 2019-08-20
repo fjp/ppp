@@ -195,6 +195,7 @@ Unsafe conversions are also called “narrowing” conversions, because they put
 
 ### object
 
+An object is some memory that holds a value of a given type.
 
 ### operation 
 

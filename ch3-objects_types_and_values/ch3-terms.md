@@ -34,6 +34,9 @@ It is used in combination with the right shift operator `>>` where the second op
 
 ### concatenation 
 
+For strings `+` means concatenation; that is, when `s1` and `s2` are strings,
+`s1+s2` is a string where the characters from `s1` are followed by the characters from `s2`. 
+For example, if `s1` has the value `"Hello"` and `s2` the value `"World"`, then `s1+s2` will have the value `"HelloWorld"`.
 
 ### conversion 
 

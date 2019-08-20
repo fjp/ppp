@@ -236,6 +236,8 @@ An operator is a function that has one ore two operands of the same or possibly 
 |            |                      | `a << b`   |          |            |               |          |
 |            |                      | `a >> b`   |          |            |               |          |
 
+https://en.cppreference.com/w/cpp/language/operators
+
 
 ### type 
 

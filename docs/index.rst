@@ -10,13 +10,13 @@ Welcome to the solution of
    :maxdepth: 5
    :caption: Contents:
 
-   .. mdinclude:: ../README.md
+.. mdinclude:: ../README.md
 
-   .. mdinclude:: ../ch1-computers_people_and_programming/README.md
+.. mdinclude:: ../ch1-computers_people_and_programming/README.md
 
-   .. mdinclude:: ../ch2-hello_world/README.md
+.. mdinclude:: ../ch2-hello_world/README.md
 
-   .. mdinclude:: ../ch3-objects_types_and_values/README.md
+.. mdinclude:: ../ch3-objects_types_and_values/README.md
 
 
 Indices and tables

@@ -79,6 +79,7 @@ int b = c;
 
 ### declaration 
 
+A declaration is a statement that gives a name to an object.
 
 ### decrement
 

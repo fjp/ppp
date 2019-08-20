@@ -83,6 +83,16 @@ A declaration is a statement that gives a name to an object.
 
 ### decrement
 
+C++ provides a special syntax for decrementing (that is, subtracting `1` from it) a variable:
+
+```
+int a = 10;
+a--; // post decrement
+--a; // pre decrement
+```
+
+Both decrement operators result in `a = a - 1;`. Post and pre decrement are useful, for example, when indexing arrays.
+
 
 ### definition
 
@@ -90,6 +100,30 @@ A definition is a declaration that sets aside memory for an object.
 
 ### increment 
 
+Incrementing a variable (that is, adding `1` to it) is so common in programs that C++ provides a special syntax for it. 
+For example:
+
+```
+++counter
+```
+
+means
+
+```cpp
+counter = counter + 1
+```
+
+There are many other common ways of changing the value of a variable based on its current value. 
+For example, we might like to add `7` to it, to subtract `9`, or to multiply it by `2`. 
+Such operations are also supported directly by C++. For example:
+
+```cpp
+a += 7; // means a = a+7
+b –= 9; // means b = b–9
+c *= 2; // means c = c*2
+```
+
+In general, for any binary operator `oper`, `a oper= b` means `a = a oper b`.
 
 ### initialization
 

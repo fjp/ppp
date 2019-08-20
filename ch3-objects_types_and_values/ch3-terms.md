@@ -40,6 +40,42 @@ For example, if `s1` has the value `"Hello"` and `s2` the value `"World"`, then 
 
 ### conversion 
 
+Conversion means to convert one type to another where a possible loss of information is possible. Because of this, conversions can be categorized to be safe and unsafe.
+
+Safe conversion means that a type which requires less memory than another one, can be converted to that type and back without loss of information. 
+For example, a `char`, which usually requires one byte of of memory, can be converted to an `int`, which is usually made up of four bytes and back again. The twice converted value will be the same as the original one.
+
+```cpp
+char c = 'x'; 
+int i1 = c; 
+int i2 = 'x';
+
+// i1 == i2
+```
+
+Here both `i1` and `i2` the the same value `120`.
+The following are safe conversions for standard types:
+
+```cpp
+bool to char 
+bool to int 
+bool to double 
+char to int 
+char to double 
+int to double
+```
+
+A useful conversion is int to double because it allows us to mix ints and doubles in expressions.
+
+(Implicit) unsafe conversion on the other hand can lose information. Unsafe means, that a value can be implicitly turned into a value of another type that does not equal the original value.
+
+```cpp
+int a = 20000; 
+char c = a;     // try to squeeze a large int into a small char 
+int b = c;
+
+// a != b
+```
 
 ### declaration 
 
@@ -89,8 +125,9 @@ an assignment (in principle) must clear out the old value from the variable befo
 ### name 
 
 
-### narrowing 
+### narrowing
 
+Unsafe conversions are also called “narrowing” conversions, because they put a value into an object that may be too small (“narrow”) to hold it.
 
 ### object
 

@@ -24,6 +24,13 @@ What is done for `a=a+7` is the following:
 
 ### cin
 
+The name cin refers to the standard input stream (pronounced “see-in,” for “character input”) defined in the standard library. It is used to read characters from input (keyboard) into a variable:
+
+```cpp
+string first_name;
+cin >> first_name; // read characters into variable first_name
+```
+It is used in combination with the right shift operator `>>` where the second operand specifies where the (keyboard) input goes.
 
 ### concatenation 
 

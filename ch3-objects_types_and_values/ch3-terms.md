@@ -294,5 +294,8 @@ int main() {
 
 ### value 
 
+A value is a set of bits in memory interpreted according to a type.
 
 ### variable
+
+A variable is a named object.

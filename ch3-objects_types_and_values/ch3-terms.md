@@ -278,6 +278,19 @@ Check the example of the term [operation](operation).
 
 ### typesafety 
 
+Every object is given a type when it is defined. 
+A program — or a part of a program — is type-safe when objects are used only according to the rules for their type. 
+Unfortunately, there are ways of doing operations that are not type-safe. 
+For example, using a variable before it has been initialized is not considered type-safe:
+
+```cpp
+int main() {
+  double x; // we “forgot” to initialize:
+            // the value of x is undefined
+  double y = x; // the value of y is undefined
+  double z = 2.0+x; // the meaning of + and the value of z are undefined
+}
+```
 
 ### value 
 

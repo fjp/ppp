@@ -2,6 +2,16 @@
 
 1. What is meant by the term prompt?
 
+A line of code that writes out a message to the screen (terminal, console, ...) which encourages or prompts the user to take action.
+
+```cpp
+int main() {
+  cout << "Please enter your first name (followed by 'enter'):\n"; // Prompt the user to take action
+  string first_name; // first_name is a variable of type     
+  string cin >> first_name; // read characters into first_name
+  cout << "Hello, " << first_name << "!\n";
+}
+```
 
 2. Which operator do you use to read into a variable?
 

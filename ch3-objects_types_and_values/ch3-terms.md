@@ -239,7 +239,41 @@ An operator is a function that has one ore two operands of the same or possibly 
 https://en.cppreference.com/w/cpp/language/operators
 
 
-### type 
+### type
+
+An object is described by a type which specifies what kind of information can be placed into that object.
+Put another way, a type specifies how a region of memory, describing that object, should be interpreted. 
+
+Consider the following named object (variable):
+
+```cpp
+int a = 42;
+```
+
+The type of the variable `a` is `int` which is suitable to describe the integer value `42`.
+
+It is not possible to put values of the wrong type into a variable:
+
+```cpp
+string name2 = 39; // error: 39 isn’t a string
+int number_of_steps = "Annemarie"; // error: “Annemarie” is not an int
+```
+
+Here are the five most important types:
+
+```cpp
+int number_of_steps = 39;  // int for integers
+double flying_time = 3.5;  // double for floating-point numbers
+char decimal_point = '.';  // char for individual characters
+string name = "Annemarie"; // string for character strings
+bool tap_on = true;        // bool for logical variables
+```
+
+Note that each of these types has its own characteristic style of literals.
+
+In addition to specifying what values can be stored in a variable, 
+the type of a variable determines what operations we can apply to it and what they mean.
+Check the example of the term [operation](operation).
 
 
 ### typesafety 

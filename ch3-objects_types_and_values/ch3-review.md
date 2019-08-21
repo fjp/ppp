@@ -41,6 +41,10 @@ as a single line of code?
 
 9. What is a literal?
 
+Literals represent values of various types. 
+For example, the literal 12 represents the integer value “twelve”,
+"Morning" represents the character string value Morning, and true represents the Boolean value true.
+
 10. What kinds of literals are there?
 
 11. What is a variable?

@@ -47,6 +47,96 @@ For example, the literal 12 represents the integer value “twelve”,
 
 10. What kinds of literals are there?
 
+Integer literals come in three varieties:
+- Decimal: a series of decimal digits
+Decimal digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9
+- Octal: a series of octal digits starting with 0
+Octal digits: 0, 1, 2, 3, 4, 5, 6, and 7
+- Hexadecimal: a series of hexadecimal digits starting with 0x or 0X 
+Hexadecimal digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f, A, B, C, D, E, and F
+- Binary: a series of binary digits starting with 0b or 0B (C++14) Binary digits: 0, 1
+
+A suffix u or U makes an integer literal unsigned (§25.5.3), and a suffix l or L makes it long, for example, 10u and 123456UL.
+
+A floating-point-literal contains a decimal point (.), an exponent (e.g., e3), or a floating-point suffix (d or f). 
+For example:
+
+```cpp
+123 // int (no decimal point, suffix, or exponent)
+123. // double: 123.0
+123.0 // double
+123   // double
+0.123 // double: 0.123
+1.23e3 // double: 1230.0
+1.23e–3 // double: 0.00123
+1.23e+3 // double 1230.0
+```
+
+Floating-point-literals have type double unless a suffix indicates otherwise. 
+For example:
+
+```cpp
+1.23 // double 
+1.23f // float
+1.23L // long double
+```
+
+The literals of type bool are true and false. The integer value of true is 1 and the integer value of false is 0.
+
+A character literal is a character enclosed in single quotes, for example, 'a' and '@'. In addition, there are some “special characters”:
+
+| Name            | ASCII name | C++ name |
+|:---------------:|:----------:|:--------:|
+| newline         |    NL      |  \n      |
+| horizontal tab  |    HT      |  \t      |
+| vertical tab    |    VT      |  \v      |
+| backspace       |    BS      |  \b      |
+| carriage return |    CR      |  \r      |
+| form feed       |    FF      |  \f      |
+| alert           |    BEL     |  \a      |
+| backslash       |    \       |  \\      |
+| question mark   |    ?       |  \?      |
+| single quote    |    '       |  \'      |
+| double quote    |    "       |  \"      |
+| octal number    |    ooo     |  \ooo    |
+| hexadecimal number | hhh     |  \xhhh   |
+
+A special character is represented as its “C++ name” enclosed in single quotes, for example, `'\n'` (newline) and `'\t'` (tab).
+
+The character set includes the following visible characters:
+
+```cpp
+abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789
+!@#$%^&*()_+|~`{ } [ ] :";'< > ?,./
+```
+
+The value of a character, such as `'a'` for a, is implementation dependent 
+(but easily discovered, for example, `cout << int('a')`).
+
+A string literal is a series of characters enclosed in double quotes, for example, "Knuth" and "King Canute". 
+A newline cannot be part of a string; instead use the special character `\n` to represent newline in a string:
+
+```cpp
+"King
+Canute " // error: newline in string literal
+"King\nCanute" // OK: correct way to get a newline into a string literal
+```
+
+There is only one pointer literal: the null pointer, `nullptr`. 
+For compatibility, any constant expression that evaluates to `0` can also be used as the null pointer. 
+
+For example:
+
+```cpp
+t* p1 = 0; // OK: null pointer
+int* p2 = 2–2; // OK: null pointer
+int* p3 = 1; // error: 1 is an int, not a pointer
+int z = 0; 
+int* p4 = z; // error: z is not a constant although it is set to zero initially
+```
+
+The value 0 is implicitly converted to the null pointer.
+
 11. What is a variable?
 
 12. What are typical sizes for a char, an int, and a double?

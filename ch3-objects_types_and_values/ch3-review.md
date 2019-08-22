@@ -27,6 +27,12 @@ cin >> first_name; // read characters into first_name
 3. If you want the user to input an integer value into your program for a variable named number, 
 what are two lines of code you could write to ask the user to do it and to input the value into your program?
 
+```cpp
+cout << "Please input an integer value (followed by 'enter'):\n"; // Prompt the user to take action
+int number;  // It could also be assumed that the variable number was declared before, which would make this line obsolet.
+cin >> number; // Read the value from the user input into the variable named number.
+```
+
 4. What is `\n` called and what purpose does it serve?
 
 This is a special *whitespace* character and is another name for newline (“end of line”) in an output output:

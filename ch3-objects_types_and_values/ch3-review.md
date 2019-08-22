@@ -139,6 +139,9 @@ The value 0 is implicitly converted to the null pointer.
 
 11. What is a variable?
 
+A named object is called a variable. 
+For example, character strings are put into string variables and integers are put into int variables.
+
 12. What are typical sizes for a char, an int, and a double?
 
 13. What measures do we use for the size of small entities in memory, such as ints and strings?

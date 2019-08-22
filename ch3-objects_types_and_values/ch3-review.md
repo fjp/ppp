@@ -50,6 +50,8 @@ For example, you can add as many spaces as you like before a number to be read;
 
 6. What terminates input into an integer?
 
+A *whitespace* character or an input that is not an integer.
+
 7. How would you write
 
 ```cpp

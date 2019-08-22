@@ -43,6 +43,11 @@ cout << "This scentence is written over\n two lines.\n";
 
 5. What terminates input into a string?
 
+A so called *whitespace* character. By convention, reading of strings is terminated by what is called whitespace, 
+that is, space, newline, and tab characters. Otherwise, whitespace by default is ignored by `>>`. 
+For example, you can add as many spaces as you like before a number to be read; 
+`>>` will just skip past them and read the number.
+
 6. What terminates input into an integer?
 
 7. How would you write

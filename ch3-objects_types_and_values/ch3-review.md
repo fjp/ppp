@@ -22,7 +22,7 @@ what are two lines of code you could write to ask the user to do it and to input
 
 4. What is `\n` called and what purpose does it serve?
 
-This is a special character and is another name for newline (“end of line”) in an output output:
+This is a special *whitespace* character and is another name for newline (“end of line”) in an output output:
 
 ```cpp
 cout << "This scentence is written over\n two lines.\n"; 

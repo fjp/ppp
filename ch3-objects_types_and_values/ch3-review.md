@@ -16,6 +16,13 @@ int main()
 
 2. Which operator do you use to read into a variable?
 
+The operator to read from an input (such as the keyboard) into a variable is called the right shift operator `>>`:
+
+```cpp
+string first_name; // first_name is a variable of type string 
+cin >> first_name; // read characters into first_name
+```
+
 
 3. If you want the user to input an integer value into your program for a variable named number, 
 what are two lines of code you could write to ask the user to do it and to input the value into your program?

@@ -180,7 +180,9 @@ a `double`. Note that different types of objects take up different amounts of sp
 In particular, a `char` takes up less space than an `int`, and `string` differs from `double`,
 `int`, and `char` in that different `strings` can take up different amounts of space.
 
-13. What measures do we use for the size of small entities in memory, such as ints and strings?
+13. What measures do we use for the size of small entities in memory, such as `ints` and `strings`?
+
+For `ints` we use usually 4 bytes which are 32 bits. A `string` is of variable size with its length stored and made up of single characters that require each 1 byte of memory. 
 
 14. What is the difference between = and ==?
 

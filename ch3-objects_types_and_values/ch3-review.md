@@ -192,6 +192,8 @@ For `ints` we use usually 4 bytes which are 32 bits. A `string` is of variable s
 
 15. What is a definition?
 
+A definition is a declaration that sets aside memory for an object.
+
 16. What is an initialization and how does it differ from an assignment?
 
 17. What is string concatenation and how do you make it work in C++?

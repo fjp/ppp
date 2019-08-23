@@ -170,6 +170,14 @@ For example, character strings are put into string variables and integers are pu
 
 12. What are typical sizes for a char, an int, and a double?
 
+Every int is of the same size; that is, the compiler sets aside the same fixed
+amount of memory for each int. On a typical desktop computer, that amount is 4
+bytes (32 bits). Similarly, bools, chars, and doubles are fixed size. You’ll typically
+find that a desktop computer uses a byte (8 bits) for a bool or a char and 8 bytes for
+a double. Note that different types of objects take up different amounts of space.
+In particular, a char takes up less space than an int, and string differs from double,
+int, and char in that different strings can take up different amounts of space.
+
 13. What measures do we use for the size of small entities in memory, such as ints and strings?
 
 14. What is the difference between = and ==?

@@ -184,7 +184,11 @@ In particular, a `char` takes up less space than an `int`, and `string` differs 
 
 For `ints` we use usually 4 bytes which are 32 bits. A `string` is of variable size with its length stored and made up of single characters that require each 1 byte of memory. 
 
-14. What is the difference between = and ==?
+14. What is the difference between `=` and `==`?
+
+`=` is the assignment operator which assigns a value to variable and is also used to initialize a variable.
+
+`==` is the equality operator which yields a `bool` (true or false, 1 or 0) by comparing two objects.
 
 15. What is a definition?
 

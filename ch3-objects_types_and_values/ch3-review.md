@@ -65,7 +65,7 @@ as a single line of code?
 
 8. What is an object?
 
-
+An object is a region of memory with a type that specifies what kind of information can be placed in it.
 
 9. What is a literal?
 

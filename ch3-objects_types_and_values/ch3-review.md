@@ -239,10 +239,38 @@ This_1_is fine the_$12_method number
 2_For_1_special _this_is_ok correct?
 ```
 
+In a C++ program, a name starts with a letter and contains only letters, digits, and underscores. 
+
+For example:
+
+```cpp
+x 
+number_of_elements 
+Fourier_transform
+z2
+Polygon
+```
+
+Therefore the following are not names:
+
+```
+the_$12_method  // $ is not a letter, digit, or underscore
+2_For_1_special // a name must start with a letter
+correct?        // ? is not a letter, digit, or underscore
+```
+
+The `_this_is_ok` is also a legal name, however, variables beginning with an underscore are reserved for implementation and
+system entities and should therefore not be used in production code. 
+If you read system code or machine-generated code, you might see names starting with underscores, such as `_foo`. 
+Never write those yourself; such names are reserved for implementation and system entities. 
+By avoiding leading underscores, you will never find your names clashing with some name that the implementation generated.
+
 19. Give five examples of legal names that you shouldn’t use because they are likely to cause confusion.
 
 
+
 20. What are some good rules for choosing names?
+
 
 
 21. What is type safety and why is it important?

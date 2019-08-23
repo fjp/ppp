@@ -196,6 +196,8 @@ A definition is a declaration that sets aside memory for an object.
 
 16. What is an initialization and how does it differ from an assignment?
 
+
+
 17. What is string concatenation and how do you make it work in C++?
 
 18. Which of the following are legal names in C++? If a name is not legal, why not?
@@ -213,6 +215,26 @@ This_1_is fine the_$12_method number
 
 
 21. What is type safety and why is it important?
+
+Every object is given a type when it is defined. 
+A program — or a part of a program — is type-safe when objects are used only according to the rules for their type. 
+Unfortunately, there are ways of doing operations that are not type-safe. 
+For example, using a variable before it has been initialized is not considered type-safe
+
+
+```cpp
+int main() 
+{
+    double x; // we “forgot” to initialize:
+              // the value of x is undefined
+    double y = x; // the value of y is undefined
+    double z = 2.0+x; // the meaning of + and the value of z are undefined
+}
+```
+
+An implementation is even allowed to give a hardware error when the uninitialized x is used. 
+Always initialize your variables! There are a few — very few — exceptions to this rule, 
+such as a variable we immediately use as the target of an input operation.
 
 
 22. Why can conversion from double to int be a bad thing?

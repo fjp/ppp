@@ -354,7 +354,8 @@ Safe conversion: d == dd, with d == 2.14748e+09; i == 2147483647
 
 One case where information gets lost with these types, is when the value of the `double` variable is too large to fit into the `int`.
 
-The following example shows an unsafe conversion from `double` to `int`. Notice that `int` ranges from -2^31 to 2^31-1.
+The following example shows an unsafe conversion from `double` to `int`. 
+Notice that `int` ranges from `-2^31` to `2^31-1`.
 
 ```cpp
 #include <iostream>

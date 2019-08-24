@@ -296,7 +296,8 @@ Always initialize your variables! There are a few — very few — exceptions to
 such as a variable we immediately use as the target of an input operation.
 
 
-22. Why can conversion from double to int be a bad thing?
+22. Why can conversion from `double` to `int` be a bad thing?
+
 
 
 23. Define a rule to help decide if a conversion from one type to another is safe or unsafe.

@@ -271,9 +271,40 @@ By avoiding leading underscores, you will never find your names clashing with so
 
 19. Give five examples of legal names that you shouldn’t use because they are likely to cause confusion.
 
+Names are case sensitive; that is, uppercase and lowercase letters are distinct, so `x` and `X` are different names.
+However, it is not a good idea to use the following names because a programmer can get confused with names from the standard library:
 
+```cpp
+int String = 2; // Similar to string
+double Int = 1.2; // Similar to int
+double Double = 1.2; // Similar to doulbe
+```
+
+You can use names of facilities in the standard library, such as `string`, but you shouldn’t. 
+Reuse of such a common name will cause trouble if you should ever want to use the standard library:
+
+```cpp
+int string = 7; // Possible but will lead to trouble when using std::string
+```
+
+The C++ language reserves many (about 85) names as “keywords.” 
+Using variable names that are similar to those can also be confusing:
+
+```cpp
+int Static = 42;
+```
+
+Avoid names that are easy to mistype, misread, or confuse. For example:
+
+```cpp
+Name names nameS foo f00 fl
+f1 fI fi
+```
+
+The characters `0` (zero), `o` (lowercase `O`), `O` (uppercase `o`), `1` (one), `I` (uppercase `i`), and `l` (lowercase L) are particularly prone to cause trouble.
 
 20. What are some good rules for choosing names?
+
 
 
 

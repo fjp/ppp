@@ -406,3 +406,14 @@ char to int
 char to double 
 int to double
 ```
+
+All of the following conversions are unsafe although they are accepted by the compiler:
+
+```cpp
+double to int 
+double to char 
+double to bool 
+int to char
+```
+
+They are unsafe in the sense that the value stored might differ from the value assigned.

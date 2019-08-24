@@ -318,7 +318,7 @@ Don’t use overly long names; they are hard to type, make lines so long that
 they don’t fit on a screen, and are hard to read quickly.
 
 C++ implementations use underscores to separate words in an identifier, such as element_count, rather than alternatives, 
-such as elementCount and ElementCount. C++ never uses names with all capital letters, such as ALL_CAPITAL_LETTERS,
+such as elementCount and ElementCount. C++ never uses names with all capital letters, such as `ALL_CAPITAL_LETTERS`,
 because that’s conventionally reserved for macros (§27.8 and §A.17.2).
 
 We should use an initial capital letter for types we define, such as `Square` and `Graph` or following the MISRA C style:

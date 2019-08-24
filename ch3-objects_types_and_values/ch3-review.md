@@ -168,7 +168,7 @@ The value 0 is implicitly converted to the null pointer.
 11. What is a variable?
 
 A named object is called a variable. 
-For example, character strings are put into string variables and integers are put into int variables.
+For example, character strings are put into `string` variables and integers are put into `int` variables.
 
 12. What are typical sizes for a char, an int, and a double?
 
@@ -224,7 +224,7 @@ s = "G'day";          // assign “G’day” to s
 ```
 
 However, logically assignment and initialization are different. 
-You can tell the two apart by the type specification (like int or string) that always starts an initialization; 
+You can tell the two apart by the type specification (like `int` or `string`) that always starts an initialization; 
 an assignment does not have that. In principle, an initialization always finds the variable empty. 
 On the other hand, an assignment (in principle) must clear out the old value from the variable before putting in the new value.
 

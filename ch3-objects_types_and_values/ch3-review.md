@@ -331,12 +331,42 @@ int main()
 }
 ```
 
+This gives the output:
+
+```
+Safe conversion: d == dd, with d == 2147483647
+```
+
+Without `std::setprecision(d)` from the iomanip header, the output would be rounded:
+
+```
+Safe conversion: d == dd, with d == 2.14748e+09
+```
+
 Information can get lost with these types when the value of the `double` variable is too large to fit into the `int` or 
 
-The following example shows an unsafe conversion from `double` to `int`:
+The following example shows an unsafe conversion from `double` to `int`. Notice that `int` ranges from -2^31 to 2^31-1.
 
 ```cpp
-double d = 
+int main()
+{
+    double d = 4294967296/2; // 2^32 = 4294967296, 2^32/2 = 2^31 = 2147483648
+    //double d = 2147483648; // 2^32 = 4294967296, 2^32/2 = 2^31 = 2147483648
+
+    int i = d;     // implicit safe conversion
+    double dd = i;
+
+    if (d == dd)
+        std::cout << "Safe conversion: d == dd, with d == " << d << "\n";
+    else
+        std::cout << "Unsafe conversion: d == " << d << "; dd == " << dd << "\n";
+}
+```
+
+The output is:
+
+```
+Unsafe conversion: d == 2.14748e+09; dd == -2.14748e+09
 ```
 
 23. Define a rule to help decide if a conversion from one type to another is safe or unsafe.

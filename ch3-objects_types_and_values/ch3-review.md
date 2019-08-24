@@ -305,7 +305,27 @@ The characters `0` (zero), `o` (lowercase `O`), `O` (uppercase `o`), `1` (one), 
 
 20. What are some good rules for choosing names?
 
+When you choose names for your variables, functions, types, etc., 
+choose meaningful names; that is, choose names that will help people understand your program.
+Don't use variables with “easy to type” names like `x1`, `x2`, `s3`, and `p7`. 
+Abbreviations and acronyms can confuse people, so use them sparingly.
 
+Short names, such as `x` and `i`, are meaningful when used conventionally; 
+that is, `x` should be a local variable or a parameter (see §4.5 and §8.4) and `i` should be
+a loop index (see §4.4.2.3).
+
+Don’t use overly long names; they are hard to type, make lines so long that
+they don’t fit on a screen, and are hard to read quickly.
+
+C++ implementations use underscores to separate words in an identifier, such as element_count, rather than alternatives, 
+such as elementCount and ElementCount. C++ never uses names with all capital letters, such as ALL_CAPITAL_LETTERS,
+because that’s conventionally reserved for macros (§27.8 and §A.17.2).
+
+We should use an initial capital letter for types we define, such as `Square` and `Graph` or following the MISRA C style:
+`c` prefix for classes and `s` prefix for structs. 
+The C++ language and standard library don’t use the initial-capital-letter style, 
+so it’s `int` rather than `Int` and `string` rather than `String`. 
+Thus, our convention helps to minimize confusion between our types and the standard ones.
 
 
 21. What is type safety and why is it important?

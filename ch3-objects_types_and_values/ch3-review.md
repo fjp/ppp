@@ -298,7 +298,46 @@ such as a variable we immediately use as the target of an input operation.
 
 22. Why can conversion from `double` to `int` be a bad thing?
 
+On a typical desktop computer architecture `double` has a fixed memory amount of 8 bytes (64 bits).
+An `int` on the other hand the compiler sets aside the same fixed amount of memory, which is 4 bytes (32 bits) on most 
+architectures. To convert a `double` to an `int` a narrowing conversion is required where information can get lost,
+which describes an unsafe conversion.
+A conversion is said to be safe if the destination type can hold the value of the source type without loosing information.
 
+```cpp
+int main() 
+{
+    double d = 100;
+    int i = d;     // implicit safe conversion
+    double dd = i;
+    if (d == dd)
+        cout << "No loss of information\n";
+}
+```
+
+```cpp
+int main()
+{
+    double d = 4294967296/2-1; // 2^32 = 4294967296, 2^32/2 = 2^31 = 2147483648
+    //double d = 2147483648-1; // 2^32 = 4294967296, 2^32/2 = 2^31 = 2147483648
+
+    int i = d;     // implicit safe conversion
+    double dd = i;
+
+    if (d == dd)
+        std::cout << "Safe conversion: d == dd, with d == " << d << "\n";
+    else
+        std::cout << "Unsafe conversion: d == " << d << "; dd == " << dd << "\n";
+}
+```
+
+Information can get lost with these types when the value of the `double` variable is too large to fit into the `int` or 
+
+The following example shows an unsafe conversion from `double` to `int`:
+
+```cpp
+double d = 
+```
 
 23. Define a rule to help decide if a conversion from one type to another is safe or unsafe.
 

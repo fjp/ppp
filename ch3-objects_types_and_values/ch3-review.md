@@ -393,3 +393,16 @@ to remind us that information (the `.7`) is thrown away.
 
 23. Define a rule to help decide if a conversion from one type to another is safe or unsafe.
 
+A conversion is unsafe if the amount of memory reserved for the destination type is less than the memory reserved for the source type or if a floating-point type is converted to a fixed-point type (with a scaling factor of `1` for the fixed-point number). Such conversion lead to a loss of information where the value is narrowed. 
+A value can be implicitly turned into a value of another type that does not equal the original value.
+
+Safe conversions happen when the source type reserves less memory than the destination type. Safe conversions are:
+
+```
+bool to char 
+bool to int 
+bool to double 
+char to int 
+char to double 
+int to double
+```

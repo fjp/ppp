@@ -305,6 +305,8 @@ which describes an unsafe conversion.
 A conversion is said to be safe if the destination type can hold the value of the source type without loosing information.
 
 ```cpp
+#include <iostream>
+
 int main() 
 {
     double d = 100;
@@ -316,6 +318,9 @@ int main()
 ```
 
 ```cpp
+#include <iostream>
+#include <iomanip>
+
 int main()
 {
     double d = 4294967296/2-1; // 2^32 = 4294967296, 2^32/2 = 2^31 = 2147483648
@@ -325,9 +330,9 @@ int main()
     double dd = i;
 
     if (d == dd)
-        std::cout << "Safe conversion: d == dd, with d == " << d << "\n";
+        std::cout << "Safe conversion: d == dd, with d == " << std::fixed << d << "; i == " << i << "\n";
     else
-        std::cout << "Unsafe conversion: d == " << d << "; dd == " << dd << "\n";
+        std::cout << "Unsafe conversion: d == " << std::fixed << d << "; dd == " << std::fixed << dd << "; i == " << i << "\n";
 }
 ```
 
@@ -337,37 +342,54 @@ This gives the output:
 Safe conversion: d == dd, with d == 2147483647
 ```
 
-Without `std::setprecision(d)` from the iomanip header, the output would be rounded:
+Without `std::fixed` from the `iomanip` header, the output of `d` would be rounded:
 
 ```
-Safe conversion: d == dd, with d == 2.14748e+09
+Safe conversion: d == dd, with d == 2.14748e+09; i == 2147483647
 ```
 
-Information can get lost with these types when the value of the `double` variable is too large to fit into the `int` or 
+One case where information gets lost with these types, is when the value of the `double` variable is too large to fit into the `int`.
 
 The following example shows an unsafe conversion from `double` to `int`. Notice that `int` ranges from -2^31 to 2^31-1.
 
 ```cpp
+#include <iostream>
+#include <iomanip>
+
 int main()
 {
     double d = 4294967296/2; // 2^32 = 4294967296, 2^32/2 = 2^31 = 2147483648
-    //double d = 2147483648; // 2^32 = 4294967296, 2^32/2 = 2^31 = 2147483648
+    //double d = 2147483648-1; // 2^32 = 4294967296, 2^32/2 = 2^31 = 2147483648
 
-    int i = d;     // implicit safe conversion
+    int i = d;     // implicit unsafe conversion
     double dd = i;
 
     if (d == dd)
-        std::cout << "Safe conversion: d == dd, with d == " << d << "\n";
+        std::cout << "Safe conversion: d == dd, with d == " << std::fixed << d << "; i == " << i << "\n";
     else
-        std::cout << "Unsafe conversion: d == " << d << "; dd == " << dd << "\n";
+        std::cout << "Unsafe conversion: d == " << std::fixed << d << "; dd == " << std::fixed << dd << "; i == " << i << "\n";
 }
 ```
 
 The output is:
 
 ```
-Unsafe conversion: d == 2.14748e+09; dd == -2.14748e+09
+Unsafe conversion: d == 2147483648.000000; dd == -2147483648.000000; i == -2147483648
 ```
+
+They are unsafe in the sense that the value stored might differ from the value assigned. 
+
+Another case where an unsafe conversion happens, is when the `double` variable stores a floating-point value and is converted to an `int`. 
+
+```cpp
+double x = 2.7; // lots of code
+int y = x; // y becomes 2
+```
+
+a `double`-to-`int` conversion truncates (always rounds down, toward zero) rather than using the conventional `4/5` rounding.
+What happens is perfectly predictable, but there is nothing in the `int y = x;` 
+to remind us that information (the `.7`) is thrown away.
+
 
 23. Define a rule to help decide if a conversion from one type to another is safe or unsafe.
 

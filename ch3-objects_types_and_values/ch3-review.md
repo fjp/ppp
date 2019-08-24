@@ -231,6 +231,10 @@ On the other hand, an assignment (in principle) must clear out the old value fro
 
 17. What is string concatenation and how do you make it work in C++?
 
+For strings `+` means concatenation; that is, when `s1` and `s2` are strings, 
+`s1+s2` is a `string` where the characters from `s1` are followed by the characters from `s2`. 
+For example, if `s1` has the value `"Hello"` and `s2` the value `"World"`, then `s1+s2` will have the value `"HelloWorld"`.
+
 18. Which of the following are legal names in C++? If a name is not legal, why not?
 
 ```

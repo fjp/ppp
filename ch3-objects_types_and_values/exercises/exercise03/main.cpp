@@ -3,23 +3,23 @@
 
 int main()
 {
-    cout << "Enter a number of miles (followed by 'Enter'):\n";
-    double miles;
-    cin >> miles;
-    const double kilometersToMile = 1.609;
-    if (1.0 == miles)
-    {
-        cout << miles << " mile is equal to " << miles * kilometersToMile << " kilometers.\n";
-    }
-    else {
-        double kilometers = miles * kilometersToMile;
-        if (1.0 == kilometers) {
-            cout << miles << " miles are equal to " << kilometers << " kilometer.\n";
-        }
-        else {
-            cout << miles << " miles are equal to " << kilometers << " kilometers.\n";
-        }
-    }
+    //int double = 0;
+    // main.cpp:6:9: error: cannot combine with previous 'int' declaration specifier
+    // main.cpp:6:16: error: expected unqualified-id
+
+    //double int = 0;
+    // main.cpp:10:12: error: cannot combine with previous 'double' declaration specifier
+    // main.cpp:10:16: error: expected unqualified-id
+
+    //double string = 0; // ok but dangerous
+
+
+    //double std::string = 0;
+    // main.cpp:17:17: error: definition or redeclaration of 'string' not allowed inside a function
+
+
+
+
 
     return 0;
 }

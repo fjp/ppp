@@ -43,12 +43,12 @@ that doesn’t correspond, such as `stupid computer!`.
 * 4 5
 ```
 
-11. Read the operation into a string called `operation` and use an if-statement to figure out which operation the user wants, 
+Read the operation into a string called `operation` and use an if-statement to figure out which operation the user wants, 
 for example, `if (operation=="+")`. Read the operands into variables of type `double`. 
 Implement this for operations called +, –, *, /, plus, minus, mul, and div with their obvious meanings.
 
 
-12. Write a program that prompts the user to enter some number of pennies (1-cent coins), nickels (5-cent coins), 
+11. Write a program that prompts the user to enter some number of pennies (1-cent coins), nickels (5-cent coins), 
 dimes (10-cent coins), quarters (25-cent coins), half dollars (50-cent coins), and one-dollar coins (100-cent coins). 
 Query the user separately for the number of each size coin, e.g., “How many pennies do you have?” 
 Then your program should print out something like this:

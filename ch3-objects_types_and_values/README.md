@@ -23,7 +23,7 @@
 
 ## Exercises
 
-.. mdinclude:: ../ch3-objects_types_and_values/exercises/exercise01/README.md
-
 .. mdinclude:: ../ch3-objects_types_and_values/exercises/exercise02/README.md
+
+.. mdinclude:: ../ch3-objects_types_and_values/exercises/exercise03/README.md
 

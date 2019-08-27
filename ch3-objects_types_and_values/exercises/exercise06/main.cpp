@@ -10,11 +10,11 @@ int main()
 
     if (val1 < val2)
     {
-        smaller = val1;
-        larger = val2;
+        smallest = val1;
+        largest = val2;
     } else {
-        smaller = val2;
-        larger = val1;
+        smallest = val2;
+        largest = val1;
     }
     
     // Put val3 in the correct place
@@ -33,7 +33,7 @@ int main()
         largest = val3;
     }
 
-    cout << smallest << ", " << middle << ", " << largest "\n"
+    cout << smallest << ", " << middle << ", " << largest << "\n";
 
     return 0;
 }

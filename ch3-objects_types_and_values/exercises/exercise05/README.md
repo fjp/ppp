@@ -8,4 +8,18 @@ Are the results the same? Should they be? What’s the difference?
    :language: cpp
    :caption: val1val2float.cpp
 
-c
+This program outpus the following:
+
+```
+Enter two double values (followed by 'Enter')
+2 3
+smaller = 2
+larger = 3
+sum = 5
+difference = 1
+product = 6
+ratio = 1.5
+```
+
+
+The ratio is different between this and the program of exercise 04, because floating-point values are not truncated when using `double` instead of `int`. 

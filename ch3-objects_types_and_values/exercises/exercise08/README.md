@@ -15,3 +15,37 @@ Enter an integer value (followed by 'Enter')
 2
 The value 2 is even.
 ```
+
+```
+Enter an integer value (followed by 'Enter')
+3
+The value 3 is odd.
+```
+
+`0` results in:
+
+```
+Enter an integer value (followed by 'Enter')
+0
+The value 0 is even.
+```
+
+Negativ values result in:
+
+```
+Enter an integer value (followed by 'Enter')
+-1
+The value -1 is odd.
+```
+
+```
+Enter an integer value (followed by 'Enter')
+-2
+The value -2 is even.
+```
+
+```
+Enter an integer value (followed by 'Enter')
+-3
+The value -3 is odd.
+```

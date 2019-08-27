@@ -22,10 +22,10 @@ int main()
         larger = val1;
     }
 
-    int sum = smaller + larger;
-    int difference = larger - smaller;
-    int product = smaller * larger;
-    int ratio = larger/smaller;
+    int sum = val1 + val2;
+    int difference = val1 - val2;
+    int product = val1 * val2;
+    int ratio = val1/val2;
 
     cout << "smaller = " << smaller << "\n"
         << "larger = " << larger  << "\n"

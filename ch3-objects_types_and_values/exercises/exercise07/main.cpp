@@ -10,22 +10,22 @@ int main()
 
     if (str1 < str2)
     {
-        smaller = str1;
-        larger = str2;
+        smallest = str1;
+        largest = str2;
     } else {
-        smaller = str2;
-        larger = str1;
+        smallest = str2;
+        largest = str1;
     }
     
     // Put str3 in the correct place
     if (str3 <= smallest)
     {
         middle = smallest;
-        smallest = val3;
+        smallest = str3;
     }
     else if (smallest < str3 && str3 < largest)
     {
-        middle = val3;
+        middle = str3;
     }
     else if (largest <= str3)
     {
@@ -33,7 +33,7 @@ int main()
         largest = str3;
     }
 
-    cout << smallest << ", " << middle << ", " << largest "\n"
+    cout << smallest << ", " << middle << ", " << largest << "\n";
 
     return 0;
 }

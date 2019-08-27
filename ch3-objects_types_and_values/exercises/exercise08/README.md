@@ -8,4 +8,10 @@ Your output should stand alone, like `The value 4 is an even number`. Hint: See 
    :language: cpp
    :caption: oddeven.cpp
 
-c
+The output using `2` is:
+
+```
+Enter an integer value (followed by 'Enter')
+2
+The value 2 is even.
+```

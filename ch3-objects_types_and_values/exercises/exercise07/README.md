@@ -7,4 +7,10 @@ So, if the user enters the values `Steinbeck, Hemingway, Fitzgerald`, the output
    :language: cpp
    :caption: sortstrings.cpp
 
-c
+The output results in:
+
+```
+Enter three strings (followed by 'Enter')
+Steinbeck Hemingway Fitzgerald
+Fitzgerald, Hemingway, Steinbeck
+```

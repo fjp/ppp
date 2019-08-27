@@ -21,10 +21,10 @@ int main()
         larger = val1;
     }
 
-    double sum = smaller + larger;
-    double difference = larger - smaller;
-    double product = smaller * larger;
-    double ratio = larger/smaller;
+    double sum = val1 + val2;
+    double difference = val1 - val2;
+    double product = val1 * val2;
+    double ratio = val1/val2;
 
     cout << "smaller = " << smaller << "\n"
         << "larger = " << larger  << "\n"

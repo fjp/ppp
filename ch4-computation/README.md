@@ -10,7 +10,7 @@
 
 ## Try This
 
-.. mdinclude:: ../ch4-computation/trythis/01-name_and_age/README.md
+.. mdinclude:: ../ch4-computation/trythis/01-currency_converter/README.md
 
 
 ## Exercises

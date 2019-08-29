@@ -9,3 +9,19 @@ that doesn’t correspond, such as `stupid computer!`.
    :language: cpp
    :caption: spelledoutnumbers.cpp
 
+
+Here are some example input and outputs:
+
+```
+Enter a number from 0 to 4 as a string, e.g. 'zero' (followed by 'Enter')
+one
+The spelled-out number one corresponds to 1.
+```
+
+
+```
+Enter a number from 0 to 4 as a string, e.g. 'zero' (followed by 'Enter')
+five
+not a number I know
+```
+

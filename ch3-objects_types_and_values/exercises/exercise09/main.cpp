@@ -34,7 +34,7 @@ int main()
     }
     else
     {
-        cout << "not a number I know\n"
+        cout << "not a number I know\n";
     }
         
     return 0;

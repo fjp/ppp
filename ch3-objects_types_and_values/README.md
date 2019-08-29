@@ -31,3 +31,11 @@
 
 .. mdinclude:: ../ch3-objects_types_and_values/exercises/exercise05/README.md
 
+.. mdinclude:: ../ch3-objects_types_and_values/exercises/exercise06/README.md
+
+.. mdinclude:: ../ch3-objects_types_and_values/exercises/exercise07/README.md
+
+.. mdinclude:: ../ch3-objects_types_and_values/exercises/exercise08/README.md
+
+.. mdinclude:: ../ch3-objects_types_and_values/exercises/exercise09/README.md
+

@@ -8,7 +8,7 @@ Your output should stand alone, like `The value 4 is an even number`. Hint: See 
    :language: cpp
    :caption: oddeven.cpp
 
-The output using `2` is:
+The output using `2` as input is:
 
 ```
 Enter an integer value (followed by 'Enter')

@@ -18,6 +18,8 @@ Welcome to the solution of
 
 .. mdinclude:: ../ch3-objects_types_and_values/README.md
 
+.. mdinclude:: ../ch4-computation/README.md
+
 
 Indices and tables
 ==================

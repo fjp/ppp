@@ -52,3 +52,27 @@ e.g., `14 dimes` and `1 dime` (not `1 dimes`). Also, report the sum in dollars a
 .. literalinclude:: ../ch3-objects_types_and_values/exercises/exercise11/main_improved.cpp
    :language: cpp
    :caption: penniesimproved.cpp
+
+
+This improved program version gives the output:
+
+```
+How many pennies do you have? (followed by 'Enter'):
+1
+How many nickels do you have? (followed by 'Enter'):
+1
+How many dimes do you have? (followed by 'Enter'):
+1
+How many quarters do you have? (followed by 'Enter'):
+1
+How many half dollars do you have? (followed by 'Enter'):
+1
+How many dollars do you have? (followed by 'Enter'):
+1
+You have 1 penny.
+You have 1 nickel.
+You have 1 dime.
+You have 1 quarter.
+You have 1 half dollar.
+The value of all of your coins is 191 cents.
+```

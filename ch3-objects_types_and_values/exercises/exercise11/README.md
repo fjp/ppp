@@ -16,3 +16,8 @@ The value of all of your coins is 573 cents.
 
 Make some improvements: if only one of a coin is reported, make the output grammatically correct, 
 e.g., `14 dimes` and `1 dime` (not `1 dimes`). Also, report the sum in dollars and cents, i.e., `$5.73` instead of `573 cents`.
+
+
+.. literalinclude:: ../ch3-objects_types_and_values/exercises/exercise11/main.cpp
+   :language: cpp
+   :caption: pennies.cpp

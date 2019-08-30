@@ -4,6 +4,22 @@
    :language: cpp
    :caption: cminchconverter.cpp
    :linenos:
+   
+Output of the cm to inch converter:
+
+```
+Please enter a length followed by a unit (c or i):
+1 c
+1cm == 0.393701in
+```
+
+And the output when converting inch to cm:
+
+```
+Please enter a length followed by a unit (c or i):
+1 i
+1in == 2.54cm
+```
 
 Use the example above as a model for a program that converts yen, euros, and pounds into dollars. If you like realism, you can find conversion rates on the web.
 

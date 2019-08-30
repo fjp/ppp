@@ -13,3 +13,24 @@ Use the example above as a model for a program that converts yen, euros, and pou
    :language: cpp
    :caption: currencyconverter.cpp
    :linenos:
+   
+
+Here are some example inputs and their resulting output:
+
+```
+Please enter an amount followed by a currency (y, e or p):
+1 y
+1yen == 0.00940203dollar
+```
+
+```
+Please enter an amount followed by a currency (y, e or p):
+1 e
+1euro == 1.0989dollar
+```
+
+```
+Please enter an amount followed by a currency (y, e or p):
+1 p
+1pound == 1.21951dollar
+```

@@ -74,5 +74,5 @@ You have 1 nickel.
 You have 1 dime.
 You have 1 quarter.
 You have 1 half dollar.
-The value of all of your coins is 191 cents.
+The value of all of your coins is $1.91 cents.
 ```

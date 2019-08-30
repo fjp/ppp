@@ -15,3 +15,19 @@ Implement this for operations called +, –, *, /, plus, minus, mul, and div wit
 .. literalinclude:: ../ch3-objects_types_and_values/exercises/exercise10/main.cpp
    :language: cpp
    :caption: polishnotationcalculator.cpp
+
+
+Here are some example inputs and the results:
+
+```
+Enter an operation ('+','-','*','/','plus','minus','mul','div') followed by two operands (followed by 'Enter')
++ 5.5 2
+The result of 5.5 + 2 is 7.5
+```
+
+```
+Enter an operation ('+','-','*','/','plus','minus','mul','div') followed by two operands (followed by 'Enter')
+mul 5 2.1
+The result of 5 mul 2.1 is 10.5
+```
+

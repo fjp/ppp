@@ -31,11 +31,12 @@ int main()
 
 
     cout
-        << "You have " <<  pennies << " pennies.\n"
-        << "You have " <<  nickels << " nickels.\n"
-        << "You have " <<  dimes << " dimes.\n"
-        << "You have " <<  quarters << " quarters.\n"
-        << "You have " <<  half_dollars << " half dollars.\n"
+        << "You have " << pennies << " pennies.\n"
+        << "You have " << nickels << " nickels.\n"
+        << "You have " << dimes << " dimes.\n"
+        << "You have " << quarters << " quarters.\n"
+        << "You have " << half_dollars << " half dollars.\n"
+        << "You have " << dollars << " dollars.\n"
         << "The value of all of your coins is " <<  cents << " cents.\n";
 
     return 0;

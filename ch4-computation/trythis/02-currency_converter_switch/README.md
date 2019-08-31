@@ -11,8 +11,11 @@ Which version of the program is easier to write, understand, and modify? Why?
    :linenos:
 
 
-Output of the cm to inch converter:
+Output of the currency converter program using switch statement:
 
 ```
+Please enter an amount followed by a currency (y, e or p):
+1 u
+1yuan == 0.139665dollar
 ```
 

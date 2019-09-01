@@ -10,6 +10,7 @@ The following code shows the original program from §3.1.
 .. literalinclude:: ../ch3-objects_types_and_values/drill/letterformoriginal.cpp
    :language: cpp
    :caption: letterformoriginal.cpp
+   :linenos:
    
 Here is the modified version to satisfy the first drill:
 

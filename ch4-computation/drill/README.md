@@ -3,6 +3,11 @@
 1. Write a program that consists of a `while`-loop that (each time around the loop) reads in two `int`s and then prints them. 
 Exit the program when a terminating `'|'` is entered.
 
+.. literalinclude:: ../ch4-computation/drill/loop01.cpp
+   :language: cpp
+   :caption: loop01.cpp
+   :linenos:
+
 2. Change the program to write out `the smaller value is:` followed by the smaller of the numbers 
 and `the larger value is:` followed by the larger value.
 

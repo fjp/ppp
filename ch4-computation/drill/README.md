@@ -7,6 +7,20 @@ Exit the program when a terminating `'|'` is entered.
    :language: cpp
    :caption: loop01.cpp
    :linenos:
+   
+The input and output of this program is:
+
+```
+1 2
+1	2
+2 1
+2	1
+3 5
+3	5
+|
+
+Process finished with exit code 0
+```
 
 2. Change the program to write out `the smaller value is:` followed by the smaller of the numbers 
 and `the larger value is:` followed by the larger value.

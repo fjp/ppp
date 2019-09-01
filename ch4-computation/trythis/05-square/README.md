@@ -7,7 +7,7 @@ Then run some version of “the first program” using that `square()`.
 
 .. literalinclude:: ../ch4-computation/trythis/05-square/main.cpp
    :language: cpp
-   :caption: CharacterLoopFor.cpp
+   :caption: square.cpp
    :linenos:
 
 

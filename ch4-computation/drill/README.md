@@ -25,6 +25,28 @@ Process finished with exit code 0
 2. Change the program to write out `the smaller value is:` followed by the smaller of the numbers 
 and `the larger value is:` followed by the larger value.
 
+.. literalinclude:: ../ch4-computation/drill/loop02.cpp
+   :language: cpp
+   :caption: loop02.cpp
+   :linenos:
+
+Input and output of this program is:
+
+```
+1 2
+The smaller value is: 1
+The larger value is: 2
+3 2
+The smaller value is: 2
+The larger value is: 3
+2 2
+The smaller value is: 2
+The larger value is: 2
+^D
+```
+
+Notice that the output if the values are the same.
+
 3. Augment the program so that it writes the line `the numbers are equal` (only) if they are equal.
 
 

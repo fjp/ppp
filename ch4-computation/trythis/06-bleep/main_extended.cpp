@@ -2,13 +2,24 @@
 
 int main() 
 {
-    string disliked = "Broccoli";
+    vector<string> dislikedVector = {"Broccoli", "Puree", "Cauliflower", "Cabbage"};
+    bool disliked = false;
     for (string temp; cin>>temp; ) // read
     {
-        if (disliked != temp)
-            cout << temp << '\n';
-        else
+        for (auto word : dislikedVector)
+        {
+            if (word == temp)
+            {
+                disliked = true;
+                break;
+            }
+        }
+        if (disliked)
             cout << "BLEEP" << '\n';
+        else
+            cout << temp << '\n';
+
+        disliked = false;
     }
 
     return 0;

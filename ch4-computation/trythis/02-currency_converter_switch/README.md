@@ -19,3 +19,7 @@ Please enter an amount followed by a currency (y, e or p):
 1yuan == 0.139665dollar
 ```
 
+This version of the currency converter program is easier to write and understand than the version using
+if statements. However, using switch-statement it is not possible to compare strings.
+For this example is was necessary to use the character 'u' for yuan because 'y' was already taken for yen.
+

@@ -55,6 +55,28 @@ Notice that the output if the values are the same. The next drill handles the ca
    :language: cpp
    :caption: loop03.cpp
    :linenos:
+   
+   
+The output is:
+
+```
+Enter two integer values separated by a space (followed by 'Enter'):
+1 2
+The smaller value is: 1
+The larger value is: 2
+3 2
+The smaller value is: 2
+The larger value is: 3
+1 5
+The smaller value is: 1
+The larger value is: 5
+10 1
+The smaller value is: 1
+The larger value is: 10
+5 5
+The numbers are equal.
+^D
+```
 
 4. Change the program so that it uses `double`s instead of `int`s.
 

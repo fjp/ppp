@@ -22,3 +22,13 @@ target_include_directories(${PROJECT_NAME}
         PRIVATE
         ${PPP_INCLUDE_DIRS}
         )
+        
+        
+project(loop03)
+
+add_executable(loop03 loop03.cpp)
+
+target_include_directories(${PROJECT_NAME}
+        PRIVATE
+        ${PPP_INCLUDE_DIRS}
+        )

@@ -75,6 +75,10 @@ Each time through the loop write out the value entered.
 If it’s the smallest so far, write `the smallest so far` after the number. 
 If it is the largest so far, write `the largest so far` after the number.
 
+.. literalinclude:: ../ch4-computation/drill/loop06.cpp
+   :language: cpp
+   :caption: loop06.cpp
+   :linenos:
 
 7. Add a unit to each `double` entered; that is, enter values such as `10cm`, `2.5in`, `5ft`, or `3.33m`. 
 Accept the four units: `cm`, `m`, `in`, `ft`. Assume conversion factors `1m == 100cm`, `1in == 2.54cm`, `1ft == 12in`. 

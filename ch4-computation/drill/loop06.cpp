@@ -1,25 +1,36 @@
 #include "std_lib_facilities.h"
 
 int main() {
-    bool first = true;
-    double val;
+    bool first {true};
+    double val {0.0};
+    double smallest {0.0};
+    double largest {0.0};
+    string unit {" "};
+
+    cout << "Enter a double value (followed by 'Enter'):\n";
     while (cin >> val)
     {
+        cout << val;
         if (first == true)
         {
             first = false;
             smallest = val;
             largest = val;
+            cout << " is the first value and therefore the smallest and largest so far.\n";
         }
-        cout << val << '\n';
-        
-        if (val < smallest)
+        else if (val < smallest)
         {
-            cout << "The smalles so far.\n";
+            cout << " the smallest so far.\n";
+            smallest = val;
         }
-        if (val > largest)
+        else if (val > largest)
         {
-            cout << "The largest so far\n";
+            cout << " the largest so far.\n";
+            largest = val;
+        }
+        else
+        {
+            cout << '\n';
         }
     }
 

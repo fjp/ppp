@@ -18,7 +18,8 @@ int main() {
             cout << "The smaller value is: " << val2 << '\n';
             cout << "The larger value is: " << val1 << '\n';
         }
-        if (val1 - val2 < 1.0/100 || val2 - val1 < 1.0/100)
+        double diff = val1 - val2;
+        if (diff > 0 && diff < 1.0/100 || diff < 0 && diff > -1.0/100)
         {
             cout << "The numbers are almost equal.\n";
         }

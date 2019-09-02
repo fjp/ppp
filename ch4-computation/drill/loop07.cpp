@@ -49,6 +49,9 @@ double convertToMeter(double val, string unit)
 
 
 int main() {
+
+    cout << "Enter a double value followed by a unit with or without a space in between (followed by 'Enter'):\n";
+
     bool first {true};
     double val {0.0};
     double valMeter {0.0};
@@ -56,7 +59,6 @@ int main() {
     double largest {0.0};
     string unit {" "};
 
-    cout << "Enter a double value followed by a unit with or without a space in between (followed by 'Enter'):\n";
     printLegalUnits();
 
     while (cin >> val >> unit)

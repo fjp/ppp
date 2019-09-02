@@ -1,6 +1,9 @@
 #include "std_lib_facilities.h"
 
 int main() {
+
+    cout << "Enter two double values separated by a space (followed by 'Enter'):\n";
+
     double val1, val2;
     while (cin >> val1 >> val2)
     {

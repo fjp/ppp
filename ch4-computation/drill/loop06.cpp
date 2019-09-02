@@ -1,13 +1,15 @@
 #include "std_lib_facilities.h"
 
 int main() {
+
+    cout << "Enter a double value (followed by 'Enter'):\n";
+
     bool first {true};
     double val {0.0};
     double smallest {0.0};
     double largest {0.0};
     string unit {" "};
 
-    cout << "Enter a double value (followed by 'Enter'):\n";
     while (cin >> val)
     {
         cout << val;

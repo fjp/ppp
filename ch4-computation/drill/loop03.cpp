@@ -6,7 +6,7 @@ int main() {
     {
         if (val1 == val2)
         {
-            cout << "The values are equal.\n";
+            cout << "The numbers are equal.\n";
         }
         else if (val1 < val2)
         {

@@ -32,3 +32,43 @@ target_include_directories(${PROJECT_NAME}
         PRIVATE
         ${PPP_INCLUDE_DIRS}
         )
+
+project(loop04)
+
+add_executable(loop04 loop04.cpp)
+
+target_include_directories(${PROJECT_NAME}
+        PRIVATE
+        ${PPP_INCLUDE_DIRS}
+        )
+
+
+project(loop05)
+
+add_executable(loop05 loop05.cpp)
+
+target_include_directories(${PROJECT_NAME}
+        PRIVATE
+        ${PPP_INCLUDE_DIRS}
+        )
+
+
+project(loop06)
+
+add_executable(loop06 loop06.cpp)
+
+target_include_directories(${PROJECT_NAME}
+        PRIVATE
+        ${PPP_INCLUDE_DIRS}
+        )
+
+
+project(loop07)
+
+add_executable(loop07 loop07.cpp)
+
+target_include_directories(${PROJECT_NAME}
+        PRIVATE
+        ${PPP_INCLUDE_DIRS}
+        )
+

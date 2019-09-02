@@ -80,6 +80,26 @@ If it is the largest so far, write `the largest so far` after the number.
    :caption: loop06.cpp
    :linenos:
 
+The following are some inputs with the resulting output:
+
+```
+Enter a double value (followed by 'Enter'):
+7
+7 is the first value and therefore the smallest and largest so far.
+5
+5 the smallest so far.
+8
+8 the largest so far.
+6
+6
+7
+7
+2
+2 the smallest so far.
+10
+10 the largest so far.
+```
+
 7. Add a unit to each `double` entered; that is, enter values such as `10cm`, `2.5in`, `5ft`, or `3.33m`. 
 Accept the four units: `cm`, `m`, `in`, `ft`. Assume conversion factors `1m == 100cm`, `1in == 2.54cm`, `1ft == 12in`. 
 Read the unit indicator into a string. 

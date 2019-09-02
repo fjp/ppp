@@ -11,6 +11,7 @@ Exit the program when a terminating `'|'` is entered.
 The input and output of this program is:
 
 ```
+Enter two integer values seperated by a space (followed by 'Enter'):
 1 2
 1	2
 2 1

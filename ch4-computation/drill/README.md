@@ -45,10 +45,14 @@ The larger value is: 2
 ^D
 ```
 
-Notice that the output if the values are the same.
+Notice that the output if the values are the same. The next drill handles the case if the two values are equal
 
 3. Augment the program so that it writes the line `the numbers are equal` (only) if they are equal.
 
+.. literalinclude:: ../ch4-computation/drill/loop03.cpp
+   :language: cpp
+   :caption: loop03.cpp
+   :linenos:
 
 4. Change the program so that it uses `double`s instead of `int`s.
 

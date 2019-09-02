@@ -105,7 +105,10 @@ Accept the four units: `cm`, `m`, `in`, `ft`. Assume conversion factors `1m == 1
 Read the unit indicator into a string. 
 You may consider `12 m` (with a space between the number and the unit) equivalent to `12m` (without a space).
 
-
+.. literalinclude:: ../ch4-computation/drill/loop07.cpp
+   :language: cpp
+   :caption: loop07.cpp
+   :linenos:
 
 Here is the output of the program after entering some values:
 
@@ -146,10 +149,14 @@ Error: no legal unit. Enter one of
 ```
 
 On Mac Mojave I had to use spaces between the value and the unit. Otherwise `cin` failed (returns false) and never enters 
-the while looop. Everything works on linux.
+the while loop (this is a [bug](https://bugs.llvm.org/show_bug.cgi?id=17782) in libc++). Everything works on linux.
 
 8. Reject values without units or with “illegal” representations of units, such as `y`, `yard`, `meter`, `km`, and `gallons`.
 
+.. literalinclude:: ../ch4-computation/drill/loop08.cpp
+   :language: cpp
+   :caption: loop08.cpp
+   :linenos:
 
 9. Keep track of the sum of values entered (as well as the smallest and the largest) and the number of values entered. 
 When the loop ends, print the smallest, the largest, the number of values, and the sum of values. 

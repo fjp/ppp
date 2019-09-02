@@ -56,6 +56,10 @@ Notice that the output if the values are the same. The next drill handles the ca
 
 4. Change the program so that it uses `double`s instead of `int`s.
 
+.. literalinclude:: ../ch4-computation/drill/loop04.cpp
+   :language: cpp
+   :caption: loop04.cpp
+   :linenos:
 
 5. Change the program so that it writes out `the numbers are almost equal` 
 after writing out which is the larger and the smaller if the two numbers differ by less than 1.0/100.

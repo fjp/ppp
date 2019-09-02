@@ -85,6 +85,49 @@ Accept the four units: `cm`, `m`, `in`, `ft`. Assume conversion factors `1m == 1
 Read the unit indicator into a string. 
 You may consider `12 m` (with a space between the number and the unit) equivalent to `12m` (without a space).
 
+
+
+Here is the output of the program after entering some values:
+
+```
+Enter a double value followed by a unit with or without a space in between (followed by 'Enter'):
+	cm for centimeters
+	m for meters
+	in for inches
+	ft for feet
+5 m
+5m is the first value and therefore the smallest and largest so far.
+4 m
+4m the smallest so far.
+6 m
+6m the largest so far.
+5 m
+5m
+8 m
+8m the largest so far.
+7 m
+7m
+3 m
+3m the smallest so far.
+4 m
+4m
+2 cm
+2cm (0.02m) the smallest so far.
+1 in
+1in (0.0254m)
+5 ft
+5ft (1.524m)
+7 y
+Error: no legal unit. Enter one of 
+	cm for centimeters
+	m for meters
+	in for inches
+	ft for feet
+```
+
+On Mac Mojave I had to use spaces between the value and the unit. Otherwise `cin` failed (returns false) and never enters 
+the while looop. Everything works on linux.
+
 8. Reject values without units or with “illegal” representations of units, such as `y`, `yard`, `meter`, `km`, and `gallons`.
 
 

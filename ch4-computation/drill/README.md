@@ -84,6 +84,31 @@ The numbers are equal.
    :language: cpp
    :caption: loop04.cpp
    :linenos:
+   
+Example input and output:
+
+```
+Enter two double values separated by a space (followed by 'Enter'):
+10.0 5.0
+The smaller value is: 5
+The larger value is: 10
+2.0 6.0
+The smaller value is: 2
+The larger value is: 6
+1 2
+The smaller value is: 1
+The larger value is: 2
+2.0 2.0
+The numbers are equal.
+1 1
+The numbers are equal.
+1 1.0
+The numbers are equal.
+1 2.0
+The smaller value is: 1
+The larger value is: 2
+^D
+```
 
 5. Change the program so that it writes out `the numbers are almost equal` 
 after writing out which is the larger and the smaller if the two numbers differ by less than 1.0/100.

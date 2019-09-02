@@ -64,6 +64,10 @@ Notice that the output if the values are the same. The next drill handles the ca
 5. Change the program so that it writes out `the numbers are almost equal` 
 after writing out which is the larger and the smaller if the two numbers differ by less than 1.0/100.
 
+.. literalinclude:: ../ch4-computation/drill/loop05.cpp
+   :language: cpp
+   :caption: loop05.cpp
+   :linenos:
 
 6. Now change the body of the loop so that it reads just one `double` each time around. 
 Define two variables to keep track of which is the smallest and which is the largest value you have seen so far. 

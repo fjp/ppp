@@ -117,6 +117,50 @@ after writing out which is the larger and the smaller if the two numbers differ 
    :language: cpp
    :caption: loop05.cpp
    :linenos:
+   
+Output for values that are similar:
+
+```
+Enter two double values separated by a space (followed by 'Enter'):
+10.0 10.0
+The numbers are equal.
+10.0 11.0
+The smaller value is: 10
+The larger value is: 11
+10.0 10.0001
+The smaller value is: 10
+The larger value is: 10.0001
+The numbers are almost equal.
+1.0 0.09
+The smaller value is: 0.09
+The larger value is: 1
+1.0 0.99
+The smaller value is: 0.99
+The larger value is: 1
+1.0 0.999
+The smaller value is: 0.999
+The larger value is: 1
+The numbers are almost equal.
+-1.0 -0.999
+The smaller value is: -1
+The larger value is: -0.999
+The numbers are almost equal.
+-1.0 -1.01
+The smaller value is: -1.01
+The larger value is: -1
+-1.0 -1.001
+The smaller value is: -1.001
+The larger value is: -1
+The numbers are almost equal.
+-1.0 -1.002
+The smaller value is: -1.002
+The larger value is: -1
+The numbers are almost equal.
+1 1.001
+The smaller value is: 1
+The larger value is: 1.001
+The numbers are almost equal.
+```
 
 6. Now change the body of the loop so that it reads just one `double` each time around. 
 Define two variables to keep track of which is the smallest and which is the largest value you have seen so far. 

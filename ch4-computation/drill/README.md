@@ -34,6 +34,7 @@ and `the larger value is:` followed by the larger value.
 Input and output of this program is:
 
 ```
+Enter two integer values seperated by a space (followed by 'Enter'):
 1 2
 The smaller value is: 1
 The larger value is: 2

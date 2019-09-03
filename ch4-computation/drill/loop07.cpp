@@ -96,10 +96,6 @@ int main() {
                 cout << '\n';
             }
         }
-        else {
-            cout << "Error: no legal unit. Enter one of \n";
-            printLegalUnits();
-        }
     }
 
     return 0;

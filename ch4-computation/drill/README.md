@@ -255,6 +255,10 @@ the while loop (this is a [bug](https://bugs.llvm.org/show_bug.cgi?id=17782) in 
 When the loop ends, print the smallest, the largest, the number of values, and the sum of values. 
 Note that to keep the sum, you have to decide on a unit to use for that sum; use meters.
 
+.. literalinclude:: ../ch4-computation/drill/loop09.cpp
+   :language: cpp
+   :caption: loop09.cpp
+   :linenos:
 
 10. Keep all the values entered (converted into meters) in a `vector`. At the end, write out those values.
 

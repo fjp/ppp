@@ -247,6 +247,39 @@ the while loop (this is a [bug](https://bugs.llvm.org/show_bug.cgi?id=17782) in 
    :caption: loop08.cpp
    :linenos:
 
+The output is:
+
+```
+Enter a double value followed by a unit with or without a space in between (followed by 'Enter'):
+	cm for centimeters
+	m for meters
+	in for inches
+	ft for feet
+5 m
+5m is the first value and therefore the smallest and largest so far.
+7 m
+7m the largest so far.
+3 m
+3m the smallest so far.
+4 m
+4m
+2 cm
+2cm (0.02m) the smallest so far.
+9 cm
+9cm (0.09m)
+1 in
+1in (0.0254m)
+1 yard
+Error: no legal unit. Enter one of 
+	cm for centimeters
+	m for meters
+	in for inches
+	ft for feet
+1 m
+1m
+^D
+```
+
 9. Keep track of the sum of values entered (as well as the smallest and the largest) and the number of values entered. 
 When the loop ends, print the smallest, the largest, the number of values, and the sum of values. 
 Note that to keep the sum, you have to decide on a unit to use for that sum; use meters.
@@ -255,6 +288,8 @@ Note that to keep the sum, you have to decide on a unit to use for that sum; use
    :language: cpp
    :caption: loop09.cpp
    :linenos:
+
+
 
 10. Keep all the values entered (converted into meters) in a `vector`. At the end, write out those values.
 

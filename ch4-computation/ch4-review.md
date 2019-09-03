@@ -173,17 +173,17 @@ but do not change values after initialization are in themselves widely useful.
 15. What are some common problems with switch-statements?
 
 
-16. What is the function of each part of the header line in a for-loop, 
+16. What is the function of each part of the header line in a `for`-loop, 
 and in what sequence are they executed?
 
 
-17. When should the for-loop be used and when should the while-loop be used?
+17. When should the for-loop be used and when should the `while`-loop be used?
 
 
 18. How do you print the numeric value of a char?
 
 
-19. Describe what the line char foo(int x) means in a function definition.
+19. Describe what the line char `foo(int x)` means in a function definition.
 
 
 20. When should you define a separate function for part of a program? List reasons.
@@ -192,22 +192,37 @@ and in what sequence are they executed?
 21. What can you do to an int that you cannot do to a string?
 
 
-22. What can you do to a string that you cannot do to an int?
+22. What can you do to a `string` that you cannot do to an `int`?
 
 
-23. What is the index of the third element of a vector?
+23. What is the index of the third element of a `vector`?
+
+```
+vector<int> vec = {0, 1, 2};
+int i3 = vec[2];
+```
+
+24. How do you write a `for`-loop that prints every element of a `vector`?
+
+To print every value of a vector, a range-based `for`-loop can be used:
+
+```
+vector<int> vec = {0, 1, 2, 3, 4, 5};
+for (auto element : vec)
+{
+    cout << element;
+}
+```
 
 
-24. How do you write a for-loop that prints every element of a vector?
+25. What does `vector<char>alphabet(26);` do?
+
+This initializes a vector that can hold 26 elements of type `char` with all zeros.
+
+26. Describe what `push_back()` does to a vector.
 
 
-25. What does vector<char> alphabet(26); do?
-
-
-26. Describe what push_back() does to a vector.
-
-
-27. What do vector’s member functions begin(), end(), and size() do?
+27. What do vector’s member functions `begin()`, `end()`, and `size()` do?
 
 
 28. What makes vector so popular/useful?

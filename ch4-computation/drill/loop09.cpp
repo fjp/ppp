@@ -104,8 +104,8 @@ int main() {
         }
     }
     
-    cout << "The smallest: " << smallest << '\n'
-         << "The largest: " << largest << '\n'
+    cout << "The smallest: " << smallest << "m\n"
+         << "The largest: " << largest << "m\n"
          << "Number of values entered: " << count << '\n'
          << "The sum of values: " << sum << "m\n";
 

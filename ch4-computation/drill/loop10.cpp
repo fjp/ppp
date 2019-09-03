@@ -77,7 +77,6 @@ int main() {
 
             if (0 == count)
             {
-                first = false;
                 smallest = val;
                 largest = val;
 
@@ -98,6 +97,7 @@ int main() {
                 cout << '\n';
             }
             sum += valMeter;
+            values.push_back(valMeter);
             count++;
         }
         else {
@@ -105,11 +105,11 @@ int main() {
             printLegalUnits();
         }
     }
-    
-    cout << "The smallest: " << smallest << ".\n";
-         << "The largest: " << largest << ".\n"; 
-         << "Number of values entered: " << count << ".\n";
-         << "The sum of values: " << sum << "m.\n";
+
+    cout << "The smallest: " << smallest << "m\n"
+         << "The largest: " << largest << "m\n"
+         << "Number of values entered: " << count << '\n'
+         << "The sum of values: " << sum << "m\n";
          
      cout << "The entered values: ";
      for (auto value : values)

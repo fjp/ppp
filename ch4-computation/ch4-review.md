@@ -37,6 +37,7 @@ Therefore a program — and any part of a program — should be as simple as pos
 The most basic building block of programs is an expression. 
 An expression computes a value from a number of operands. 
 The simplest expression is simply a literal value, such as `10`, `'a'`, `3.14`, or `"Norah"`.
+Names of variables are also expressions. A variable represents the object of which it is the name.
 
 5. What is the difference between a statement and an expression, as described in this chapter?
 

@@ -333,6 +333,46 @@ The sum of values: 16.7223m
    :caption: loop10.cpp
    :linenos:
 
+The output of this drill is:
+
+```
+Enter a double value followed by a unit with or without a space in between (followed by 'Enter'):
+	cm for centimeters
+	m for meters
+	in for inches
+	ft for feet
+10 m
+10m is the first value and therefore the smallest and largest so far.
+8 m
+8m the smallest so far.
+3 m
+3m the smallest so far.
+5 m
+5m
+2 cm
+2cm (0.02m) the smallest so far.
+1 in
+1in (0.0254m)
+0.2 in
+0.2in (0.00508m) the smallest so far.
+100 ft
+100ft (30.48m) the largest so far.
+1 yard
+Error: no legal unit. Enter one of 
+	cm for centimeters
+	m for meters
+	in for inches
+	ft for feet
+.2 cm
+0.2cm (0.002m) the smallest so far.
+|
+The smallest: 0.002m
+The largest: 30.48m
+Number of values entered: 9
+The sum of values: 56.5325m
+The entered values: 10 8 3 5 0.02 0.0254 0.00508 30.48 0.002 
+```
+
 11. Before writing out the values from the `vector`, sort them (that’ll make them come out in increasing order).
 
 .. literalinclude:: ../ch4-computation/drill/loop11.cpp

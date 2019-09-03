@@ -88,7 +88,6 @@ void use(int n)
     constexpr int c2 = n+7; // error: we don’t know the value of c2
     // ...
 }
-To handle cases
 ```
 
 To handle cases where the value of a “variable” that is initialized with a value that

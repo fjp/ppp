@@ -41,6 +41,16 @@ Names of variables are also expressions. A variable represents the object of whi
 
 5. What is the difference between a statement and an expression, as described in this chapter?
 
+An expression computes a value from a set of operands using operators like the ones mentioned in §4.3. 
+To produce several values, do something many times, choose among alternatives, or if you want to get input or produce output,
+in C++, as in many languages, you use language constructs called statements to express those things.
+
+Two kinds of statements are: 
+
+- expression statements 
+- declarations
+
+An expression statement is simply an expression followed by a semicolon.
 
 6. What is an lvalue? List the operators that require an lvalue. 
 Why do these operators, and not the others, require an lvalue?

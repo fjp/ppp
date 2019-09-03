@@ -213,32 +213,28 @@ Enter a double value followed by a unit with or without a space in between (foll
 	ft for feet
 5 m
 5m is the first value and therefore the smallest and largest so far.
-4 m
-4m the smallest so far.
-6 m
-6m the largest so far.
-5 m
-5m
-8 m
-8m the largest so far.
 7 m
-7m
+7m the largest so far.
 3 m
 3m the smallest so far.
 4 m
 4m
+8 m
+8m the largest so far.
+6 m
+6m
 2 cm
 2cm (0.02m) the smallest so far.
 1 in
 1in (0.0254m)
-5 ft
-5ft (1.524m)
-7 y
-Error: no legal unit. Enter one of 
-	cm for centimeters
-	m for meters
-	in for inches
-	ft for feet
+9 ft
+9ft (2.7432m)
+100 ft
+100ft (30.48m) the largest so far.
+1 y
+1 m
+1m
+^D
 ```
 
 On Mac Mojave I had to use spaces between the value and the unit. Otherwise `cin` failed (returns false) and never enters 

@@ -268,3 +268,8 @@ Note that to keep the sum, you have to decide on a unit to use for that sum; use
    :linenos:
 
 11. Before writing out the values from the `vector`, sort them (that’ll make them come out in increasing order).
+
+.. literalinclude:: ../ch4-computation/drill/loop11.cpp
+   :language: cpp
+   :caption: loop11.cpp
+   :linenos:

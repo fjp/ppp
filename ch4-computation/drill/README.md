@@ -379,3 +379,43 @@ The entered values: 10 8 3 5 0.02 0.0254 0.00508 30.48 0.002
    :language: cpp
    :caption: loop11.cpp
    :linenos:
+
+Output for drill 11:
+
+```
+Enter a double value followed by a unit with or without a space in between (followed by 'Enter'):
+	cm for centimeters
+	m for meters
+	in for inches
+	ft for feet
+8 m
+8m is the first value and therefore the smallest and largest so far.
+9 m
+9m the largest so far.
+5 m
+5m the smallest so far.
+2 cm
+2cm (0.02m) the smallest so far.
+1 in
+1in (0.0254m)
+0.1 in
+0.1in (0.00254m) the smallest so far.
+100 ft
+100ft (30.48m) the largest so far.
+2 yard
+Error: no legal unit. Enter one of 
+	cm for centimeters
+	m for meters
+	in for inches
+	ft for feet
+6 cm
+6cm (0.06m)
+6 m
+6m
+|
+The smallest: 0.00254m
+The largest: 30.48m
+Number of values entered: 9
+The sum of values: 58.5879m
+The entered values in sorted order: 0.00254 0.02 0.0254 0.06 5 6 8 9 30.48 
+```

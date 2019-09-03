@@ -64,6 +64,45 @@ so that `a=b` is an expression and we need the terminating semicolon to make `a=
 6. What is an lvalue? List the operators that require an lvalue. 
 Why do these operators, and not the others, require an lvalue?
 
+An lvalue is an expression that identifies an object that could in principle be modified 
+(but obviously an lvalue that has a const type is protected against modification by the type system) 
+and have its address taken. 
+The complement to lvalue is rvalue, that is, an expression that identifies something that may not be modified 
+or have its address taken, such as a value returned from a function (&f(x) is an error because f(x) is an rvalue).
+
+The following operators require an lvalue on the left han side because they may modify this value. 
+
+Assignments:
+
+```
+v = x;
+v *= x;
+v /= x;
+v%=x
+v+=x
+v– =x
+v>>=x
+v<<=x
+v&=x
+v^=x
+v|=x
+```
+
+Address of:
+
+```
+&v
+```
+
+(pre/post-)increment/decrement:
+
+```
+++v;
+--v;
+v++;
+v--;
+```
+
 
 7. What is a constant expression?
 

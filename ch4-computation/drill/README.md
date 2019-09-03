@@ -262,5 +262,9 @@ Note that to keep the sum, you have to decide on a unit to use for that sum; use
 
 10. Keep all the values entered (converted into meters) in a `vector`. At the end, write out those values.
 
+.. literalinclude:: ../ch4-computation/drill/loop10.cpp
+   :language: cpp
+   :caption: loop10.cpp
+   :linenos:
 
 11. Before writing out the values from the `vector`, sort them (that’ll make them come out in increasing order).

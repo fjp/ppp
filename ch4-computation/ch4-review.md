@@ -51,6 +51,15 @@ Two kinds of statements are:
 - declarations
 
 An expression statement is simply an expression followed by a semicolon.
+For example:
+
+```
+a = b;
+++b;
+```
+
+Those are two expression statements. Note that the assignment `=` is an operator
+so that `a=b` is an expression and we need the terminating semicolon to make `a=b;` a statement.
 
 6. What is an lvalue? List the operators that require an lvalue. 
 Why do these operators, and not the others, require an lvalue?

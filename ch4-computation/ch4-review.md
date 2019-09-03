@@ -20,6 +20,17 @@ such as producing the result (output) 49 from the argument (input) 7 using the c
 
 3. What are the three requirements a programmer should keep in mind when expressing computations?
 
+Our job as programmers is to express computations
+
+- Correctly
+- Simply
+- Efficiently
+
+Please note the order of those ideals: it doesn’t matter how fast a program is if it gives the wrong results. 
+Similarly, a correct and efficient program can be so complicated that it must be thrown away or 
+completely rewritten to produce a new version (release). 
+Remember, useful programs will always be modified to accommodate new needs, new hardware, etc. 
+Therefore a program — and any part of a program — should be as simple as possible to perform its task.
 
 4. What does an expression do?
 

@@ -34,6 +34,9 @@ Therefore a program — and any part of a program — should be as simple as pos
 
 4. What does an expression do?
 
+The most basic building block of programs is an expression. 
+An expression computes a value from a number of operands. 
+The simplest expression is simply a literal value, such as `10`, `'a'`, `3.14`, or `"Norah"`.
 
 5. What is the difference between a statement and an expression, as described in this chapter?
 

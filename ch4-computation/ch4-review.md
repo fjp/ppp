@@ -67,6 +67,49 @@ Why do these operators, and not the others, require an lvalue?
 
 7. What is a constant expression?
 
+C++ offers the notion of a symbolic constant, that is, a named object to which you can’t give a new value after it has been initialized. 
+For example:
+
+```
+constexpr double pi = 3.14159;
+pi = 7; // error: assignment to constant
+double c = 2*pi*r; // OK: we just read pi; we don’t try to change it
+```
+
+Such constants are useful for keeping code readable. 
+
+A constexpr symbolic constant must be given a value that is known at compile time.
+
+```
+constexpr int max = 100;
+void use(int n)
+{
+    constexpr int c1 = max+7; // OK: c1 is 107
+    constexpr int c2 = n+7; // error: we don’t know the value of c2
+    // ...
+}
+To handle cases
+```
+
+To handle cases where the value of a “variable” that is initialized with a value that
+is not known at compile time but never changes after initialization, C++ offers a
+second form of constant (a const)
+
+```
+constexpr int max = 100;
+void use(int n)
+{
+    constexpr int c1 = max+7; // OK: c1 is 107
+    const int c2 = n+7; // OK, but don’t try to change the value of c2
+    // ...
+    c2 = 7; // error: c2 is a const
+}
+```
+
+Such “const variables” are very common for two reasons:
+- C++98 did not have constexpr, so people used const.
+- "Variables" that are not constant expressions (their value is not known at compile time) 
+but do not change values after initialization are in themselves widely useful.
 
 8. What is a literal?
 

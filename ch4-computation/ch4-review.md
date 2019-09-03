@@ -11,6 +11,12 @@ such as producing the result (output) 49 from the argument (input) 7 using the c
 
 2. What do we mean by inputs and outputs to a computation? Give examples.
 
+When we say “input” and “output” we generally mean information coming into and out of a computer, 
+but we can also use the terms for information given to or produced by a part of a program. 
+Inputs to a part of a program are often called *arguments* and outputs from a part of a program are often called *results*.
+
+By computation we simply mean the act of producing some outputs based on some inputs, 
+such as producing the result (output) 49 from the argument (input) 7 using the computation (function) square (see §4.5).
 
 3. What are the three requirements a programmer should keep in mind when expressing computations?
 

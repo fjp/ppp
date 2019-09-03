@@ -76,7 +76,6 @@ int main() {
 
             if (0 == count)
             {
-                first = false;
                 smallest = val;
                 largest = val;
 
@@ -105,10 +104,10 @@ int main() {
         }
     }
     
-    cout << "The smallest: " << smallest << ".\n";
-         << "The largest: " << largest << ".\n"; 
-         << "Number of values entered: " << count << ".\n";
-         << "The sum of values: " << sum << "m.\n";
+    cout << "The smallest: " << smallest << '\n'
+         << "The largest: " << largest << '\n'
+         << "Number of values entered: " << count << '\n'
+         << "The sum of values: " << sum << "m\n";
 
     return 0;
 }

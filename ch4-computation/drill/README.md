@@ -289,7 +289,42 @@ Note that to keep the sum, you have to decide on a unit to use for that sum; use
    :caption: loop09.cpp
    :linenos:
 
-
+```
+Enter a double value followed by a unit with or without a space in between (followed by 'Enter'):
+	cm for centimeters
+	m for meters
+	in for inches
+	ft for feet
+5 m
+5m is the first value and therefore the smallest and largest so far.
+2 m
+2m the smallest so far.
+9 m
+9m the largest so far.
+2 ft
+2ft (0.6096m) the smallest so far.
+0.5 in
+0.5in (0.0127m) the smallest so far.
+100 yard
+Error: no legal unit. Enter one of 
+	cm for centimeters
+	m for meters
+	in for inches
+	ft for feet
+2 gallons
+Error: no legal unit. Enter one of 
+	cm for centimeters
+	m for meters
+	in for inches
+	ft for feet
+10 cm
+10cm (0.1m)
+|
+The smallest: 0.0127
+The largest: 9
+Number of values entered: 6
+The sum of values: 16.7223m
+```
 
 10. Keep all the values entered (converted into meters) in a `vector`. At the end, write out those values.
 

@@ -320,8 +320,8 @@ Error: no legal unit. Enter one of
 10 cm
 10cm (0.1m)
 |
-The smallest: 0.0127
-The largest: 9
+The smallest: 0.0127m
+The largest: 9m
 Number of values entered: 6
 The sum of values: 16.7223m
 ```

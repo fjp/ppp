@@ -187,6 +187,10 @@ Use constants with descriptive names and not use these magic constants (literals
 12. What operators can be used on integers but not on floating-point numbers?
 
 
+|                       |   Name                 | Comment                                    |
+|:=====================:|:====================== |:===========================================|
+| `a%b`                 |  modulo (remainder)    |  only for integer types                    |
+
 13. What are some operators that can be used for strings?
 
 

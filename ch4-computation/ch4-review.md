@@ -211,8 +211,20 @@ Use constants with descriptive names and not use these magic constants (literals
 | `lval=a`              |  assignment            | result is `bool`                           |
 | `lval+=a`             |  compound assignment   | `lval=lval+a`                              |
 
-14. When would a programmer prefer a switch-statement to an if-statement?
+14. When would a programmer prefer a `switch`-statement to an `if`-statement?
 
+A selection based on comparison of a value against several constants can be tedious to write using `if` and `else`
+statements. C++ offers a `switch`-statement which is archaic but still clearer than nested `if`-statements, 
+especially when we compare against many constants. 
+
+Here are some technical details about switch-statements:
+- The value on which we switch must be of an integer, `char`, or enumeration (§9.5) type. 
+In particular, you cannot switch on a `string`.
+- The values in the case labels must be constant expressions (§4.3.1). 
+In particular, you cannot use a variable in a case label.
+- You cannot use the same value for two case labels.
+- You can use several case labels for a single case.
+- Don’t forget to end each case with a `break`. Unfortunately, the compiler probably won’t warn you if you forget.
 
 15. What are some common problems with switch-statements?
 

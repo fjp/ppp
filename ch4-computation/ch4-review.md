@@ -262,6 +262,26 @@ This initializes a vector that can hold 26 elements of type `char` with all zero
 
 26. Describe what `push_back()` does to a vector.
 
+The operation `push_back()` adds a new element to a `vector`. 
+The new element becomes the last element of the `vector`.
+
+For example:
+
+```
+vector<double> v; // start off empty; that is, v has no elements
+v.push_back(2.7); // add an element with the value 2.7 at end (“the back”) of v
+                  // v now has one element and v[0]==2.7
+v.push_back(5.6); // add an element with the value 5.6 at end of v
+                  // v now has two elements and v[1]==5.6
+```
+
+Note the syntax for a call of `push_back()`. It is called a member function call; 
+`push_back()` is a member function of `vector` and must be called using this dot notation:
+
+```
+member-function-call:
+    object_name.member-function-name ( argument-list )
+```
 
 27. What do vector’s member functions `begin()`, `end()`, and `size()` do?
 

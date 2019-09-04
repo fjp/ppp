@@ -235,4 +235,11 @@ This initializes a vector that can hold 26 elements of type `char` with all zero
 28. What makes vector so popular/useful?
 
 
-29. How do you sort the elements of a vector?
+29. How do you sort the elements of a `vector`?
+
+C++ offers a variant of the standard library `sort` algorithm, `sort()`:
+
+```
+vector<double> temps = {33.0, 23.9, 25.7, 21.2, 28.5, 19.8};
+sort(temps); // modifies temps vector to be sorted
+```

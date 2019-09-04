@@ -168,7 +168,7 @@ Use constants with descriptive names and not use these magic constants (literals
 11. What are some operators that we can use for integers and floating-point values?
 
 |                       |   Name                 | Comment                                    |
-|:=====================:|:====================== |:===========================================|
+|:---------------------:|:-----------------------|:-------------------------------------------|
 | `a+b`                 |  add                   |                                            |
 | `a-b`                 |  subtract              |                                            |
 | `out<<b`              |  write `b` to `out`    | where `out` is an `ostream`                |
@@ -188,7 +188,7 @@ Use constants with descriptive names and not use these magic constants (literals
 
 
 |                       |   Name                 | Comment                                    |
-|:=====================:|:====================== |:===========================================|
+|:---------------------:|:-----------------------|:-------------------------------------------|
 | `a%b`                 |  modulo (remainder)    |  only for integer types                    |
 
 13. What are some operators that can be used for strings?

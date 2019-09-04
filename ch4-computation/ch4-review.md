@@ -157,6 +157,15 @@ but do not change values after initialization are in themselves widely useful.
 
 10. What is a magic constant? Give examples.
 
+Non-obvious literals in code (outside definitions of symbolic constants) are derisively referred to as magic constants.
+For example:
+
+```
+299792458 // fundamental onstant of the universe: speed of light in vacuum measured in meters per second
+3.14159 // approximation to pi
+```
+
+Use constants with descriptive names and not use these magic constants (literals) directly in an expression.
 
 11. What are some operators that we can use for integers and floating-point values?
 

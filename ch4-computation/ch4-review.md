@@ -127,6 +127,9 @@ but do not change values after initialization are in themselves widely useful.
 
 8. What is a literal?
 
+Literals represent values of various types. For example, the literal `12` represents
+the integer value "twelve", `"Morning"` represents the character string value *Morning*,
+and `true` represents the Boolean value *true*.
 
 9. What is a symbolic constant and why do we use them?
 

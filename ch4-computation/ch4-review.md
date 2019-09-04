@@ -226,7 +226,90 @@ In particular, you cannot use a variable in a case label.
 - You can use several case labels for a single case.
 - Don’t forget to end each case with a `break`. Unfortunately, the compiler probably won’t warn you if you forget.
 
-15. What are some common problems with switch-statements?
+15. What are some common problems with `switch`-statements?
+
+The most common error with `switch`-statements is to forget to terminate a case
+with a `break`.
+
+For example:
+
+```
+int main() // example of bad code (a break is missing) 
+{
+    constexpr double cm_per_inch = 2.54; // number of centimeters in // an inch
+    double length = 1; // length in inches or // centimeters
+    char unit = 'a';
+    cout << "Please enter a length followed by a unit (c or i):\n"; cin >> length >> unit;
+    switch (unit) 
+    { 
+    case 'i':
+        cout << length << "in == " << cm_per_inch*length << "cm\n"; 
+    case 'c':
+        cout << length << "cm == " << length/cm_per_inch << "in\n"; 
+    }
+}
+```
+
+Unfortunately, the compiler will accept this, and when you have finished case `'i'` you’ll just “drop through” 
+into case `'c'`, so that if you enter `2i` the program will output
+
+```
+2in == 5.08cm 
+2cm == 0.787402in
+```
+
+To select based on `string` you have to use an `if`-statement or a `map`.
+
+```
+int main() // you can switch only on integers, etc. 
+{
+    cout << "Do you like fish?\n"; 
+    string s;
+    cin >> s;
+    switch (s) // error: the value must be of integer, char, or enum type
+    { 
+        case "no": 
+            // ...
+            break; 
+        case "yes":
+            // ...
+            break; 
+    }
+}
+
+```
+
+Case label values must be constants and distinct. 
+
+For example:
+
+```
+int main() // case labels must be constants 
+{
+    // define alternatives:
+    int y = 'y'; // this is going to cause trouble constexpr char n = 'n';
+    constexpr char m = '?';
+    cout << "Do you like fish?\n";
+    char a;
+    cin >> a;
+    switch (a) {
+    case n:
+        // ...
+        break; 
+    case y: // error: variable in case label
+        // ...
+        break; 
+    case m:
+        // . . .
+        break; 
+    case 'n': // error: duplicate case label (n’s value is ‘n’)
+        // ...
+        break; 
+    default:
+        // ...
+        break; 
+    }
+}
 
 
 16. What is the function of each part of the header line in a `for`-loop, 

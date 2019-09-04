@@ -180,8 +180,8 @@ Use constants with descriptive names and not use these magic constants (literals
 | `a==b`                |  equal                 | not to be confused with `=`                |
 | `a!=b`                |  not equal             | result is `bool`                           |
 | `a&&b`                |  logical and           | result is `bool`                           |
-| <code>a&#124;b</code> |  logical or            | result is `bool`                           |
-| `lval=a`              |  assignment            | result is `bool`                           |
+| <code>a&#124;a&#124;b</code> |  logical or     | result is `bool`                           |
+| `lval=a`              |  assignment            | not to be confused with `==`               |
 | `lval*=a`             |  compound assignment   | `lval=lval*a`; also for `/`, `%`, `+`, `-` |
 
 12. What operators can be used on integers but not on floating-point numbers?
@@ -193,6 +193,20 @@ Use constants with descriptive names and not use these magic constants (literals
 
 13. What are some operators that can be used for strings?
 
+|                       |   Name                 | Comment                                    |
+|:---------------------:|:-----------------------|:-------------------------------------------|
+| `a+b`                 |  add                   |                                            |
+| `a-b`                 |  subtract              |                                            |
+| `out<<b`              |  write `b` to `out`    | where `out` is an `ostream`                |
+| `in>>b`               |  read from `in` to `b` | where `in` is an `istream`                 |
+| `a<b`                 |  less than             | result is `bool`                           |
+| `a<=b`                |  less than or equal    | result is `bool`                           |
+| `a>b`                 |  greater than          | result is `bool`                           |
+| `a>=b`                |  greater than or equal | result is `bool`                           |
+| `a==b`                |  equal                 | not to be confused with `=`                |
+| `a!=b`                |  not equal             | result is `bool`                           |
+| `lval=a`              |  assignment            | result is `bool`                           |
+| `lval+=a`             |  compound assignment   | `lval=lval+a`                              |
 
 14. When would a programmer prefer a switch-statement to an if-statement?
 

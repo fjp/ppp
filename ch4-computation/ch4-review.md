@@ -167,6 +167,22 @@ Use constants with descriptive names and not use these magic constants (literals
 
 11. What are some operators that we can use for integers and floating-point values?
 
+|                       |   Name                 | Comment                                    |
+|:=====================:|:====================== |:===========================================|
+| `a+b`                 |  add                   |                                            |
+| `a-b`                 |  subtract              |                                            |
+| `out<<b`              |  write `b` to `out`    | where `out` is an `ostream`                |
+| `in>>b`               |  read from `in` to `b` | where `in` is an `istream`                 |
+| `a<b`                 |  less than             | result is `bool`                           |
+| `a<=b`                |  less than or equal    | result is `bool`                           |
+| `a>b`                 |  greater than          | result is `bool`                           |
+| `a>=b`                |  greater than or equal | result is `bool`                           |
+| `a==b`                |  equal                 | not to be confused with `=`                |
+| `a!=b`                |  not equal             | result is `bool`                           |
+| `a&&b`                |  logical and           | result is `bool`                           |
+| <code>a&#124;b</code> |  logical or            | result is `bool`                           |
+| `lval=a`              |  assignment            | result is `bool`                           |
+| `lval*=a`             |  compound assignment   | `lval=lval*a`; also for `/`, `%`, `+`, `-` |
 
 12. What operators can be used on integers but not on floating-point numbers?
 

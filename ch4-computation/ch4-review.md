@@ -369,7 +369,7 @@ Use a `while`-statement only when that’s not the case.
 20. When should you define a separate function for part of a program? List reasons.
 
 
-21. What can you do to an int that you cannot do to a string?
+21. What can you do to an `int` that you cannot do to a `string`?
 
 
 22. What can you do to a `string` that you cannot do to an `int`?

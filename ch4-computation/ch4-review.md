@@ -430,6 +430,38 @@ for (auto element : vec)
 }
 ```
 
+A vector “knows” its size, so we can print the elements of a vector like this:
+
+```
+vector<int> v = {5, 7, 9, 4, 6, 8}; 
+for (int i=0; i<v.size(); ++i)
+    cout << v[i] << '\n';
+```
+
+The call `v.size()` gives the number of elements of the `vector` called `v`. 
+In general, `v.size()` gives us the ability to access elements of a vector without accidentally referring to an element
+outside the vector’s range. The range for a vector `v` is `[0:v. size())`. 
+That’s the mathematical notation for a half-open sequence of elements. 
+The first element of `v` is `v[0]` and the last `v[v.size()–1]`. If `v.size==0`, `v` has no elements, that is, 
+`v` is an empty vector. 
+This notion of half-open sequences is used throughout C++ and the C++ standard library (§17.3, §20.3).
+
+
+The language takes advantage of the notion of a half-open sequence to provide a simple loop over all the elements of a 
+sequence, such as the elements of a vector. 
+
+For example:
+
+```
+vector<int> v = {5, 7, 9, 4, 6, 8}; 
+for (int x : v) // for each x in v
+    cout << x << '\n';
+```  
+ 
+This is called a range-for-loop because the word range is often used to mean the same as “sequence of elements.” 
+We read `for (int x : v)` as “for each `int` `x` in `v`” and the meaning of the loop is exactly like the equivalent loop
+over the subscripts `[0:v.size())`. 
+We use the range-`for`-loop for simple loops over all the elements of a sequence looking at one element at a time.
 
 25. What does `vector<char>alphabet(26);` do?
 

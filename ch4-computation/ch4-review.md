@@ -75,12 +75,12 @@ The following operators require an lvalue on the left han side because they may 
 Assignments:
 
 ```
-v = x;
-v *= x;
-v /= x;
+v=x;
+v*=x;
+v/=x;
 v%=x
 v+=x
-v– =x
+v–=x
 v>>=x
 v<<=x
 v&=x

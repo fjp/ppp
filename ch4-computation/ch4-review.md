@@ -398,6 +398,13 @@ The following operators can be applied to an `int` but not to a `string`.
 
 22. What can you do to a `string` that you cannot do to an `int`?
 
+|                       |   Name                   | Comment                                    |
+|:---------------------:|:-------------------------|:-------------------------------------------|
+| `a+b`                 |  concatenate             |                                            |
+| `a+=b`                |  add to end              |                                            |
+| `a[i]`                |  index an `char` element |                                            |
+| `a[i]='b'`            |  change a character      |                                            |
+| `a.size()`            |  get the size            |                                            |
 
 23. What is the index of the third element of a `vector`?
 

@@ -503,9 +503,28 @@ member-function-call:
 
 27. What do vector’s member functions `begin()`, `end()`, and `size()` do?
 
+The member functions `begin()` and `end()` of a `vector` return iterators, `begin` and `end`; 
+they identify the beginning and the end of the sequence. An STL sequence is what is usually called “half-open”; 
+that is, the element identified by begin is part of the sequence, 
+but the end iterator points one beyond the end of the sequence. 
+The usual mathematical notation for such sequences (ranges) is `[begin:end)`.
+An iterator is an object that identifies an element of a sequence.
+
+The member function `size()` returns the number of elements stored in a `vector`.
+The call `v.size()` gives the number of elements of the vector called `v`. 
+In general, `v.size()` gives us the ability to access elements of a vector without accidentally referring to an element 
+outside the `vector`'s range. The range for a `vector` `v` is `[0:v.size())`. 
+That's the mathematical notation for a half-open sequence of elements. 
+The first element of `v` is `v[0]` and the last `v[v.size()–1]`. 
+If `v.size==0`, `v` has no elements, that is, `v` is an empty `vector`. 
+This notion of half-open sequences is used throughout C++ and the C++ standard library (§17.3, §20.3).
+
 
 28. What makes vector so popular/useful?
 
+A `vector` is similar to an array in C and other languages. 
+However, you need not specify the size (length) of a `vector` in advance, and you can add as many elements as you like.
+The C++ standard `vector` has other useful properties.
 
 29. How do you sort the elements of a `vector`?
 

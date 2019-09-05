@@ -7,7 +7,7 @@ All that a program ever does is to compute; that is, it takes some inputs and pr
 After all, we call the hardware on which we run the program a computer.
 
 By computation we simply mean the act of producing some outputs based on some inputs, 
-such as producing the result (output) 49 from the argument (input) 7 using the computation (function) square (see §4.5).
+such as producing the result (output) `49` from the argument (input) `7` using the computation (function) `square` (see §4.5).
 
 2. What do we mean by inputs and outputs to a computation? Give examples.
 

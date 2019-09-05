@@ -360,8 +360,9 @@ However, using a `for`-statement yields more easily understood and more maintain
 whenever a loop can be defined as a `for`-statement with a simple initializer, condition, and increment operation. 
 Use a `while`-statement only when that’s not the case.
 
-18. How do you print the numeric value of a char?
+18. How do you print the numeric value of a `char`?
 
+The value of a character, such as `'a'` for `a`, is implementation dependent (but easily discovered, for example, `cout << int('a')`).
 
 19. Describe what the line char `foo(int x)` means in a function definition.
 

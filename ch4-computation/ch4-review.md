@@ -463,9 +463,20 @@ We read `for (int x : v)` as “for each `int` `x` in `v`” and the meaning of 
 over the subscripts `[0:v.size())`. 
 We use the range-`for`-loop for simple loops over all the elements of a sequence looking at one element at a time.
 
-25. What does `vector<char>alphabet(26);` do?
+25. What does `vector<char> alphabet(26);` do?
 
-This initializes a vector that can hold 26 elements of type `char` with all zeros.
+This initializes a vector that can hold 26 elements of type `char` which are initialized to `'\0'`, the null/empty char.
+
+This defines a vector of a given size, 26 in this case, without specifying the element values. 
+In that case, we use the `(n)` notation where `n` is the number of elements, and the elements are given a default value 
+according to the element type. 
+
+For example:
+
+```
+vector<int> vi(6); // vector of 6 ints initialized to 0 
+vector<string> vs(4); // vector of 4 strings initialized to ""
+```
 
 26. Describe what `push_back()` does to a vector.
 

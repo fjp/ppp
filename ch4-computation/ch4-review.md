@@ -199,7 +199,6 @@ Use constants with descriptive names and not use these magic constants (literals
 |                       |   Name                 | Comment                                    |
 |:---------------------:|:-----------------------|:-------------------------------------------|
 | `a+b`                 |  add                   |                                            |
-| `a-b`                 |  subtract              |                                            |
 | `out<<b`              |  write `b` to `out`    | where `out` is an `ostream`                |
 | `in>>b`               |  read from `in` to `b` | where `in` is an `istream`                 |
 | `a<b`                 |  less than             | result is `bool`                           |
@@ -372,9 +371,30 @@ that it is called `foo`, that it takes an `int` argument (here, called `x`), and
 
 20. When should you define a separate function for part of a program? List reasons.
 
+We define a function when we want a separate computation with a name because doing so
+
+- Makes the computation logically separate
+- Makes the program text clearer (by naming the computation)
+- Makes it possible to use the function in more than one place in our program
+- Eases testing
 
 21. What can you do to an `int` that you cannot do to a `string`?
 
+The following operators can be applied to an `int` but not to a `string`.
+
+|                       |   Name                 | Comment                                    |
+|:---------------------:|:-----------------------|:-------------------------------------------|
+| `a-b`                 |  subtract              |                                            |
+| `a*b`                 |  multiplication        |                                            |
+| `a/b`                 |  division              |                                            |
+| `a%b`                 |  remainder (modulo)    |                                            |
+| `a++`                 |  increment by 1        |                                            |
+| `a--`                 |  decrement by 1        |                                            |
+| `a+=n`                |  increment by n        |                                            |
+| `a+=n`                |  decrement by n        |                                            |
+| `a*=b`                |  multiply and assign   |                                            |
+| `a/=b`                |  divide and assign     |                                            |
+| `a%=b`                |  remainder and assign  |                                            |
 
 22. What can you do to a `string` that you cannot do to an `int`?
 

@@ -408,6 +408,11 @@ The following operators can be applied to an `int` but not to a `string`.
 
 23. What is the index of the third element of a `vector`?
 
+The first element of a `vector` has index 0, the second index 1, and so on. 
+We refer to an element by subscripting the name of the vector with the element’s index, 
+for example, `v[0]` for the value of the first element, the value of v[1] yields the second element, and so on. 
+Indices for a vector always start with 0 and increase by 1. The index of the third element is therefore `v[2]`.
+
 ```
 vector<int> vec = {0, 1, 2};
 int i3 = vec[2];

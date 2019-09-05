@@ -364,8 +364,11 @@ Use a `while`-statement only when that’s not the case.
 
 The value of a character, such as `'a'` for `a`, is implementation dependent (but easily discovered, for example, `cout << int('a')`).
 
-19. Describe what the line char `foo(int x)` means in a function definition.
+19. Describe what the line `char foo(int x)` means in a function definition.
 
+The line of this definition tells us that this is a function (that’s what the parentheses mean), 
+that it is called `foo`, that it takes an `int` argument (here, called `x`), and that it returns a `char` 
+(the type of the result always comes first in a function declaration);
 
 20. When should you define a separate function for part of a program? List reasons.
 

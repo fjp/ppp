@@ -432,6 +432,22 @@ This is called *repetition* or — especially when you do something to a series 
 
 ### loop
 
+In C++ a loop can be a `while`-statement or a `for`-statement. These statements are ways to repeat some statement (to loop).
+For this we need:
+
+- A variable to keep track of how many times we have been through the loop (a loop variable or a control variable), 
+for example the `int` called `i`
+- An initializer for the loop variable, for example `int i = 0`
+- A termination criterion, for example that we want to go through the loop 100 times
+- Something to do each time around the loop (the body of the loop)
+
+For example:
+
+```cpp
+while (i<100) // the loop condition testing the loop variable i {
+cout << i << '\t' << square(i) << '\n';
+++i ; // increment the loop variable i }
+```
 
 
 ### lvalue

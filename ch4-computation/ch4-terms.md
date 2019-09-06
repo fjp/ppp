@@ -204,6 +204,9 @@ An iterator is an object that identifies an element of a sequence.
 
 ### expression
 
+The most basic building block of programs is an expression. An expression computes
+a value from a number of operands. The simplest expression is simply a literal value, such as `10`, `'a'`, `3.14`, or `"Norah"`.
+Names of variables are also expressions. A variable represents the object of which it is the name.
 
 ### `for`-statement
 
@@ -306,6 +309,25 @@ In this way, we can write arbitrarily complex tests and associate a statement wi
 
 ### statement
 
+An expression computes a value from a set of operands using operators like the ones mentioned in §4.3. 
+To produce several values, do something many times, choose among alternatives, or if you want to get input or produce output,
+in C++, as in many languages, you use language constructs called statements to express those things.
+
+Two kinds of statements are: 
+
+- expression statements 
+- declarations
+
+An expression statement is simply an expression followed by a semicolon.
+For example:
+
+```
+a = b;
+++b;
+```
+
+Those are two expression statements. Note that the assignment `=` is an operator
+so that `a=b` is an expression and we need the terminating semicolon to make `a=b;` a statement.
 
 ### `switch`-statement
 

@@ -144,6 +144,54 @@ For example, if we need to build a dictionary, we can separate that job into thr
 
 ### `else`
 
+The simplest form of selection is an `if`-statement, which selects between two alternatives. 
+For the second alternative the `else`-statement is used.
+For example:
+
+```cpp
+int main()
+{
+    int a = 0;
+    int b = 0;
+    cout << "Please enter two integers\n";
+    cin >> a >> b;
+    if (a<b) // condition
+             // 1st alternative (taken if condition is true):
+        cout << "max(" << a << "," << b <<") is " << b <<"\n";
+    else
+             // 2nd alternative (taken if condition is false):
+        cout << "max(" << a << "," << b <<") is " << a << "\n";
+}
+```
+
+An `if`-statement chooses between two alternatives. If its condition is true, the first statement is executed; 
+otherwise, the second statement is, which is defined by the `else` statement.
+
+The general form of an `if`-statement is
+
+```
+if ( expression ) statement else statement
+```
+
+That is, an `if`, followed by an *expression* in parentheses, followed by a *statement*, followed by an `else`, followed by a *statement*. 
+It is also possible to combine two `if`-statements: For that use an `if`-statement as the `else` part of an `if`-statement:
+
+```
+if ( expression ) statement else if ( expression ) statement else statement
+```
+
+For our program that gives this structure:
+
+```cpp
+if (unit == 'i')
+    ...     // 1st alternative
+else if (unit == 'c')
+    ...     // 2nd alternative
+else
+    ...     // 3rd alternative
+```
+
+In this way, we can write arbitrarily complex tests and associate a statement with each alternative.
 
 ### `end()`
 
@@ -162,6 +210,54 @@ For example, if we need to build a dictionary, we can separate that job into thr
 
 ### `if`-statement
 
+The simplest form of selection is an `if`-statement, which selects between two alternatives. 
+For the second alternative the `else`-statement is used.
+For example:
+
+```cpp
+int main()
+{
+    int a = 0;
+    int b = 0;
+    cout << "Please enter two integers\n";
+    cin >> a >> b;
+    if (a<b) // condition
+             // 1st alternative (taken if condition is true):
+        cout << "max(" << a << "," << b <<") is " << b <<"\n";
+    else
+             // 2nd alternative (taken if condition is false):
+        cout << "max(" << a << "," << b <<") is " << a << "\n";
+}
+```
+
+An `if`-statement chooses between two alternatives. If its condition is true, the first statement is executed; 
+otherwise, the second statement is, which is defined by the `else` statement.
+
+The general form of an `if`-statement is
+
+```
+if ( expression ) statement else statement
+```
+
+That is, an `if`, followed by an *expression* in parentheses, followed by a *statement*, followed by an `else`, followed by a *statement*. 
+It is also possible to combine two `if`-statements: For that use an `if`-statement as the `else` part of an `if`-statement:
+
+```
+if ( expression ) statement else if ( expression ) statement else statement
+```
+
+For our program that gives this structure:
+
+```cpp
+if (unit == 'i')
+    ...     // 1st alternative
+else if (unit == 'c')
+    ...     // 2nd alternative
+else
+    ...     // 3rd alternative
+```
+
+In this way, we can write arbitrarily complex tests and associate a statement with each alternative.
 
 ### increment
 

@@ -210,6 +210,37 @@ Names of variables are also expressions. A variable represents the object of whi
 
 ### `for`-statement
 
+Iterating over a sequence of numbers is so common that C++, like most other programming languages, has a special syntax for it. 
+A `for`-statement is like a `while`-statement except that the management of the control variable is concentrated at the top 
+where it is easy to see and understand. 
+For example:
+
+```cpp
+// calculate and print a table of squares 0–99
+int main()
+{
+  for (int i = 0; i<100; ++i)
+    cout << i << '\t' << square(i) << '\n';
+}
+```
+
+This means "Execute the body with `i` starting at `0` incrementing i after each execution of the body until we reach `100`." 
+A `for`-statement is always equivalent to some `while`-statement. The corresponding `while`-statement would look like:
+
+```cpp
+{
+    int i = 0;  // the for-statement initializer
+    while (i<100) {   // the for-statement condition
+        cout << i << '\t' << square(i) << '\n';   // the for-statement body
+        ++i; // the for-statement increment
+    }
+}
+```
+
+Using a `for`-statement yields more easily understood and more maintainable code whenever a loop can be defined as a `for`-statement 
+with a simple initializer, condition, and increment operation. Use a `while`-statement only when that's not the case.
+Never modify the loop variable inside the body of a `for`-statement. 
+That would violate every reader's reasonable assumption about what a loop is doing.
 
 ### range-`for`-statement
 

@@ -457,7 +457,7 @@ for (int x : v) // for each x in v
     cout << x << '\n';
 ```  
  
-This is called a range-for-loop because the word range is often used to mean the same as “sequence of elements.” 
+This is called a range-for-loop because the word range is often used to mean the same as "sequence of elements".
 We read `for (int x : v)` as “for each `int` `x` in `v`” and the meaning of the loop is exactly like the equivalent loop
 over the subscripts `[0:v.size())`. 
 We use the range-`for`-loop for simple loops over all the elements of a sequence looking at one element at a time.

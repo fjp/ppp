@@ -160,7 +160,7 @@ For example, if we need to build a dictionary, we can separate that job into thr
 ### function
 
 
-### if-statement
+### `if`-statement
 
 
 ### increment
@@ -184,7 +184,7 @@ For example, if we need to build a dictionary, we can separate that job into thr
 ### output
 
 
-### push_back()
+### `push_back()`
 
 
 ### repetition
@@ -196,20 +196,20 @@ For example, if we need to build a dictionary, we can separate that job into thr
 ### selection
 
 
-### size()
+### `size()`
 
 
-### sort()
+### `sort()`
 
 
 ### statement
 
 
-### switch-statement
+### `switch`-statement
 
 
-### vector
+### `vector`
 
 
-### while-statement
+### `while`-statement
 

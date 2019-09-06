@@ -444,9 +444,11 @@ for example the `int` called `i`
 For example:
 
 ```cpp
-while (i<100) // the loop condition testing the loop variable i {
-cout << i << '\t' << square(i) << '\n';
-++i ; // increment the loop variable i }
+while (i<100) // the loop condition testing the loop variable i 
+{
+    cout << i << '\t' << square(i) << '\n';
+    ++i ; // increment the loop variable i 
+}
 ```
 
 

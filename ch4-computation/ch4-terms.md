@@ -66,7 +66,7 @@ Conditional expression:
 
 ### declaration
 
-All the information needed to call a function was in the first line of its definition. 
+All the information needed to call a function is in the first line of its definition. 
 For example:
 
 ```
@@ -99,8 +99,7 @@ int square(int x) // definition of square
 }
 ```
 
-
-So, if you just want to use a function, you simply write — or more commonly `#includ`e — its declaration. 
+So, if you just want to use a function, you simply write — or more commonly `#include` — its declaration. 
 The function definition can be elsewhere.
 
 This distinction between declarations and definitions becomes essential in larger programs where we use

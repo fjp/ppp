@@ -372,8 +372,41 @@ In this way, we can write arbitrarily complex tests and associate a statement wi
 
 ### increment
 
+The increment operators `a++`, `++a`, `a+=n` is defined for types `int` and `double` to increment by one or `n` respectively.
+
+Incrementing a variable (that is, adding 1 to it) is so common in programs that C++ provides a special syntax for it. 
+
+For example:
+
+```cpp
+++counter
+```
+
+means
+
+```cpp
+counter = counter + 1
+```
+
+There are many other common ways of changing the value of a variable based on its current value. 
+For example, we might like to add 7 to it, to subtract 9, or to multiply it by 2. 
+Such operations are also supported directly by C++. 
+
+For example:
+
+```cpp
+a += 7;  // means a = a+7
+b –= 9;  // means b = b–9
+c *= 2;  // means c = c*2
+```
+
+In general, for any binary operator `oper`, `a oper= b` means `a = a oper b` (§A.5). 
+For starters, that rule gives us operators `+=`, `–=`, `*=`, `/=`, and `%=`. 
+This provides a pleasantly compact notation that directly reflects our ideas. 
+For example, in many application domains `*=` and `/=` are referred to as "scaling".
 
 ### input
+
 
 
 ### iteration

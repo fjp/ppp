@@ -263,6 +263,61 @@ or comparing elements of two vectors, are usually better done using the more com
 
 ### function
 
+A function is a named sequence of statements. A *function* can return a result (also called a *return value*).
+The standard library provides a lot of useful functions, such as the square root function `sqrt()` that we used in §3.4. 
+However, we write many functions ourselves.
+
+Here is a plausible definition of `square`:
+
+```cpp
+int square(int x) // return the square of x
+{
+    return x*x;
+}
+```
+
+The first line of this definition tells us that this is a function (that's what the parentheses mean), that it is called `square`, 
+that it takes an `int` argument (here, called `x`), and that it returns an `int` 
+(the type of the result always comes first in a function declaration); that is, we can use it like this:
+
+```cpp
+int main()
+{
+    cout << square(2) << '\n'; // print 4
+    cout << square(10) << '\n'; // print 100
+}
+```
+
+We don't have to use the result of a function call, but we do have to give a function exactly the arguments it requires.
+
+The *function body* is the block (§4.4.2.2) that actually does the work.
+
+```cpp
+{
+    return x*x; // return the square of x
+}
+```
+
+The syntax of a *function definition* can be described like this:
+
+```
+type identifi er ( parameter-list ) function-body
+```
+
+That is, a type (the return type), followed by an identifier (the name of the function), followed by a list of parameters in parentheses,
+followed by the body of the function (the statements to be executed). 
+The list of arguments required by the function is called a *parameter list* and its elements are called *parameters* 
+(or formal *arguments*). The list of parameters can be empty, and if we don’t want to return a result we give void (meaning "nothing") 
+as the return type. 
+
+For example:
+
+```cpp
+void write_sorry() // take no argument; return no value
+{
+    cout << "Sorry\n";
+}
+```
 
 ### `if`-statement
 

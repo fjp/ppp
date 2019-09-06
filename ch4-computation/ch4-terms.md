@@ -425,8 +425,13 @@ such as producing the result (output) `49` from the argument (input) `7` using t
 
 ### iteration
 
+Programming languages provide convenient ways of doing something several times. 
+This is called *repetition* or — especially when you do something to a series of elements of a data structure — *iteration*.
+
+
 
 ### loop
+
 
 
 ### lvalue

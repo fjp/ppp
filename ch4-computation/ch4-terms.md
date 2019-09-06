@@ -67,8 +67,28 @@ Conditional expression:
 ### declaration
 
 
+
 ### definition
 
+The syntax of a *function definition* can be described like this:
+
+```
+type identifi er ( parameter-list ) function-body
+```
+
+That is, a type (the return type), followed by an identifier (the name of the function),
+followed by a list of parameters in parentheses, followed by the body of the
+function (the statements to be executed). The list of arguments required by the
+function is called a *parameter list* and its elements are called *parameters* (or formal
+*arguments*). The list of parameters can be empty, and if we don’t want to return a
+result we give `void` (meaning "nothing") as the return type. For example:
+
+```
+void write_sorry() // take no argument; return no value
+{
+    cout << "Sorry\n";
+}
+```
 
 ### divide and conquer
 

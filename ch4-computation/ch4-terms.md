@@ -407,7 +407,21 @@ For example, in many application domains `*=` and `/=` are referred to as "scali
 
 ### input
 
+From one point of view, all that a program ever does is to compute; that is, it takes some inputs and produces some output.
+After all, we call the hardware on which we run the program a computer. 
+This view is accurate and reasonable as long as we take a broad view of what constitutes input and output.
 
+The input can come from a keyboard, from a mouse, from a touch screen, from files, from other input devices, 
+from other programs, from other parts of a program. "Other input devices" is a category that contains most really 
+interesting input sources: music keyboards, video recorders, network connections, temperature sensors, 
+digital camera image sensors, etc. The variety is essentially infinite.
+To deal with input, a program usually contains some data, sometimes referred to as its *data structures* or its *state*.
+
+When we say "input" and “output” we generally mean information coming into and out of a computer, 
+but the terms can also be used for information given to or produced by a part of a program. 
+Inputs to a part of a program are often called *arguments* and outputs from a part of a program are often called *results*.
+By computation we simply mean the act of producing some outputs based on some inputs, 
+such as producing the result (output) `49` from the argument (input) `7` using the computation (function) `square` (see §4.5).
 
 ### iteration
 

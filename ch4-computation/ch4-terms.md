@@ -33,6 +33,19 @@ After all, we call the hardware on which we run the program a computer.
 
 ### conditional statement
 
+In programs, as in life, we often have to select among alternatives. 
+In C++, that is done using either an `if`-statement or a `switch`-statement.
+
+The simplest form of selection is an `if`-statement, which selects between two alternatives.
+If its condition is true, the first statement is executed; otherwise, the second statement is.
+
+A selection based on comparison of a value against several constants is so common that C++ provides a special statement for it: 
+the `switch`-statement.
+
+Conditional statements, conditional expressions and conditional constructs are features of a programming language, 
+which perform different computations or actions depending on whether a programmer-specified boolean condition evaluates to true or false. This is always achieved by selectively altering the control flow based on some condition. 
+
+
 The `?:` construct is called an arithmetic if or a conditional expression. 
 The value of `(a>=b)?a:b` is `a` if `a>=b` and `b` otherwise. A conditional expression saves us from writing long-winded code like this:
 
@@ -50,8 +63,6 @@ int max(int a, int b) // max is global; a and b are local
 
 Conditional expression:
 `x?y:z` If `x` the result is `y`; otherwise the result is `z`.
-
-
 
 ### declaration
 

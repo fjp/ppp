@@ -33,6 +33,25 @@ After all, we call the hardware on which we run the program a computer.
 
 ### conditional statement
 
+The `?:` construct is called an arithmetic if or a conditional expression. 
+The value of `(a>=b)?a:b` is `a` if `a>=b` and `b` otherwise. A conditional expression saves us from writing long-winded code like this:
+
+```
+int max(int a, int b) // max is global; a and b are local
+{
+  int m; // m is local
+  if (a>=b)
+      m = a;
+  else
+      m = b;
+  return m;
+}
+```
+
+Conditional expression:
+`x?y:z` If `x` the result is `y`; otherwise the result is `z`.
+
+
 
 ### declaration
 

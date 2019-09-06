@@ -66,7 +66,45 @@ Conditional expression:
 
 ### declaration
 
+All the information needed to call a function was in the first line of its definition. 
+For example:
 
+```
+int square(int x)
+```
+
+Given that, we know enough to say
+
+```
+int x = square(44);
+```
+
+We don't really need to look at the function body.
+
+Almost all of the time, we are just interested in knowing how to call a function — seeing the definition would just be distracting.
+C++ provides a way of supplying that information separate from the complete function definition. It is called a *function declaration*:
+
+```
+int square(int); // declaration of square
+double sqrt(double); // declaration of sqrt
+```
+
+Note the terminating semicolons. 
+A semicolon is used in a function declaration instead of the body used in the corresponding function definition:
+
+```
+int square(int x) // definition of square
+{
+    return x*x;
+}
+```
+
+
+So, if you just want to use a function, you simply write — or more commonly `#includ`e — its declaration. 
+The function definition can be elsewhere.
+
+This distinction between declarations and definitions becomes essential in larger programs where we use
+declarations to keep most of the code out of sight to allow us to concentrate on a single part of a program at a time (§4.2).
 
 ### definition
 

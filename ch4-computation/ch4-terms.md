@@ -17,6 +17,11 @@ For example, if we need to build a dictionary, we can separate that job into thr
 
 ### begin()
 
+The member functions `begin()` and `end()` of a `vector` return iterators, `begin` and `end`; 
+they identify the beginning and the end of the sequence. An STL sequence is what is usually called “half-open”; 
+that is, the element identified by begin is part of the sequence, but the end iterator points one beyond the end of the sequence. 
+The usual mathematical notation for such sequences (ranges) is `[begin:end)`.
+An iterator is an object that identifies an element of a sequence.
 
 ### computation
 

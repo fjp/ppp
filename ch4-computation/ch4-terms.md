@@ -244,6 +244,22 @@ That would violate every reader's reasonable assumption about what a loop is doi
 
 ### range-`for`-statement
 
+The language takes advantage of the notion of a half-open sequence to provide a simple loop over all the elements of a sequence, 
+such as the elements of a `vector`. 
+For example:
+
+```cpp
+vector<int> v = {5, 7, 9, 4, 6, 8};
+for (int x : v) // for each x in v
+    cout << x << '\n';
+```
+
+This is called a range-`for`-loop because the word range is often used to mean the same as "sequence of elements". 
+We read `for (int x : v)` as "for each `int` `x` in `v`" and the meaning of the loop is exactly like the equivalent loop over 
+the subscripts `[0:v.size())`. 
+We use the range-`for`-loop for simple loops over all the elements of a sequence looking at one element at a time. 
+More complicated loops, such as looking at every third element of a vector, looking at only the second half of a vector, 
+or comparing elements of two vectors, are usually better done using the more complicated and more general traditional `for`-statement (§4.4.2.3).
 
 ### function
 

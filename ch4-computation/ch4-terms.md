@@ -572,6 +572,9 @@ In C++, that is done using either an `if`-statement or a `switch`-statement.
 
 ### `size()`
 
+The size of a vector can be obtained by a call to one of vector’s member functions: `size()`. 
+`v.size()` is `0` for a `vector` `v` that has initially no elements. 
+After the third call of `push_back()`, `v.size()` becomes `3`.
 
 ### `sort()`
 

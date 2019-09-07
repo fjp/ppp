@@ -476,7 +476,11 @@ to another of `vector`'s member functions: `size()`. A `vector` initialized with
 
 ### output
 
-
+From one point of view, all that a program ever does is to compute; that is, it takes some inputs and produces some output.
+Input comes from a wide variety of sources. Similarly, output can go to a wide variety of destinations. 
+Output can be to a screen, to files, to network connections, to other output devices, to other programs, 
+and to other parts of a program. Examples of output devices include network interfaces, music synthesizers, 
+electric motors, light generators, heaters, etc. 
 
 ### `push_back()`
 

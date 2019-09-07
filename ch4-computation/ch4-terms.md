@@ -480,6 +480,31 @@ to another of `vector`'s member functions: `size()`. A `vector` initialized with
 
 ### `push_back()`
 
+Often, we start a vector empty and grow it to its desired size as we read or compute the data we want in it. 
+The key operation here is `push_back()`, which adds a new element to a vector. 
+The new element becomes the last element of the vector. 
+
+For example:
+
+```cpp
+vector<double> v;  // start off empty; that is, v has no elements
+
+v.push_back(2.7); //add an element with the value 2.7 at end (“theback”) of v
+                  // v now has one element and v[0]==2.7
+v.push_back(5.6); // add an element with the value 5.6 at end of v
+                  // v now has two elements and v[1]==5.6
+v.push_back(7.9); // add an element with the value 7.9 at end of v
+                  // v now has three elements and v[2]==7.9
+```
+
+
+Note the syntax for a call of `push_back()`. It is called a member function call; 
+`push_back()` is a member function of `vector` and must be called using this dot notation: 
+
+```
+member-function-call:
+    object_name.member-function-name ( argument-list )
+```
 
 ### repetition
 

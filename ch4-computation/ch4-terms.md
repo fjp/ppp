@@ -567,6 +567,8 @@ We distinguish between `length` used on the left-hand side of an assignment or a
 
 ### selection
 
+In programs, as in life, we often have to select among alternatives. 
+In C++, that is done using either an `if`-statement or a `switch`-statement.
 
 ### `size()`
 

@@ -15,7 +15,7 @@ so we access it through typed and named variables (§3.2), standard library `vec
 - *"Divide and conquer":* Here we take a large problem and divide it into several little ones. 
 For example, if we need to build a dictionary, we can separate that job into three: read the data, sort the data, and output the data.
 
-### begin()
+### `begin()`
 
 The member functions `begin()` and `end()` of a `vector` return iterators, `begin` and `end`; 
 they identify the beginning and the end of the sequence. An STL sequence is what is usually called “half-open”; 

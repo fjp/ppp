@@ -512,6 +512,45 @@ member-function-call:
 
 ### repetition
 
+We rarely do something only once. Therefore, programming languages provide convenient ways of doing something several times. 
+This is called *repetition* or — especially when you do something to a series of elements of a data structure — *iteration*.
+
+To do something repeatedly we need
+
+- A way to repeat some statement (to loop)
+- A variable to keep track of how many times we have been through the loop (a loop variable or a control variable), 
+here the int called i
+- An initializer for the loop variable, here 0
+- A termination criterion, here that we want to go through the loop 100 times
+- Something to do each time around the loop (the body of the loop)
+
+The language construct in C++ to repeat something is called a `while`-statement or a `for`-statement.
+
+```cpp
+while (i<100) // the loop condition testing the loop variable i 
+{
+    cout << i << '\t' << square(i) << '\n';
+    ++i ; // increment the loop variable i 
+}
+```
+
+Iterating over a sequence of numbers is so common that C++, like most other programming languages, 
+has a special syntax for it. A `for`-statement is like a `while`-statement except that the management of 
+the control variable is concentrated at the top where it is easy to see and understand. 
+For example:
+
+```cpp
+// calculate and print a table of squares 0–99 
+int main()
+{
+    for (int i = 0; i<100; ++i)
+        cout << i << '\t' << square(i) << '\n';
+}
+```
+
+This means "Execute the body with `i` starting at `0` incrementing `i` after each execution of the body until we reach `100`."
+A `for`-statement is always equivalent to some `while`-statement.
+
 
 ### rvalue
 

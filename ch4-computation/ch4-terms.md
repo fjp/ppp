@@ -554,6 +554,16 @@ A `for`-statement is always equivalent to some `while`-statement.
 
 ### rvalue
 
+In computer science, a value considered independently of its storage location. The address of an rvalue may not be taken.
+An rvalue can't be used as the left-hand operand of the built-in assignment or compound assignment operators.
+
+Consider
+
+```cpp
+length = 99; // assign 99 to length
+```
+We distinguish between `length` used on the left-hand side of an assignment or an initialization 
+("the lvalue of `length`" or "the object named by `length`") and `length` used on the right-hand side of an assignment or initialization (“the rvalue of `length`,” “the value of the object named by length,” or just “the value of length”).
 
 ### selection
 

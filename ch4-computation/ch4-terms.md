@@ -471,10 +471,11 @@ member-function-call:
 ```
 
 For example, `push_back()` is a member functions of a `vector` to add elements. The size can be obtain by a call
-to another of `vector`'s member functions: `size()`. A `vector` initialized with no elements, `v.size()` is `0, and after the third call of push_back(), v.size() becomes 3.
+to another of `vector`'s member functions: `size()`. A `vector` initialized with no elements, `v.size()` is `0`, and after the third call of `push_back()`, `v.size()` becomes `3`.
 
 
 ### output
+
 
 
 ### `push_back()`

@@ -611,6 +611,32 @@ so that `a=b` is an expression and we need the terminating semicolon to make `a=
 
 ### `switch`-statement
 
+A selection based on comparison of a value against several constants can be tedious to write using `if` and `else`
+statements. C++ offers a `switch`-statement which is archaic but still clearer than nested `if`-statements, 
+especially when we compare against many constants. 
+
+To select based on a `string` you have to use an `if`-statement or a `map` (Chapter 21). 
+A `switch`-statement generates optimized code for comparing against a set of constants. 
+For larger sets of constants, this typically yields more efficient code than a collection of `if`-statements. 
+However, this means that the case label values must be constants and distinct.
+
+Often you want the same action for a set of values in a switch. 
+It would be tedious to repeat the action so you can label a single action by a set of case labels.
+
+The most common error with switch-statements is to forget to terminate a case
+with a break.
+
+Here are some technical details about switch-statements:
+- The value on which we switch must be of an integer, `char`, or enumeration (§9.5) type. 
+In particular, you cannot switch on a `string`.
+- The values in the case labels must be constant expressions (§4.3.1). 
+In particular, you cannot use a variable in a case label.
+- You cannot use the same value for two case labels.
+- You can use several case labels for a single case.
+- Don't forget to end each case with a `break`. Unfortunately, the compiler probably won't warn you if you forget.
+
+
+
 
 ### `vector`
 

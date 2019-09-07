@@ -579,6 +579,7 @@ After the third call of `push_back()`, `v.size()` becomes `3`.
 ### `sort()`
 
 
+
 ### statement
 
 An expression computes a value from a set of operands using operators like the ones mentioned in §4.3. 
@@ -605,6 +606,88 @@ so that `a=b` is an expression and we need the terminating semicolon to make `a=
 
 
 ### `vector`
+
+
+To store a collection of data and to work on it a `vector` can be used. 
+It is a data structure that is simply a sequence of elements that you can access by an index. 
+
+That is, the first element has index 0, the second index 1, and so on. 
+We refer to an element by subscripting the name of the vector with the element's index, 
+so the value of the first element can be obtained with `v[0]`, the value of the second element with `v[1]`, and so on. 
+Indices for a `vector` always start with 0 and increase by 1.
+
+A vector doesn't just store its elements, it also stores its size. The size can be obtained with its member function `size()`.
+
+We could make such a `vector` like this:
+
+```cpp
+vector<int> v = {5, 7, 9, 4, 6, 8}; // vector of 6 ints
+```
+
+We see that to make a `vector` we need to specify the type of the elements and the initial set of elements. 
+The element type comes after `vector` in angle brackets (`<` `>`), here `<int>`.
+
+We can also define a vector of a given size without specifying the element values. 
+In that case, we use the `(n)` notation where `n` is the number of elements, 
+and the elements are given a default value according to the element type. 
+For example:
+
+```cpp
+vector<int> vi(6); // vector of 6 ints initialized to 0 
+vector<string> vs(4); // vector of 4 strings initialized to ""
+```
+
+#### Traversing a vector:
+
+A vector "knows" its size, so we can print the elements of a vector like this:
+
+```cpp
+vector<int> v = {5, 7, 9, 4, 6, 8}; 
+for (int i=0; i<v.size(); ++i)
+    cout << v[i] << '\n';
+```
+
+The call `v.size()` gives the number of elements of the `vector` called `v`. 
+In general, `v.size()` gives us the ability to access elements of a `vector` without accidentally referring to an element
+outside the vector's range. The range for a `vector` `v` is `[0:v.size())`. 
+That's the mathematical notation for a half-open sequence of elements. 
+The first element of `v` is `v[0]` and the last `v[v.size()–1]`. If `v.size==0`, `v` has no elements, that is, 
+`v` is an empty `vector`. 
+This notion of half-open sequences is used throughout C++ and the C++ standard library (§17.3, §20.3).
+The language takes advantage of the notion of a half-open sequence to provide a simple loop over all the elements of a 
+sequence, such as the elements of a `vector`. 
+For example:
+
+```cpp
+vector<int> v = {5, 7, 9, 4, 6, 8}; 
+for (int x : v) // for each x in v
+    cout << x << '\n';
+```
+
+This is called a range-`for`-loop because the word range is often used to mean the same as "sequence of elements".
+
+#### Growing a `vector`
+
+Often, we start a `vector` empty and grow it to its desired size as we read or compute the data we want in it. 
+The key operation here is `push_back()`, which adds a new element to a vector. 
+The new element becomes the last element of the vector. 
+For example:
+
+
+```cpp
+vector<double> v;  // start off empty; that is, v has no elements
+
+v.push_back(2.7); //add an element with the value 2.7 at end (“theback”) of v
+                  // v now has one element and v[0]==2.7
+v.push_back(5.6); // add an element with the value 5.6 at end of v
+                  // v now has two elements and v[1]==5.6
+v.push_back(7.9); // add an element with the value 7.9 at end of v
+                  // v now has three elements and v[2]==7.9
+```
+
+If you have programmed before, you will note that a `vector` is similar to an array in C and other languages. 
+However, you need not specify the size (length) of a `vector` in advance, and you can add as many elements as you like. 
+As we go along, you'll find that the C++ standard `vector` has other useful properties.
 
 
 ### `while`-statement

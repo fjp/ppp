@@ -725,3 +725,46 @@ As we go along, you'll find that the C++ standard `vector` has other useful prop
 
 ### `while`-statement
 
+We rarely do something only once. Therefore, programming languages provide convenient ways of doing something several times.
+This is called *repetition* or — especially when you do something to a series of elements of a data structure — *iteration*.
+
+To do this, C++ provides a `while`-statement and a `for`-statement. 
+For example:
+
+```cpp
+// calculate and print a table of squares 0–99 
+int main()
+{
+    int i = 0; // start from 0 
+    while (i<100) {
+        cout << i << '\t' << square(i) << '\n';
+        ++i; // increment i (that is, i becomes i+1) 
+    }
+}
+```
+
+Clearly, to do this we need
+
+- A way to repeat some statement (to loop)
+- A variable to keep track of how many times we have been through the loop (a loop variable or a control variable), 
+here the int called i
+- An initializer for the loop variable, here 0
+- A termination criterion, here that we want to go through the loop 100 times
+- Something to do each time around the loop (the body of the loop)
+
+The language construct we used is called a `while`-statement. 
+Just following its distinguishing keyword, `while`, it has a condition “on top” followed by its body:
+
+```cpp
+while (i<100) // the loop condition testing the loop variable i 
+{
+    cout << i << '\t' << square(i) << '\n';
+    ++i ; // increment the loop variable i 
+}
+```
+
+The loop body is a block (delimited by curly braces) that writes out a row of the table and increments the loop variable, `i`.
+We start each pass through the loop by testing if `i<100`. If so, we are not yet finished and we can execute the loop body. 
+If we have reached the end, that is, if `i` is `100`, we leave the `while`-statement and execute what comes next. 
+In this program the end of the program is next, so we leave the program.
+The loop variable for a `while`-statement must be defined and initialized outside (before) the `while`-statement.

@@ -463,6 +463,16 @@ and have its address taken.
 
 ### member function
 
+A member function is part of an object (class or struct) and must be called using this dot notation: 
+
+```
+member-function-call:
+    object_name.member-function-name ( argument-list )
+```
+
+For example, `push_back()` is a member functions of a `vector` to add elements. The size can be obtain by a call
+to another of `vector`'s member functions: `size()`. A `vector` initialized with no elements, `v.size()` is `0, and after the third call of push_back(), v.size() becomes 3.
+
 
 ### output
 

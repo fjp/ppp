@@ -222,7 +222,7 @@ In particular, you cannot switch on a `string`.
 In particular, you cannot use a variable in a case label.
 - You cannot use the same value for two case labels.
 - You can use several case labels for a single case.
-- Don’t forget to end each case with a `break`. Unfortunately, the compiler probably won’t warn you if you forget.
+- Don't forget to end each case with a `break`. Unfortunately, the compiler probably won't warn you if you forget.
 
 15. What are some common problems with `switch`-statements?
 
@@ -351,7 +351,7 @@ means
 Never modify the loop variable inside the body of a `for`-statement. That would
 violate every reader’s reasonable assumption about what a loop is doing.
 
-17. When should the for-loop be used and when should the `while`-loop be used?
+17. When should the `for`-loop be used and when should the `while`-loop be used?
 
 Some novices prefer `while`-statements and some novices prefer `for`-statements.
 However, using a `for`-statement yields more easily understood and more maintainable code

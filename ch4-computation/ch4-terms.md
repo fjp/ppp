@@ -454,6 +454,12 @@ while (i<100) // the loop condition testing the loop variable i
 
 ### lvalue
 
+It is a value that points to a storage location, potentially allowing new values to be assigned 
+(so named because it appears on the left side of a variable assignment).
+
+An lvalue is an expression that identifies an object that could in principle be modified 
+(but obviously an lvalue that has a const type is protected against modification by the type system) 
+and have its address taken. 
 
 ### member function
 

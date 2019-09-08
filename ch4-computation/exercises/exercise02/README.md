@@ -6,6 +6,40 @@ fix the program in §4.6.3 so that it always prints out a median. Hint: A median
 
 .. literalinclude:: ../ch4-computation/exercises/exercise02/main.cpp
    :language: cpp
-   :caption: median.cpp
+   :caption: meanmedian.cpp
+   :linenos:
 
-c
+Here are two example inputs to the mean and median program:
+
+```
+Enter a series of temperatures to get the median (followed by '|' or a another non double/integer character):
+1 2 3 4 5 |
+Average temperature: 3
+Median temperature: 3
+```
+
+```
+Enter a series of temperatures to get the median (followed by '|' or a another non double/integer character):
+1 2 3 4 | 
+Average temperature: 2.5
+Median temperature: 3
+```
+
+.. literalinclude:: ../ch4-computation/exercises/exercise02/main_solution.cpp
+   :language: cpp
+   :caption: meanmedianexact.cpp
+   :linenos:
+
+```
+Enter a series of temperatures to get the median (followed by '|' or a another non double/integer character):
+1 2 3 4 5 |
+Average temperature: 3
+Median temperature: 3
+```
+
+```
+Enter a series of temperatures to get the median (followed by '|' or a another non double/integer character):
+1 2 3 4 |
+Average temperature: 2.5
+Median temperature: 2.5
+```

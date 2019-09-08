@@ -1,6 +1,7 @@
 ### Exercise 02
 
-If we define the median of a sequence as "a number so that exactly as many elements come before it in the sequence as come after it" 
+If we define the median of a sequence as 
+"a number so that exactly as many elements come before it in the sequence as come after it" 
 fix the program in §4.6.3 so that it always prints out a median. Hint: A median need not be an element of the sequence.
 
 
@@ -29,6 +30,10 @@ Median temperature: 3
    :language: cpp
    :caption: meanmedianexact.cpp
    :linenos:
+   
+   
+The following to inputs are the same as for the previous program. 
+Notice that the second input is different this time, because the median computation is changed.
 
 ```
 Enter a series of temperatures to get the median (followed by '|' or a another non double/integer character):

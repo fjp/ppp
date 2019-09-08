@@ -3,7 +3,7 @@
 // compute median temperatures int 
 int main()
 {
-    cout << "Enter a series of temperatures to get the median (followed by 'Enter'):\n";
+    cout << "Enter a series of temperatures to get the median (followed by '|' or a another non double/integer character):\n";
 
     vector<double> temps; // temperatures
     for (double temp; cin>>temp; ) // read into temp

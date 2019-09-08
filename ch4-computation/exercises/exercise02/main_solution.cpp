@@ -20,7 +20,7 @@ int main()
 
     double median = -1;
     if (temps.size() > 1 && 0 == temps.size() % 2)
-        median = (temps[temps.size()/2 - 1] - temps[temps.size()/2]) / 2.0;
+        median = (temps[temps.size()/2 - 1] + temps[temps.size()/2]) / 2.0;
     else
         median = temps[temps.size()/2];
 

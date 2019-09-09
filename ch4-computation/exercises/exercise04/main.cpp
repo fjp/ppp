@@ -4,68 +4,44 @@
 int main()
 {
     cout << "Think of a number between 1 and 100\n\n";
-    
-    bool found {false};
-    int half {50};
-    int number {100};
+
+    int number {50};
+
+    // define upper and lower bounds
     int upper {100};
-    int lower {0};
+    int lower {1};
+    int range {upper - lower};
+
     char answer {'\0'};
     int question {1};
-    while (!found)
+    while (lower != upper)
     {
-         cout << question++ << ". Is the number you are thinking of less than " << half << "? (Enter 'y' or 'n') \n";
-         cin >> answer;
-         if ('y' == answer) 
-         {
-              upper = half;
-              if (half / 2 > lower)
-              {
-                  half /= 2;
-              }
-              else
-              {
-                  
-                  while (!found)
-                  {
-                      cout << question++ << ". Is the number you are thinking of " << half++ << "? (Enter 'y' or 'n') \n";
-                      cin >> answer;
-                      if ('y' == answer) 
-                      {
-                          found = true;
-                          number = half;
-                      }
-                  }
-              }
-         }
-         else 
-         {
-              cout << question++ << ". Is the number you are thinking of " << half << "? (Enter 'y' or 'n') \n";
-              cin >> answer;
-              if ('y' == answer) 
-              {
-                  found = true;
-                  number = half;
-              }
-              else
-              {
-                  lower = half;
-                  if (half + half/2 < upper)
-                  {
-                      half = half + half/2;
-                  }
-                  else
-                  {
-                      cout << question++ << ". Is the number you are thinking of " << half++ << "? (Enter 'y' or 'n') \n";
-                      cin >> answer;
-                      if ('y' == answer) 
-                      {
-                          found = true;
-                          number = half;
-                      }
-                  }
-              }
-         }
+        cout << question++ << ". Is the number you are thinking of " << number << "? (Enter 'y' or 'n') \n";
+        cin >> answer;
+        if ('y' == answer)
+        {
+            lower = number;
+            upper = number;
+
+        } else if ('n' == answer) {
+
+            cout << question++ << ". Is the number you are thinking of less than " << number << "? (Enter 'y' or 'n') \n";
+            cin >> answer;
+            if ('y' == answer)
+            {
+                upper = number;
+                range = upper - lower;
+                number = lower + range/2;
+            } else {
+                lower = number;
+                range = upper - lower;
+                number = lower + range/2;
+
+            }
+        } else {
+            cout << "Please enter 'y' or 'n' ...\n";
+        }
+
     }
 
     cout << "Is the number you guessed " << number << "?\n";

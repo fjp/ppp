@@ -3,21 +3,26 @@
 // compute median temperatures int 
 int main()
 {
-    cout << "Enter a series of temperatures to get the median (followed by '|' or a another non double/integer character):\n";
+    cout << "Enter a series of double values, which represent the distance between two cities\n"
+            "(followed by '|' or a another non double/integer character):\n";
 
-    vector<double> temps; // temperatures
-    for (double temp; cin>>temp; ) // read into temp
-        temps.push_back(temp);  // put temp into vector
+    vector<double> distances; // city distances
+    for (double ditance; cin >> distance; ) // read into distance
+        distances.push_back(distance);  // put distance into vector
 
 
-    // compute mean temperature:
-    double sum = 0;
-    for (int x : temps) sum += x;
-    cout << "Average temperature: " << sum/temps.size() << '\n';
+    // compute total distance:
+    double sum {0.0};
+    for (double distance : distances) sum += x;
+    cout << "Total distance: " << sum/distances.size() << '\n';
 
-    // compute median temperature:
-    sort(temps); // sort temperatures
-    cout << "Median temperature: " << temps[temps.size()/2] << '\n';
+    // compute smallest and largest distance:
+    sort(distances); // sort distances
+    cout << "Smalles distance: " << distances[0] << '\n'
+         << "Largest distance: " << distances[distances.size()-1] << '\n';
+         
+         
+    cout << "The mean distance between two cities is: " << sum/distances.size() << '\n';
 
     return 0;
 }

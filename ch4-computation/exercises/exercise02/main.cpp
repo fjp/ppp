@@ -12,7 +12,7 @@ int main()
 
     // compute mean temperature:
     double sum = 0;
-    for (int x : temps) sum += x;
+    for (double x : temps) sum += x;
     cout << "Average temperature: " << sum/temps.size() << '\n';
 
     // compute median temperature:

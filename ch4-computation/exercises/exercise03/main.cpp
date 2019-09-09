@@ -13,7 +13,8 @@ int main()
 
     // compute total distance:
     double sum {0.0};
-    for (double distance : distances) sum += x;
+    for (double distance : distances)
+        sum += distance;
     cout << "Total distance: " << sum/distances.size() << '\n';
 
     // compute smallest and largest distance:

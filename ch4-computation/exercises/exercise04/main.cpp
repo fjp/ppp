@@ -10,11 +10,11 @@ int main()
     int number {100};
     int upper {100};
     int lower {0};
-    char answer {\0};
-    int count {0};
+    char answer {'\0'};
+    int question {1};
     while (!found)
     {
-         cout << count++ << ". Is the number you are thinking of less than " << half << "? (Enter 'y' or 'n') \n";
+         cout << question++ << ". Is the number you are thinking of less than " << half << "? (Enter 'y' or 'n') \n";
          cin >> answer;
          if ('y' == answer) 
          {
@@ -28,7 +28,8 @@ int main()
                   
                   while (!found)
                   {
-                      cout << count++ << ". Is the number you are thinking of " << half++ << "? (Enter 'y' or 'n') \n";
+                      cout << question++ << ". Is the number you are thinking of " << half++ << "? (Enter 'y' or 'n') \n";
+                      cin >> answer;
                       if ('y' == answer) 
                       {
                           found = true;
@@ -39,7 +40,8 @@ int main()
          }
          else 
          {
-              cout << count++ << ". Is the number you are thinking of " << half << "? (Enter 'y' or 'n') \n";
+              cout << question++ << ". Is the number you are thinking of " << half << "? (Enter 'y' or 'n') \n";
+              cin >> answer;
               if ('y' == answer) 
               {
                   found = true;
@@ -54,7 +56,8 @@ int main()
                   }
                   else
                   {
-                      cout << count++ << ". Is the number you are thinking of " << half++ << "? (Enter 'y' or 'n') \n";
+                      cout << question++ << ". Is the number you are thinking of " << half++ << "? (Enter 'y' or 'n') \n";
+                      cin >> answer;
                       if ('y' == answer) 
                       {
                           found = true;
@@ -64,6 +67,8 @@ int main()
               }
          }
     }
+
+    cout << "Is the number you guessed " << number << "?\n";
 
     return 0;
 }

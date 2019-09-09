@@ -30,7 +30,7 @@ int main()
         else
             number = lower + range/2;
 
-        cout << "upper: " << upper << " lower: " << lower << " range: " << range << '\n';
+        //cout << "upper: " << upper << " lower: " << lower << " range: " << range << '\n';
 
         cout << question + 1 << ". Is the number you are thinking of less than " << number << "? (Enter 'y' or 'n') \n";
 
@@ -48,7 +48,7 @@ int main()
             cout << "Please enter 'y' or 'n' ...\n";
         }
 
-        cout << "upper: " << upper << " lower: " << lower << " range: " << range << '\n';
+        //cout << "upper: " << upper << " lower: " << lower << " range: " << range << '\n';
 
     }
 

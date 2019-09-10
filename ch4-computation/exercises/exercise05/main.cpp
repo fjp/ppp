@@ -15,13 +15,13 @@ int main()
         switch (operation)
         {
             case '+':
-                cout << "The sum of " << op1 << " and " << op2 << " is "; << op1+op2 << '\n';
+                cout << "The sum of " << op1 << " and " << op2 << " is " << op1+op2 << '\n';
                 break;
             case '-':
-                cout << "The difference of " << op1 << " and " << op2 << " is "; << op1-op2 << '\n';
+                cout << "The difference of " << op1 << " and " << op2 << " is " << op1-op2 << '\n';
                 break;
             case '*':
-                cout << "The product of " << op1 << " and " << op2 << " is "; << op1*op2 << '\n';
+                cout << "The product of " << op1 << " and " << op2 << " is " << op1*op2 << '\n';
                 break;
             case '/':
                 if (op2 == 0)

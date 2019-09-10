@@ -2,19 +2,21 @@
 
 
 vector<string> stringDigits {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+string input {"Enter digits from 0 to 9 (either as string or integer) which will be converted to (spelled-out) digits (followed by 'Enter')\n"};
 
-int convert(string digit)
+int convertStringToInt(string digit)
 {
     for (int i = 0; i < stringDigits.size(); ++i)
     {
-        if (d == digit)
+        if (stringDigits[i] == digit)
             return i;
     }
     cout << "Error: digit not in vector\n";
+    cout << input;
     return -1;
 }
 
-string convert(int digit)
+string convertIntToString(int digit)
 {
     if (0 <= digit && digit <= 9)
     {
@@ -23,7 +25,8 @@ string convert(int digit)
     else
     {
         cout << "Error: digit not in vector\n";
-        return "";
+        cout << input;
+        return " ";
     }
 }
 
@@ -33,7 +36,7 @@ int main()
 {
     
     
-    cout << "Enter digits from 0 to 9 (either as string or integer) which will be converted to (spelled-out) digits (follwed by 'Enter')\n";
+    cout << input;
     
     string digit;
     int value;
@@ -42,7 +45,10 @@ int main()
     {
         if (cin >> value)
         {
-            cout << convert(value) << '\n';
+            string result = convertIntToString(value);
+            if (" " != result)
+                cout << result << '\n';
+
         }
         else
         {
@@ -51,7 +57,12 @@ int main()
             if (digit == "|")
                 validinput = false;
             else
-                cout << convert(digit) << '\n';
+            {
+                int result = convertStringToInt(digit);
+                if (-1 != result)
+                    cout << result << '\n';
+            }
+
         }
         
     }

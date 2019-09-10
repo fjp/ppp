@@ -9,30 +9,30 @@ int main()
     char operation {'\0'};
     cin >> val1 >> val2 >> op;
     
-
     cin >> op1 >> op2 >> operation;
     
-    double result = 0;
     switch (operation)
     {
         case '+':
-            result = op1+op2;
+            cout << "The sum of " << op1 << " and " << op2 << " is "; << op1+op2 << '\n';
             break;
         case '-':
-            result = op1-op2;
+            cout << "The difference of " << op1 << " and " << op2 << " is "; << op1-op2 << '\n';
             break;
         case '*':
-            result = op1*op2;
+            cout << "The product of " << op1 << " and " << op2 << " is "; << op1*op2 << '\n';
             break;
         case '/':
-            result = op1/op2;
+            if (op2 == 0)
+                    cout << "ERROR: Division by zero\n";
+                else
+                    cout << "The division of " << op1 << " and " << op2 << " is " << op1/op2 << '\n';
             break;
         default:
-            result = op1+op2;
+            cout << "The operator " << operation << " is not supported!\n";
             break;
     }
     
-    cout << "The result of " << op1 << " " << operation << " " << op2 << " is " << result << "\n";
     
     return 0;
 }

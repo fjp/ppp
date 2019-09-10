@@ -8,14 +8,47 @@ e.g., the input `seven` gives the output `7`.
 .. literalinclude:: ../ch4-computation/exercises/exercise06/main.cpp
    :language: cpp
    :caption: digitconverter.cpp
-:linenos:
+   :linenos:
 
 
 
-TODO add example output
+Example output:
+
+```
+Enter integer digits from 0 to 9 which will be converted to spelled-out digits (followed by 'Enter')
+0
+zero
+1
+one
+2
+two
+3
+three
+4
+four
+5
+five
+6
+six
+7
+seven
+8
+eight
+9
+nine
+10
+Error: value must be an integer between 0 and 9.
+-1
+Error: value must be an integer between 0 and 9.
+|
+
+Process finished with exit code 0
+```
 
 
 .. literalinclude:: ../ch4-computation/exercises/exercise06/main_extended.cpp
    :language: cpp
    :caption: digitconverterextended.cpp
-:linenos:
+   :linenos:
+
+

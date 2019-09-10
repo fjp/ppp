@@ -9,3 +9,13 @@ e.g., the input `seven` gives the output `7`.
    :language: cpp
    :caption: digitconverter.cpp
 :linenos:
+
+
+
+TODO add example output
+
+
+.. literalinclude:: ../ch4-computation/exercises/exercise06/main_extended.cpp
+   :language: cpp
+   :caption: digitconverterextended.cpp
+:linenos:

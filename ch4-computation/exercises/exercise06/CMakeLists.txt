@@ -12,3 +12,14 @@ target_include_directories(${PROJECT_NAME}
         PRIVATE
             ${PPP_INCLUDE_DIRS}
 )
+
+project(exercise06extended)
+
+set(CMAKE_CXX_STANDARD 17)
+
+add_executable(exercise06extended main_extended.cpp)
+
+target_include_directories(${PROJECT_NAME}
+        PRIVATE
+        ${PPP_INCLUDE_DIRS}
+        )

@@ -50,5 +50,58 @@ Process finished with exit code 0
    :language: cpp
    :caption: digitconverterextended.cpp
    :linenos:
+   
+Example output:
 
+```
+Enter digits from 0 to 9 (either as string or integer) which will be converted to (spelled-out) digits (followed by 'Enter')
+0
+zero
+1
+one
+2
+two
+3
+three
+4
+four
+5
+five
+6
+six
+7
+seven
+8
+eight
+9
+nine
+10
+Error: digit not in vector
+Enter digits from 0 to 9 (either as string or integer) which will be converted to (spelled-out) digits (followed by 'Enter')
+zero
+0
+one
+1
+two
+2
+three
+3
+four
+4
+five
+5
+six
+6
+seven
+7
+eight
+8
+nine
+9
+ten
+Error: digit not in vector
+Enter digits from 0 to 9 (either as string or integer) which will be converted to (spelled-out) digits (followed by 'Enter')
+|
 
+Process finished with exit code 0
+```

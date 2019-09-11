@@ -287,3 +287,20 @@ Square: 32
 	Rice on previous squares [int]: 2147483647, [double]: 2.14748e+09
 	Total rice grains [int]: -1, [double]: 4.29497e+09
 ```
+
+
+For `double` square 1024 resulted in an `inf` value of total grains:
+
+```
+Square: 1023
+	Grains on current square [in]: 0, [double]: 4.49423e+307
+	Rice on previous squares [int]: -1, [double]: 4.49423e+307
+	Total rice grains [int]: -1, [double]: 8.98847e+307
+Square: 1024
+	Grains on current square [in]: 0, [double]: 8.98847e+307
+	Rice on previous squares [int]: -1, [double]: 8.98847e+307
+	Total rice grains [int]: -1, [double]: inf
+```
+
+Square 1023 yields the "maximum displayable" `double` value of 8.98847e+307. 
+Afterwards the total number of rice grains is inf.

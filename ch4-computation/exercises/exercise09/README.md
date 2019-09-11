@@ -272,3 +272,18 @@ Square: 64
 	Rice on previous squares [int]: -1, [double]: 9.22337e+18
 	Total rice grains [int]: -1, [double]: 1.84467e+19
 ```
+
+The maximum number of squares for an `int` is 31, 
+which results exactly in the total positive value that a 32 bit integer can represent 2,147,483,647 = 2^31 - 1.
+Afterwards the total value overflows and is negative from square 32 on.
+
+```
+Square: 31
+	Grains on current square [in]: 1073741824, [double]: 1.07374e+09
+	Rice on previous squares [int]: 1073741823, [double]: 1.07374e+09
+	Total rice grains [int]: 2147483647, [double]: 2.14748e+09
+Square: 32
+	Grains on current square [in]: -2147483648, [double]: 2.14748e+09
+	Rice on previous squares [int]: 2147483647, [double]: 2.14748e+09
+	Total rice grains [int]: -1, [double]: 4.29497e+09
+```

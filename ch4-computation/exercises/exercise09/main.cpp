@@ -11,12 +11,15 @@ int main() {
     // Maximum number that fits in an int (assuming 32 bits)
     // 2^32/2: form −(2^31) to 2^31 − 1 => maximum is 2,147,483,647
 
-    // Maximum number that fits in a double (assuming 64 bit)
+    // Maximum number that fits in an int (assuming 64 bit)
     // 2^64/2: from −(2^63) to 2^63 − 1 => 9,223,372,036,854,775,807
 
+    // Maximum number that fits in a double (https://en.wikipedia.org/wiki/Double-precision_floating-point_format)
+    // From +-5e-324 to +-1.7e308
 
 
-    for (int nSquare = 1; nSquare <= 64; ++nSquare) {
+
+    for (int nSquare = 1; nSquare <= 1024; ++nSquare) {
 
         cout << "Square: " << nSquare << '\n';
         cout << "\tGrains on current square [in]: " << nRiceOnCurrSquare << ", [double]: " << dRiceOnCurrSquare << '\n';
@@ -31,8 +34,6 @@ int main() {
 
     }
 
-        //cout << "To give the inventor at least " << naDesiredRice[i] << " grains, " << nSquare << " squares are required.\n";
-        //cout << "Grains at square " << nSquare << ": " << nRiceOnCurrSquare << '\n';
-        //cout << "With the rice on the previous squares this results in " << nRiceOnPrevSquares + nRiceOnCurrSquare << " total grains for the inventor.\n\n";
+
     return 0;
 }

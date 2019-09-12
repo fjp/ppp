@@ -16,11 +16,8 @@ string PlayerThrow()
                     return strPlayerThrow;
             }
         }
-        else 
-        {
-            cout << "Please try again. Enter 'Rock', 'Paper' or 'Scissors'\n";
-            cin.clear();   
-        }
+        cout << "Please try again. Enter 'Rock', 'Paper' or 'Scissors'\n";
+        cin.clear();   
     }
 }
 

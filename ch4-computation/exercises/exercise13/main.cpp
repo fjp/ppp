@@ -44,10 +44,12 @@ int main() {
                 }
                 nCount++;
             }
+            //if (nCount-1 % 10 == 0)
+                cout << "\n\n";
+            //else
+            //    cout << "\n";
         }
-        else {
-            cout << "\n";
-        }
+
     }
 
     cout << "Found prime numbers between 1 and " << 100 << ": \n";

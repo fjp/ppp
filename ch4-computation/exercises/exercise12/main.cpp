@@ -42,7 +42,7 @@ int main() {
     {
         nPrime = naPrimes[nIdx];
         cout << nPrime << " ";
-        if ((nIdx+1) % 25 == 0)
+        if ((nIdx+1) % 25 == 0) // Line break after 25 primes
             cout << '\n';
     }
     cout << '\n';

@@ -41,7 +41,7 @@ string ComputerThrow()
 
 void Draw(string i_strGesture)
 {
-    cout << "\tDraw! We both threw " << i_strGesture << "\nRepeat ";
+    cout << "\tDraw! We both threw " << i_strGesture << " Repeat\n";
 }
 
 void PlayerWin(string i_strPlayerGesture, string i_strComputerGesture)

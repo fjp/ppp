@@ -59,7 +59,7 @@ Let's play 'Rock, Paper, Scissors'. Finish when one wins 2 games and repeat on d
 	Enter a gesture ('Rock', 'Paper', 'Scissors'):
 Scissors
 Rock, Paper, Scissors
-	Draw! We both threw Scissors Repeat
+	Draw! We both threw Scissors ... Repeat
 	Score: Player 0:0 Computer
 
 1. Round:
@@ -68,7 +68,7 @@ Rock, Paper, Scissors
 	Enter a gesture ('Rock', 'Paper', 'Scissors'):
 Paper
 Rock, Paper, Scissors
-	Draw! We both threw Paper Repeat
+	Draw! We both threw Paper ... Repeat
 	Score: Player 0:0 Computer
 
 1. Round:
@@ -88,7 +88,7 @@ Rock, Paper, Scissors
 	Enter a gesture ('Rock', 'Paper', 'Scissors'):
 Paper
 Rock, Paper, Scissors
-	Draw! We both threw Paper Repeat
+	Draw! We both threw Paper ... Repeat
 	Score: Player 1:0 Computer
 
 2. Round:

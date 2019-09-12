@@ -12,7 +12,7 @@ of prime numbers with primes. Consider 2 the first prime.
 
 .. literalinclude:: ../ch4-computation/exercises/exercise11/main.cpp
    :language: cpp
-   :caption: rockpaperscissors.cpp
+   :caption: primes.cpp
    :linenos:
 
 The result of this program is:

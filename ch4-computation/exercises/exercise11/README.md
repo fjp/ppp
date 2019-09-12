@@ -10,3 +10,7 @@ and stores each prime found in a `vecto`r. Write another loop that lists the
 primes you found. You might check your result by comparing your `vector`
 of prime numbers with primes. Consider 2 the first prime.
 
+.. literalinclude:: ../ch4-computation/exercises/exercise11/main.cpp
+   :language: cpp
+   :caption: rockpaperscissors.cpp
+   :linenos:

@@ -41,7 +41,7 @@ string ComputerThrow()
 
 void Draw(string i_strGesture)
 {
-    cout << "\tDraw! We both threw " << i_strGesture << " Repeat\n";
+    cout << "\tDraw! We both threw " << i_strGesture << " ... Repeat\n";
 }
 
 void PlayerWin(string i_strPlayerGesture, string i_strComputerGesture)
@@ -77,67 +77,61 @@ int main()
         strPlayerGesture = PlayerThrow();
         cout << "Rock, Paper, Scissors\n";
 
-        switch (strComputerGesture[0]) {
-            case 'R':
-                switch (strPlayerGesture[0]) {
-                    case 'R':
-                        Draw(strPlayerGesture);
-                        nRound--;
-                        break;
-                    case 'P':
-                        PlayerWin(strPlayerGesture, strComputerGesture);
-                        nPlayerScore++;
-                        break;
-                    case 'S':
-                        ComputerWin(strPlayerGesture, strComputerGesture);
-                        nComputerScore++;
-                        break;
-                    default:
-                        cout << "Error, something went wrong!\n";
-                }
-                break;
-            case 'P':
-                switch (strPlayerGesture[0]) {
-                    case 'R':
-                        ComputerWin(strPlayerGesture, strComputerGesture);
-                        nComputerScore++;
-                        break;
-                    case 'P':
-                        Draw(strPlayerGesture);
-                        nRound--;
-                        break;
-                    case 'S':
-                        PlayerWin(strPlayerGesture, strComputerGesture);
-                        nPlayerScore++;
-                        break;
-                    default:
-                        cout << "Error, something went wrong!\n";
-                }
-                break;
-            case 'S':
-                switch (strPlayerGesture[0]) {
-                    case 'R':
-                        PlayerWin(strPlayerGesture, strComputerGesture);
-                        nPlayerScore++;
-                        break;
-                    case 'P':
-                        ComputerWin(strPlayerGesture, strComputerGesture);
-                        nComputerScore++;
-                        break;
-                    case 'S':
-                        Draw(strPlayerGesture);
-                        nRound--;
-                        break;
-                    default:
-                        cout << "Error, something went wrong!\n";
-                }
-                break;
-            default:
-                cout << "Error, something went wrong!\n";
+        if (strPlayerGesture == strComputerGesture)
+        {
+            Draw(strPlayerGesture);
         }
+        else {
+            switch (strComputerGesture[0]) {
+                case 'R':
+                    switch (strPlayerGesture[0]) {
+                        case 'P':
+                            PlayerWin(strPlayerGesture, strComputerGesture);
+                            nPlayerScore++;
+                            break;
+                        case 'S':
+                            ComputerWin(strPlayerGesture, strComputerGesture);
+                            nComputerScore++;
+                            break;
+                        default:
+                            cout << "Error, something went wrong!\n";
+                    }
+                    break;
+                case 'P':
+                    switch (strPlayerGesture[0]) {
+                        case 'R':
+                            ComputerWin(strPlayerGesture, strComputerGesture);
+                            nComputerScore++;
+                            break;
+                        case 'S':
+                            PlayerWin(strPlayerGesture, strComputerGesture);
+                            nPlayerScore++;
+                            break;
+                        default:
+                            cout << "Error, something went wrong!\n";
+                    }
+                    break;
+                case 'S':
+                    switch (strPlayerGesture[0]) {
+                        case 'R':
+                            PlayerWin(strPlayerGesture, strComputerGesture);
+                            nPlayerScore++;
+                            break;
+                        case 'P':
+                            ComputerWin(strPlayerGesture, strComputerGesture);
+                            nComputerScore++;
+                            break;
+                        default:
+                            cout << "Error, something went wrong!\n";
+                    }
+                    break;
+                default:
+                    cout << "Error, something went wrong!\n";
+            }
 
-        cout << "\tScore: Player " << nPlayerScore << ":" << nComputerScore << " Computer\n\n";
-        nRound++;
+            cout << "\tScore: Player " << nPlayerScore << ":" << nComputerScore << " Computer\n\n";
+            nRound++;
+        }
     }
 
     if (nPlayerScore > nComputerScore)

@@ -14,6 +14,16 @@ To find all the prime numbers less than or equal to a given integer `n` by Erato
 4. Find the first number greater than p in the list that is not marked. If there was no such number, stop. Otherwise, let p now equal this new number (which is the next prime), and repeat from step 3.
 5. When the algorithm terminates, the numbers remaining not marked in the list are all the primes below n.
 
+
+.. literalinclude:: ../ch4-computation/exercises/exercise13/main_simple.cpp
+   :language: cpp
+   :caption: sieveoferatosthenes_simple.cpp
+   :linenos:
+
+
+
+Another version of the program is the following, which uses a vector: 
+
 .. literalinclude:: ../ch4-computation/exercises/exercise13/main.cpp
    :language: cpp
    :caption: sieveoferatosthenes.cpp

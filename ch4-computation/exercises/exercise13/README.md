@@ -35,6 +35,8 @@ Another version of the program is the following, which uses a vector:
    :caption: sieveoferatosthenes.cpp
    :linenos:
 
+The following output shows the sieved number blocks for every iteration of the outer for loop.
+The amount of sieved numbers reduces because most of them are already marked as not being prime.
 
 ```
 2 4 6 8 10 12 14 16 18 20 

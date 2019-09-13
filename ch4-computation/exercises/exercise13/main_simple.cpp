@@ -1,5 +1,6 @@
 #include "std_lib_facilities.h"
 
+// Sieve of Eratosthenes algorithm:
 // 1. Create a list of consecutive integers from 2 through n: (2, 3, 4, ..., n).
 // 2. Initially, let p equal 2, the smallest prime number.
 // 3. Enumerate the multiples of p by counting in increments of p from 2p to n,

@@ -12,9 +12,13 @@
 
 int main()
 {
+    cout << "Enter an upper limit up to that primes are searched.\n";
+
     // 1. Create a list of consecutive integers from 2 through n: (2, 3, 4, ..., n).
     // The indices will represent the numbers and true or false will specify if a number is marked, meaning it is no prime.
-    constexpr int nMax {100};
+    int nMax {100};
+    cin >> nMax;
+
     vector<int> baMarked(nMax+1); // Plus 1 because nMax should also be check if it is prime
     // Initially, all numbers are not marked. Composite numbers are going to be marked true. Primes will stay false.
     // This loop should not be necessary because vector is default initialized to false usually.

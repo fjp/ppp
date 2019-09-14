@@ -6,7 +6,7 @@ project(exercise14)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(exercise14 main_simple.cpp)
+add_executable(exercise14 main.cpp)
 
 target_include_directories(${PROJECT_NAME}
         PRIVATE

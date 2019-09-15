@@ -9,3 +9,27 @@ Create a program that finds the mode of a set of positive integers.
    :language: cpp
    :caption: mode.cpp
    :linenos:
+   
+
+Here are some inputs and the resulting output:
+
+``` 
+Enter a series of positive integer values to get the mode (To finish, enter '|' or a another non integer character):
+1 2 3 3 4 5 6 7 8 8 8 9 10 11 |
+Mode: 8
+```
+
+``` 
+Enter a series of positive integer values to get the mode (To finish, enter '|' or a another non integer character):
+30 60 20 1 2 1 1 2 60 80 50 20 |
+Mode: 1
+```
+
+
+In case of two numbers having equal frequencies, the smaller one is picked because of the sorting.
+
+``` 
+Enter a series of positive integer values to get the mode (To finish, enter '|' or a another non integer character):
+2 2 1 1 1 3 3 3 |
+Mode: 1
+```

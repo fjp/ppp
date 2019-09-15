@@ -35,6 +35,7 @@ string ComputerThrow()
         }
         cout << "Please try again. Enter an integer'\n";
         cin.clear();
+        cin.ignore();
     }
 }
 

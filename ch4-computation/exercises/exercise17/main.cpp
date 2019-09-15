@@ -2,24 +2,28 @@
 
 int main() {
 
-    cout << "Enter a series of positive integer values to get the mode (To finish, enter '|' or a another non integer character):\n";
+    cout << "Enter a sequence of strings to get the min, max and mode (To finish, press Ctrl-D):\n";
 
-    vector<int> naValues;
-    for (int nValue; cin >> nValue; ) // read into temp
-        naValues.push_back(nValue);  // put temp into vector
+    vector<string> straWords;
+    for (string strWord; cin >> strWord; )
+        straWords.push_back(strWord);
 
 
-    sort(naValues); // sort series
+    sort(straWords); // sort sequence
 
-    // compute mode of the entered series:
+    // get the min and max of the entered sequence:
+    string strMin {straWords[0]}; // first entry is the "minimum"
+    string strMax {straWords[straWords.size()-1]}; // last entry is the "maximum"
+
+    // compute mode of the entered sequence:
     int nCount {1};
     int nMaxCount {1};
-    int nMode {0};
-    int nPrev {naValues[0]};
-    for (int nIdx = 1; nIdx < naValues.size(); ++nIdx)
+    string nMode {" "};
+    string nPrev {straWords[0]};
+    for (int nIdx = 1; nIdx < straWords.size(); ++nIdx)
     {
         // update the number count if the previous value is the same as the current one.
-        if (nPrev == naValues[nIdx])
+        if (nPrev == straWords[nIdx])
         {
             nCount++;
         } else {
@@ -29,14 +33,17 @@ int main() {
         // update the mode if necessary
         if (nMaxCount < nCount)
         {
-            nMode = naValues[nIdx];
+            nMode = straWords[nIdx];
             nMaxCount = nCount;
         }
 
-        nPrev = naValues[nIdx];
+        nPrev = straWords[nIdx];
     }
 
-    cout << "The mode of the series is " << nMode << " with " << nMaxCount << " appareances.\n";
+    cout << "The min of the sequence is " << strMin << " and the max is " << strMax << '\n';
+    cout << "The mode of the sequence is " << nMode << " with " << nMaxCount << " appareances.\n";
 
     return 0;
+
+    /// moon sun earth moon saturn pluto
 }

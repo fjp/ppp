@@ -50,5 +50,12 @@ int main() {
         }
     }
 
+
+    // Write out all the (name,score) pairs, one per line.
+    for (int nIdx = 0; nIdx < straNames.size(); ++nIdx)
+    {
+        cout << "(" << straNames[nIdx] << "," << naScores[nIdx] << ")\n";
+    }
+
     return 0;
 }

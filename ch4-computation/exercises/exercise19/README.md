@@ -10,3 +10,16 @@ Write out all the (name,score) pairs, one per line.
    :language: cpp
    :caption: name-and-value_pairs.cpp
    :linenos:
+
+
+The program results in the following:
+
+```
+Enter a set of name-and-value pairs, such as 'Joe 17' and 'Barbara 22 (Terminate the input using 'NoName 0' followed by 'Enter'):
+Joe 17
+Barbara 22
+NoName 0
+(Joe,17)
+(Barbara,22)
+(NoName,0)
+```

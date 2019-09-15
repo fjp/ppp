@@ -5,3 +5,7 @@ The number that appears the most times in a sequence is called the *mode*.
 Create a program that finds the mode of a set of positive integers.
 
 
+.. literalinclude:: ../ch4-computation/exercises/exercise16/main.cpp
+   :language: cpp
+   :caption: mode.cpp
+   :linenos:

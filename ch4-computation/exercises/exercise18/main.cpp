@@ -67,7 +67,11 @@ int main() {
              << "x2 = " << fReal << " - " << fImag << "i\n";
     }
     else
-        cout << "x1 = " << x1 << "i, x2 = " << x2 << '\n';
+    {
+        cout << "x1 = " << x1 << '\n'
+             << "x2 = " << x2 << '\n';
+    }
+
 
     return 0;
 }

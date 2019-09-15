@@ -16,3 +16,25 @@ output both `x1` and `x2`.
    :caption: quadraticequation.cpp
    :linenos:
  
+ 
+ 
+ Here are some example input and the output result:
+ 
+ ``` 
+ Enter the coefficients 'a', 'b' and 'c' as double to get the results of a quadratic equation (Followed by 'Enter'):
+ 1 3 1
+ The solution of 1x^2 + 3x + 1 = 0 is real:
+ x1 = -0.381966
+ x2 = -2.61803
+ ```
+ 
+ 
+ The program is also able to compute imaginary solutions:
+ 
+ ``` 
+ Enter the coefficients 'a', 'b' and 'c' as double to get the results of a quadratic equation (Followed by 'Enter'):
+ 1 2 3
+ The solution of 1x^2 + 2x + 3 = 0 is imaginary:
+ x1 = -1 + 1.41421i
+ x2 = -1 - 1.41421i
+ ```

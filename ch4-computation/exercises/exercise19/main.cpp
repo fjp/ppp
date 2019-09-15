@@ -39,9 +39,9 @@ int main() {
                 {
                     cout << "Duplicate detected! Names must be unique.\n";
                 }
+                straNames.push_back(strName);
+                naScores.push_back(nScore);
             }
-            straNames.push_back(strName);
-            naScores.push_back(nScore);
         } else {
             cin.clear();
             cin.ignore();

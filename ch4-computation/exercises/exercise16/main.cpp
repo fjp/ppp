@@ -5,8 +5,8 @@ int main() {
     cout << "Enter a series of positive integer values to get the mode (To finish, enter '|' or a another non integer character):\n";
 
     vector<int> naValues;
-    for (int nValue; cin >> nValue; ) // read into temp
-        naValues.push_back(nValue);  // put temp into vector
+    for (int nValue; cin >> nValue; )
+        naValues.push_back(nValue);
 
 
     sort(naValues); // sort series

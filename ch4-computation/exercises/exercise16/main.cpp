@@ -35,7 +35,8 @@ int main() {
 
         nPrev = naValues[nIdx];
     }
-    cout << "Mode: " << nMode << '\n';
+
+    cout << "The mode of the series is " << nMode << " with " << nMaxCount << " appareances.\n";
 
     return 0;
 }

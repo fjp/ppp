@@ -44,6 +44,4 @@ int main() {
     cout << "The mode of the sequence is " << nMode << " with " << nMaxCount << " appareances.\n";
 
     return 0;
-
-    /// moon sun earth moon saturn pluto
 }

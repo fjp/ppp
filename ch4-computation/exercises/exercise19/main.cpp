@@ -31,6 +31,7 @@ int main() {
         {
             cout << "Duplicate detected! Names must be unique.\n";
             bDuplicate = true;
+            // return -1; // depending on what terminate means (terminate program or terminate input?)
         }
         else 
         {

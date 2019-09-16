@@ -14,8 +14,11 @@ Enter a set of name-and-value pairs, such as 'Joe 17' and 'Barbara 22 (Terminate
 Joe 17
 Barbara 22
 NoName 0
+
+The entered names are:
 (Joe,17)
 (Barbara,22)
+
 Write a name to get the score: Joe
 Score for Joe is 17
 Write a name to get the score: Barbara

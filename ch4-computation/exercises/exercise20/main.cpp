@@ -52,6 +52,7 @@ int main() {
     }
 
 
+    cout << "\nThe entered names are:\n";
     // Write out all the (name,score) pairs, one per line.
     for (int nIdx = 0; nIdx < straNames.size(); ++nIdx)
     {
@@ -59,7 +60,8 @@ int main() {
     }
 
 
-    cout << "Write a name to get the score: ";
+
+    cout << "\nWrite a name to get the score: ";
     while (cin >> strName)
     {
         PrintName(strName, straNames, naScores);

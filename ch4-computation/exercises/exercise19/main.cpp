@@ -1,11 +1,11 @@
 #include "std_lib_facilities.h"
 
 
-bool Duplicate(string i_strName, int i_nScore, vector<string> i_straNames, vector<int> i_naScores)
+bool Duplicate(string i_strName, vector<string> i_straNames)
 {
-    for (int nIdx = 0; nIdx < i_straNames.size(); ++nIdx)
+    for (string strName : i_straNames)
     {
-        if (i_strName == i_straNames[nIdx])
+        if (i_strName == i_strName)
         {
             return true;
         }
@@ -27,7 +27,7 @@ int main() {
     while (!bDuplicate && cin >> strName >> nScore && ("NoName" == strName && 0 == nScore)) // Terminate input with NoName 0
     {            
         // Check that each name is unique and terminate with an error message if a name is entered twice.
-        if (Duplicate(strName, nScore, straNames, naScores))
+        if (Duplicate(strName, straNames))
         {
             cout << "Duplicate detected! Names must be unique.\n";
             bDuplicate = true;

@@ -5,7 +5,7 @@ bool Duplicate(string i_strName, vector<string> i_straNames)
 {
     for (string strName : i_straNames)
     {
-        if (i_strName == i_strName)
+        if (strName == i_strName)
         {
             return true;
         }
@@ -24,7 +24,7 @@ int main() {
     vector<int> naScores(0);
 
     bool bDuplicate {false};
-    while (!bDuplicate && cin >> strName >> nScore && ("NoName" == strName && 0 == nScore)) // Terminate input with NoName 0
+    while (!bDuplicate && (cin >> strName >> nScore) && ("NoName" != strName || 0 != nScore)) // Terminate input with NoName 0
     {            
         // Check that each name is unique and terminate with an error message if a name is entered twice.
         if (Duplicate(strName, straNames))

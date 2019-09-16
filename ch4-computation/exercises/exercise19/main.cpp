@@ -23,33 +23,19 @@ int main() {
     vector<string> straNames(0);
     vector<int> naScores(0);
 
-    bool bValid {true};
-    while (bValid)
-    {
-        if (cin >> strName >> nScore)
+    bool bDuplicate {false};
+    while (!bDuplicate && cin >> strName >> nScore && ("NoName" == strName && 0 == nScore)) // Terminate input with NoName 0
+    {            
+        // Check that each name is unique and terminate with an error message if a name is entered twice.
+        if (Duplicate(strName, nScore, straNames, naScores))
         {
-            // Terminate input with NoName 0
-            if ("NoName" == strName && 0 == nScore)
-            {
-                bValid = false;
-            }
-            // Check that each name is unique and terminate with an error message if a name is entered twice.
-            else {
-                if (Duplicate(strName, nScore, straNames, naScores))
-                {
-                    cout << "Duplicate detected! Names must be unique.\n";
-                }
-                else 
-                {
-                    straNames.push_back(strName);
-                    naScores.push_back(nScore);
-                }
-            }
-        } else {
-            cin.clear();
-            cin.ignore();
-
-            cout << "Enter a name-and-value pair, such as 'Joe 17' and 'Barbara 22'\n";
+            cout << "Duplicate detected! Names must be unique.\n";
+            bDuplicate = true;
+        }
+        else 
+        {
+            straNames.push_back(strName);
+            naScores.push_back(nScore);
         }
     }
 

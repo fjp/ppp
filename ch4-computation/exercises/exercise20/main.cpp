@@ -59,12 +59,12 @@ int main() {
     }
 
 
-    cout << "Write a name to get the score:\n";
+    cout << "Write a name to get the score: ";
     while (cin >> strName)
     {
         PrintName(strName, straNames, naScores);
 
-        cout << "Write a name to get the score:\n";
+        cout << "Write a name to get the score: ";
     }
 
 

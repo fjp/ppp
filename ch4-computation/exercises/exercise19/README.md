@@ -21,5 +21,31 @@ Barbara 22
 NoName 0
 (Joe,17)
 (Barbara,22)
-(NoName,0)
+```
+
+In the case of a duplicate name the output is:
+
+``` 
+Enter a set of name-and-value pairs, such as 'Joe 17' and 'Barbara 22 (Terminate the input using 'NoName 0' followed by 'Enter'):
+Joe 17
+Barbara 22
+Joe 18
+Duplicate detected! Names must be unique.
+(Joe,17)
+(Barbara,22)
+```
+
+Notice, to finish, the user needs to entery `NoName 0` exactly:
+
+```
+Enter a set of name-and-value pairs, such as 'Joe 17' and 'Barbara 22 (Terminate the input using 'NoName 0' followed by 'Enter'):
+Joe 17
+Barbara 22
+John 21
+NoName 1
+NoName 0
+(Joe,17)
+(Barbara,22)
+(John,21)
+(NoName,1)
 ```

@@ -1,5 +1,3 @@
-## Drill
-
 1. Write a program that consists of a `while`-loop that (each time around the loop) reads in two `int`s and then prints them. 
 Exit the program when a terminating `'|'` is entered.
 

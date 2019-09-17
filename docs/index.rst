@@ -9,12 +9,12 @@ Welcome to the solution of
 .. toctree::
    :maxdepth: 5
    :caption: Contents:
+   
+   ch1-computers_people_and_programming.rst
+   
+   ch2-hello_world.rst
 
 .. mdinclude:: ../README.md
-
-.. include:: ch1-computers_people_and_programming.rst
-
-.. mdinclude:: ../ch2-hello_world/README.md
 
 .. mdinclude:: ../ch3-objects_types_and_values/README.md
 

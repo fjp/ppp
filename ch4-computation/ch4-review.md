@@ -1,5 +1,3 @@
-## Review
-
 1. What is a computation?
 
 By computation we simply mean the act of producing some outputs based on some inputs, 

@@ -1,5 +1,3 @@
-## Review
-
 1. What is meant by the term prompt?
 
 A line of code that writes out a message to the screen (terminal, console, ...) which encourages or prompts the user to take action.

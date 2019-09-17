@@ -1,5 +1,3 @@
-## Exercises
-
 1. Pick an activity you do most days (such as going to class, eating dinner, or watching television). Make a list of ways computers are directly or indirectly involved.
 
 The activity going to work involves computers in the form of traffic lights that are controlled by computers. My bike and car (depending which vehicle I choose to go to work) were designed using computers and my car contains multiple electronic control units. Before I leave the house I check the weather with my phone which involves not only my smartphone but computers that were used to determin the weather forecast. At work I enter the building using a chip card reader which uses cryptographie.   

@@ -3,8 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to the solution of
-==========
+Welcome to the walkthrough of Programming Principles and Practice using C++
+===========================================================================
+
+[![Documentation Status](https://readthedocs.org/projects/programming-principles-and-pratice-using-c/badge/?version=latest)](https://programming-principles-and-pratice-using-c.readthedocs.io/en/latest/?badge=latest)
 
 .. toctree::
    :maxdepth: 5
@@ -17,10 +19,9 @@ Welcome to the solution of
    ch3-objects_types_and_values.rst
    
    ch4-computation.rst
+   
+   ch5-errors.rst
 
-.. mdinclude:: ../README.md
-
-.. mdinclude:: ../ch5-errors/README.md
 
 Indices and tables
 ==================

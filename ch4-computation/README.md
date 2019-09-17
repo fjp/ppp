@@ -29,3 +29,40 @@
 
 .. mdinclude:: ../ch4-computation/exercises/exercise02/README.md
 
+.. mdinclude:: ../ch4-computation/exercises/exercise03/README.md
+
+.. mdinclude:: ../ch4-computation/exercises/exercise04/README.md
+
+.. mdinclude:: ../ch4-computation/exercises/exercise05/README.md
+
+.. mdinclude:: ../ch4-computation/exercises/exercise06/README.md
+
+.. mdinclude:: ../ch4-computation/exercises/exercise07/README.md
+
+.. mdinclude:: ../ch4-computation/exercises/exercise08/README.md
+
+.. mdinclude:: ../ch4-computation/exercises/exercise09/README.md
+
+.. mdinclude:: ../ch4-computation/exercises/exercise10/README.md
+
+.. mdinclude:: ../ch4-computation/exercises/exercise11/README.md
+
+.. mdinclude:: ../ch4-computation/exercises/exercise12/README.md
+
+.. mdinclude:: ../ch4-computation/exercises/exercise13/README.md
+
+.. mdinclude:: ../ch4-computation/exercises/exercise14/README.md
+
+.. mdinclude:: ../ch4-computation/exercises/exercise15/README.md
+
+.. mdinclude:: ../ch4-computation/exercises/exercise16/README.md
+
+.. mdinclude:: ../ch4-computation/exercises/exercise17/README.md
+
+.. mdinclude:: ../ch4-computation/exercises/exercise18/README.md
+
+.. mdinclude:: ../ch4-computation/exercises/exercise19/README.md
+
+.. mdinclude:: ../ch4-computation/exercises/exercise20/README.md
+
+.. mdinclude:: ../ch4-computation/exercises/exercise21/README.md

@@ -1,5 +1,3 @@
-## Review
-
 ### 1. What is the purpose of the “Hello, World!” program?
 
 To check your program environment and to get acquainted with the tools and to see if everything is setup correctly.

@@ -1,5 +1,3 @@
-# Chapter 3 - Objects, Types and Values Exercises
-
 1. If you haven’t done so already, do the Try this exercises from this chapter.
 
 2. Write a program in C++ that converts from miles to kilometers. 

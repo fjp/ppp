@@ -1,5 +1,3 @@
-## Terms
-
 ### affordability
 
 One of the ideals (correcteness, reliability, well designed, affordable, maintainable) a programmer should aim for when creating a program. 

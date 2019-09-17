@@ -20,6 +20,7 @@ Welcome to the solution of
 
 .. mdinclude:: ../ch4-computation/README.md
 
+.. mdinclude:: ../ch5-error/README.md
 
 Indices and tables
 ==================

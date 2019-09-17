@@ -10,13 +10,13 @@ Welcome to the solution of
    :maxdepth: 5
    :caption: Contents:
    
-   ch1-computers-people-and-programming.rst
+   ch1-computers_people_and_programming.rst
    
    ch2-hello_world.rst
+   
+   ch3-objects_types_and_values.rst
 
 .. mdinclude:: ../README.md
-
-.. mdinclude:: ../ch3-objects_types_and_values/README.md
 
 .. mdinclude:: ../ch4-computation/README.md
 

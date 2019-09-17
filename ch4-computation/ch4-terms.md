@@ -1,5 +1,3 @@
-## Terms
-
 ### abstraction
 
 Our main tool for organizing a program — and for organizing our thoughts as we program — 

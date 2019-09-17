@@ -1,6 +1,3 @@
-## Terms
-
-
 ### assignment
 
 An assignment is an operator, denoted by the `=` sign. This operator assings a new value to a variable. 

@@ -10,7 +10,7 @@ Welcome to the solution of
    :maxdepth: 5
    :caption: Contents:
    
-   ch1-computers_people_and_programming.rst
+   ch1-computers-people-and-programming.rst
    
    ch2-hello_world.rst
 

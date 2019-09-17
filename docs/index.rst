@@ -15,10 +15,10 @@ Welcome to the solution of
    ch2-hello_world.rst
    
    ch3-objects_types_and_values.rst
+   
+   ch4-computation.rst
 
 .. mdinclude:: ../README.md
-
-.. mdinclude:: ../ch4-computation/README.md
 
 .. mdinclude:: ../ch5-errors/README.md
 

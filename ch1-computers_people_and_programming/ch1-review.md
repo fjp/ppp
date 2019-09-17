@@ -1,5 +1,3 @@
-## Review
-
 ### 1. What is software?
 
 Sofware runs on hardware and is a collection of code instructions that are intended to solve a problem.

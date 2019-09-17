@@ -7,7 +7,7 @@ project(exercise02)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(exercise02 main.cpp)
+add_executable(${PROJECT_NAME} main.cpp)
 
 target_include_directories(${PROJECT_NAME}
         PRIVATE
@@ -19,7 +19,7 @@ project(exercise02solution)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(exercise02solution main_solution.cpp)
+add_executable(${PROJECT_NAME} main_solution.cpp)
 
 target_include_directories(${PROJECT_NAME}
         PRIVATE

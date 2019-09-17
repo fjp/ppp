@@ -2,23 +2,23 @@ Chapter 3 - Objects, Types and Values
 -------------------------------------
 
 Drill
-˜˜˜˜˜
+*****
 
 .. mdinclude:: ../ch3-objects_types_and_values/drill/README.md
 
 Review
-˜˜˜˜˜˜
+******
 
 .. mdinclude:: ../ch3-objects_types_and_values/ch3-review.md
 
 Terms
-˜˜˜˜˜
+*****
 
 .. mdinclude:: ../ch3-objects_types_and_values/ch3-terms.md
 
 
 Try This
-˜˜˜˜˜˜˜˜
+********
 
 .. mdinclude:: ../ch3-objects_types_and_values/trythis/01-name_and_age/README.md
 
@@ -32,7 +32,7 @@ Try This
 
 
 Exercises
-˜˜˜˜˜˜˜˜˜
+*********
 
 .. mdinclude:: ../ch3-objects_types_and_values/exercises/exercise02/README.md
 

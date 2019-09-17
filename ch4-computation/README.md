@@ -12,6 +12,16 @@
 
 .. mdinclude:: ../ch4-computation/trythis/01-currency_converter/README.md
 
+.. mdinclude:: ../ch4-computation/trythis/02-currency_converter_switch/README.md
+
+.. mdinclude:: ../ch4-computation/trythis/03-character_loop/README.md
+
+.. mdinclude:: ../ch4-computation/trythis/04-character_loop_for/README.md
+
+.. mdinclude:: ../ch4-computation/trythis/05-square/README.md
+
+.. mdinclude:: ../ch4-computation/trythis/06-bleep/README.md
+
 
 ## Exercises
 

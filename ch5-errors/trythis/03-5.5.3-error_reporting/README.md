@@ -44,3 +44,18 @@ area5: 5
 Calling area with values that result in an area greater than the size of an integer (32 bit) will result
 in an unrecognized overflow error. The following output returns 1.
 To solve such errors the callee (in this case area) should check if its result is greater than its inputs.
+
+
+Narrowing conversion errors, which are a result of entering doubles instead of ints, are not caught by this program.
+This could be checked by letting the user enter doubles and then convert them to ints if possible
+(or compare them afterwards)
+If the user enters a double value cin gets in a bad state and the program returns without any output.
+
+To throw if a conversion is not possible use:
+
+```cpp
+int x1 = narrow_cast<int>(2.9); // throws
+int x2 = narrow_cast<int>(2.0); // OK
+char c1 = narrow_cast<char>(1066); // throws
+char c2 = narrow_cast<char>(85); // OK
+```

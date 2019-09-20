@@ -35,6 +35,12 @@ int f(int x, int y, int z)
 
 int main()
 {
-
+    cout << "Enter three integers separated by space (followed by 'Enter')\n";
+    int x, y, z;
+    while (cin >> x >> y >> z)
+    {
+        f(x, y, z);
+    }
+    
     return 0;
 }

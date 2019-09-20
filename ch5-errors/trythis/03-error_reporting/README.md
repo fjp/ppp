@@ -29,3 +29,18 @@ Enter three integers separated by space (followed by 'Enter')
 libc++abi.dylib: terminating with uncaught exception of type std::runtime_error: non-positive area() argument called by framed_area()
 ```
 
+Here is the output with values that are working:
+
+```
+Enter three integers separated by space (followed by 'Enter')
+3 3 3
+area1: 9
+area3: 1
+ratio: 9
+area4: 1
+area5: 5
+```
+
+Calling area with values that result in an area greater than the size of an integer (32 bit) will result
+in an unrecognized overflow error. The following output returns 1.
+To solve such errors the callee (in this case area) should check if its result is greater than its inputs.

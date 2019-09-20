@@ -1,7 +1,9 @@
+// Author: Franz Pucher
+// Date: 2019.09.20
+// Try This 5.5.3 Error reporting
+// 
+
 #include "std_lib_facilities.h"
-
-
-
 
 // calculate area of a rectangle;
 // return –1 to indicate a bad argument

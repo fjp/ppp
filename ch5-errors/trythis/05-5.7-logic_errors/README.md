@@ -82,3 +82,16 @@ High temperature: 1.79e+308
 Low temperature: 0
 Average temperature: inf
 ```
+
+The logical error of initializing `high_temp` and `low_temp` with zero is also severe
+when only negative values are entered:
+
+``` 
+-5.0 -2.1 -3.8 -10.6
+|
+High temperature: 0
+Low temperature: -10.6
+Average temperature: -5.375
+```
+
+`high_temp` stays zero because no negative number is greater than zero.

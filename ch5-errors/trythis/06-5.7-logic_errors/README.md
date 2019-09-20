@@ -24,6 +24,11 @@ Low temperature: -26.1
 Average temperature: 9.29583
 ```
 
+The following program uses no magic constants `1000` and `-1000` for the 
+`min_temp` and `max_temp` values. 
+Instead, the [absolute zero](https://en.wikipedia.org/wiki/Absolute_zero) and 
+[absolute hot](https://en.wikipedia.org/wiki/Absolute_hot) temperature values are taken:
+
 .. literalinclude:: ../ch5-errors/trythis/06-5.7-logic_errors/main_improved.cpp
    :language: cpp
    :caption: logicerrorsimprovedmore.cpp

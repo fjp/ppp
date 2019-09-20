@@ -1,6 +1,5 @@
 #include "std_lib_facilities.h"
 
-
 // calculate area of a rectangle;
 // return –1 to indicate a bad argument
 int area(int length, int width)
@@ -31,4 +30,16 @@ int f(int x, int y, int z)
     // The missing tests are not relevant for framed_area because it does error checking on its own.
     // In case of an invalid input, the function terminates the program uisng error() from std_lib_facilicties header.
     // ...
+}
+
+int main()
+{
+    cout << "Enter three integers separated by space (followed by 'Enter')\n";
+    int x, y, z;
+    while (cin >> x >> y >> z)
+    {
+        f(x, y, z);
+    }
+    
+    return 0;
 }

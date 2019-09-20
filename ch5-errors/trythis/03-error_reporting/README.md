@@ -19,3 +19,13 @@ Instead the return value of `area()` is return directly which is `-1` in case of
    :language: cpp
    :caption: errorreportingfix.cpp
    :linenos:
+
+
+Here is one output that is equal for both programs:
+
+```
+Enter three integers separated by space (followed by 'Enter')
+1 1 1
+libc++abi.dylib: terminating with uncaught exception of type std::runtime_error: non-positive area() argument called by framed_area()
+```
+

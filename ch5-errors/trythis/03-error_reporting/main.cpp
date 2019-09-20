@@ -31,6 +31,8 @@ int f(int x, int y, int z)
     int area3 = framed_area(y,z);
     double ratio = double(area1)/area3;
     // ...
+
+    return 0;
 }
 
 int main()
@@ -40,6 +42,7 @@ int main()
     while (cin >> x >> y >> z)
     {
         f(x, y, z);
+        cout << '\n';
     }
     
     return 0;

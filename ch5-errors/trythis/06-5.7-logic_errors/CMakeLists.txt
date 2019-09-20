@@ -12,3 +12,13 @@ target_include_directories(${PROJECT_NAME}
         PRIVATE
             ${PPP_INCLUDE_DIRS}
 )
+
+
+project(LogicErrorImproved)
+
+add_executable(${PROJECT_NAME} main_improved.cpp)
+
+target_include_directories(${PROJECT_NAME}
+        PRIVATE
+        ${PPP_INCLUDE_DIRS}
+        )

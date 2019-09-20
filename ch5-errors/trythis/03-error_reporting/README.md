@@ -12,7 +12,8 @@ To run the given example function `f(int x, int y, int z)` I added the required 
    :caption: errorreporting.cpp
    :linenos:
 
-It is not possible to test this program with a variety of values because the first call to `int area2 = framed_area(1,z)` terminates the program with an error. This happens because the first input argument `1` yields a negative value when subtracted by the `constexpr int frame_width = 2`. The following program is an extension to the original `errorreporting.cpp` to fix those issues and add tests where appropriate. In this version `framed_area()` does not use `error()`. Instead `-1` is returned. 
+It is not possible to test this program with a variety of values because the first call to `int area2 = framed_area(1,z)` terminates the program with an error. This happens because the first input argument `1` yields a negative value when subtracted by the `constexpr int frame_width = 2`. The following program is an extension to the original `errorreporting.cpp` to fix those issues and add tests where appropriate. In this version `framed_area()` does not use `error()`. 
+Instead the return value of `area()` is return directly which is `-1` in case of an error. 
 
 .. literalinclude:: ../ch5-errors/trythis/03-error_reporting/main_extension.cpp
    :language: cpp

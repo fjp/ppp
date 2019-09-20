@@ -60,3 +60,25 @@ High temperature: 0
 Low temperature: 0
 Average temperature: nan
 ```
+
+Another case where the program "breaks" is when an overflow of `double` happens,
+which is basically the same error as the previous one:
+`cin` gets in a bad state and therefore the `vector` is empty.
+
+``` 
+1e350
+High temperature: 0
+Low temperature: 0
+Average temperature: nan
+```
+
+With too high values, the average becomes `inf`, depending on wheater this is considered
+a wrong result with these high values:
+
+``` 
+1.79e308 1.79e301 1.79e302 1.79e305 1.79e308
+|
+High temperature: 1.79e+308
+Low temperature: 0
+Average temperature: inf
+```

@@ -48,10 +48,19 @@ int f(int x, int y, int z)
     // In case of an invalid input, the function terminates the program uisng error() from std_lib_facilicties header.
     // ...
 
+    // Calling area with values that result in an area greater than the size of an integer (32 bit) will result
+    // in an unrecognized overflow error. The following output returns 1.
+    // To solve such errors the caller
+    int area4 = area(2e16, 2e16);
+    int area5 = area(2e32, 5);
+
+
     cout << "area1: " << area1 << '\n';
     //cout << "area2: " << area2 << '\n';
     cout << "area3: " << area3 << '\n';
     cout << "ratio: " << ratio << '\n';
+    cout << "area4: " << area4 << '\n';
+    cout << "area5: " << area5 << '\n';
 }
 
 int main()

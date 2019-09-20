@@ -9,3 +9,10 @@ give a valid argument for having caught all errors.
    :language: cpp
    :caption: errorreporting.cpp
    :linenos:
+
+It is not possible to test this program with a variety of values because the first call to `int area2 = framed_area(1,z)` terminates the program with an error. The following program is an extension the original errorreporting.cpp to fix those issues and add tests where appropriate.
+
+.. literalinclude:: ../ch5-errors/trythis/03-error_reporting/main_extension.cpp
+   :language: cpp
+   :caption: errorreportingfix.cpp
+   :linenos:

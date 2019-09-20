@@ -33,3 +33,27 @@ Instead, the [absolute zero](https://en.wikipedia.org/wiki/Absolute_zero) and
    :language: cpp
    :caption: logicerrorsimprovedmore.cpp
    :linenos:
+   
+   
+Another solution to this program is to initialize the `min_temp` and `max_temp`
+in the first iteration of the for loop. This does not require any 
+upper and lower limits on the temperature values.
+However, this requries an `if`-statement to check the iteration of the loop:
+
+```cpp
+int no_of_temps = 0;
+for (double temp; cin>>temp; ) { // read temp
+    ++no_of_temps; // count temperatures
+    sum += temp; // compute sum
+    if (1 == no_of_temps)
+    {
+        high_temp = temp;
+        low_temp = temp;
+    }
+    else
+    {
+        if (temp > high_temp) high_temp = temp; // find high
+        if (temp < low_temp) low_temp = temp; // find low
+    }
+}
+```

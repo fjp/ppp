@@ -67,9 +67,12 @@ int main()
     constexpr int frame_width = 2;
     
     cout << "Enter three integers separated by space (followed by 'Enter')\n";
-    int x, y, z;
+    int x {0};
+    int y {0};
+    int z {0};
     while (cin >> x >> y >> z)
     {
+        // narrowing errors, which are a result of entering doubles instead of ints, are not caught by this program.
         f(x, y, z);
         cout << '\n';
     }

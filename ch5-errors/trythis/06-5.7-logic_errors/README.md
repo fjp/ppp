@@ -1,8 +1,9 @@
 ### Uncaught Exception
 
-Get this program to run. Check that our input really does produce that output. 
-Try to "break" the program (i.e., get it to give wrong results) by giving it other input sets. 
-What is the least amount of input you can give it to get it to fail?
+Look it up. 
+Check some information sources to pick good values for the `min_temp` 
+(the "minimum temperature") and `max_temp` (the "maximum temperature") constants for our program. 
+Those values will determine the limits of usefulness of our program.
 
 .. literalinclude:: ../ch5-errors/trythis/06-5.7-logic_errors/main.cpp
    :language: cpp

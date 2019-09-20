@@ -15,9 +15,10 @@ int area(int length, int width)
 
 int framed_area(int x, int y) // calculate area within frame
 {
-    constexpr int frame_width = 2;
-    if (x–frame_width<=0 || y–frame_width<=0)
-        error("non-positive area() argument called by framed_area()");
+    // Let the error checking be done by area and the caller.
+    //constexpr int frame_width = 2;
+    //if (x–frame_width <= 0 || y–frame_width <= 0)
+    //    error("non-positive area() argument called by framed_area()");
     return area(x–frame_width,y–frame_width);
 }
 
@@ -38,6 +39,8 @@ int f(int x, int y, int z)
 
 int main()
 {
+    constexpr int frame_width = 2;
+    
     cout << "Enter three integers separated by space (followed by 'Enter')\n";
     int x, y, z;
     while (cin >> x >> y >> z)

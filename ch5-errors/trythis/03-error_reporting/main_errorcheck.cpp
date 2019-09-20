@@ -50,7 +50,6 @@ int f(int x, int y, int z)
 
     // Calling area with values that result in an area greater than the size of an integer (32 bit) will result
     // in an unrecognized overflow error. The following output returns 1.
-    // To solve such errors the caller
     int area4 = area(2e16, 2e16);
     int area5 = area(2e32, 5);
 

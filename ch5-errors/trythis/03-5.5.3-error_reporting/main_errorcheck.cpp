@@ -73,6 +73,8 @@ int main()
     while (cin >> x >> y >> z)
     {
         // narrowing errors, which are a result of entering doubles instead of ints, are not caught by this program.
+        // This could be checked by letting the user enter doubles and then convert them to ints if possible
+        // (or compare them afterwards)
         f(x, y, z);
         cout << '\n';
     }

@@ -8,3 +8,4 @@ up with an approximate answer using a pencil and the back of an envelope (or a n
 This is an ability — a simple habit, really — that can save us a lot of time and confusion.
 
 
+In a regular hexagon the side lengths are the same as the radius of a circle that goes through each of the six corners.

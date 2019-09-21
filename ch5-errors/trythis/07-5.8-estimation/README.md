@@ -13,4 +13,5 @@ Assuming we know that the area of a circle is r^2*pi (`pow(r,2)*PI`) the area wi
 This result is reasonable, because we know that the area of the circumscribed circle is larger than that of the hexagon. 
 In the book the value of the program that calculates the area of a hexagon is 10.3923cm^3, which is smaller than 12.566cm^3.
 A hexagon can be partitioned into six [equilateral triangles](https://en.wikipedia.org/wiki/Equilateral_triangle) where the area can be found using the [Pythagorean theorem](https://en.wikipedia.org/wiki/Pythagorean_theorem) to be: `sqrt(3)/4*r^2`.
-Multiplying this formula with 6 results in the exact area of the hexagon: `3*sqrt(3)/2*r^2`.
+Multiplying this formula with 6 results in the exact area of the hexagon: `3*sqrt(3)/2*r^2`. 
+However, using the area of circle is a faster approximation than the exact formula.

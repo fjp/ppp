@@ -1,4 +1,4 @@
-### Estimation
+### Estimation - Hexagon Area
 
 Our hexagon was regular with 2cm sides. 
 Did we get that answer right? Just do the "back of the envelope" calculation. 

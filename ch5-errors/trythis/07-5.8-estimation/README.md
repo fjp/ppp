@@ -8,4 +8,5 @@ up with an approximate answer using a pencil and the back of an envelope (or a n
 This is an ability — a simple habit, really — that can save us a lot of time and confusion.
 
 
-In a regular hexagon the side lengths are the same as the radius of a circle that goes through each of the six corners.
+In a [regular hexagon](https://en.wikipedia.org/wiki/Hexagon) the lengths of each side are the same as the radius of a circle that goes through each of the six corners. Therefore we can calculate the area of a circle to approximate the area of the hexagon. 
+Assuming we know that the area of a circle is `r*r*pi` the area with radius `r=2` is `12.566`.

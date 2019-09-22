@@ -3,7 +3,7 @@
 Estimate those driving times. Also, estimate the corresponding flight times (using ordinary commercial air travel). 
 Then, try to verify your estimates by using appropriate sources, such as maps and timetables. We'd use online sources.
 
-In this try we search for the driving and flight times from New York City to Denver and from London to Nice.
+In this "try this" we search for the driving and flight times from New York City to Denver and from London to Nice.
 The estimated driving times can be calculated from air (flying) distance between the cities and an average speed that underestimates the true average speed. 
 Both guesses (distance and average speed) should never overestimate the true values to get a useful estimation 
 (see also [admissible heuristic](https://en.wikipedia.org/wiki/Admissible_heuristic) in path finding algorithms such as [A*](https://en.wikipedia.org/wiki/A*_search_algorithm)).

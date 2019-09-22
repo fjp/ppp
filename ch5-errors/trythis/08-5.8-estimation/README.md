@@ -13,6 +13,7 @@ Using an online air (flying) distance calculator such as [distancecalculator](ht
 we find the following distances. Note that this calculator uses the [Haversine formula](https://en.wikipedia.org/wiki/Haversine_formula) which determines the [great-circle distance](https://en.wikipedia.org/wiki/Great-circle_distance) between two points on a sphere given their longitudes and latitudes.
 
 | City A   | City B | Air Distance (km) | Air Distance (mi) |
+|:--------:|:------:|:-----------------:|:-----------------:|
 | New York | Denver | 2618.51           | 1627.07           |
 | London   | Nice   | 1027.82           | 638.66            |
 

@@ -17,3 +17,12 @@ we find the following distances. Note that this calculator uses the [Haversine f
 | New York | Denver | 2618.51           | 1627.07           |
 | London   | Nice   | 1027.82           | 638.66            |
 
+We underestimate the driving speed with an average of 200km/h (124m/hr) and the flying speed ([cruise](https://en.wikipedia.org/wiki/Cruise_(aeronautics))) 1000km/h (621m/hr) which gives the following driving and flying times:
+
+| City A   | City B | Driving time      | Flying time       |
+|:--------:|:------:|:-----------------:|:-----------------:|
+| New York | Denver | 13h 5.4 minutes   | 2h 37.1 minutes   |
+| London   | Nice   | 5h 8.3 minutes    | 1h 1.7 minutes    |
+
+
+

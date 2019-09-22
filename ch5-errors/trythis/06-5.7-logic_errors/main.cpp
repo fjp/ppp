@@ -1,6 +1,6 @@
+// Try This 5.7 Logic errors - improved version
 // Author: Franz Pucher
 // Date: 2019.09.20
-// Try This 5.7 Logic errors - improved version
 
 #include "std_lib_facilities.h"
 

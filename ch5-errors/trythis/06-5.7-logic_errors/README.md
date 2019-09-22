@@ -1,4 +1,4 @@
-### Uncaught Exception
+### Locic Errors
 
 Look it up. 
 Check some information sources to pick good values for the `min_temp` 

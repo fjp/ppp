@@ -20,7 +20,7 @@ int area(int length, int width)
 {
     if (length<=0 || width <=0) error("area() pre-condition");
     int a = length*width;
-    //cout << "area() a: " << a << '\n';
+    cout << "area() a: " << a << '\n';
     if (a<=0) error("area() post-condition"); // throw runtime_error(string s)
     return a;
 }
@@ -42,10 +42,10 @@ try
     return 0;
 }
 catch (runtime_error& e) {
-    cout << "Error: " << e.what() << '\n';
+    cerr << "Error: " << e.what() << '\n';
     return 1;
 }
 catch (...) {
-    cout << "Error: unknown exception\n";
+    cerr << "Error: unknown exception\n";
     return 2;
 }

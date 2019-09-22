@@ -12,7 +12,7 @@ Both guesses (distance and average speed) should never overestimate the true val
 Using an online air (flying) distance calculator such as [distancecalculator](https://www.distancecalculator.net/), 
 we find the following distances. Note that this calculator uses the [Haversine formula](https://en.wikipedia.org/wiki/Haversine_formula) which determines the [great-circle distance](https://en.wikipedia.org/wiki/Great-circle_distance) between two points on a sphere given their longitudes and latitudes.
 
-| City A   | City B | Air Distance (km) | Air Distance (mi) |
+| City A   | City B | Air distance (km) | Air distance (mi) |
 |:--------:|:------:|:-----------------:|:-----------------:|
 | New York | Denver | 2618.51           | 1627.07           |
 | London   | Nice   | 1027.82           | 638.66            |
@@ -24,5 +24,9 @@ We underestimate the driving speed with an average of 200km/h (124m/hr) and the 
 | New York | Denver | 13h 5.4 minutes   | 2h 37.1 minutes   |
 | London   | Nice   | 5h 8.3 minutes    | 1h 1.7 minutes    |
 
+To verify these driving time results we can use Google Maps:
 
-
+| City A   | City B | Exact driving distance (km) | Driving time        | Average speed(km/h) |
+|:--------:|:------:|:---------------------------:|:-------------------:|:-------------------:|
+| New York | Denver | 2883.0                      | 26h                 | 111                 |
+| London   | Nice   | 1396                        | 13h 1 minute        | 107                 |

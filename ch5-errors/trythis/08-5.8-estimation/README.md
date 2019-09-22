@@ -21,12 +21,19 @@ We underestimate the driving speed with an average of 200km/h (124m/hr) and the 
 
 | City A   | City B | Driving time      | Flying time       |
 |:--------:|:------:|:-----------------:|:-----------------:|
-| New York | Denver | 13h 5.4 minutes   | 2h 37.1 minutes   |
-| London   | Nice   | 5h 8.3 minutes    | 1h 1.7 minutes    |
+| New York | Denver | 13h 5minutes    | 2h 37minutes   |
+| London   | Nice   | 5h 8minutes     | 1h 2minutes    |
 
 To verify these driving time results we can use Google Maps:
 
 | City A   | City B | Exact driving distance (km) | Driving time        | Average speed(km/h) |
 |:--------:|:------:|:---------------------------:|:-------------------:|:-------------------:|
 | New York | Denver | 2883.0                      | 26h                 | 111                 |
-| London   | Nice   | 1396                        | 13h 1 minute        | 107                 |
+| London   | Nice   | 1396                        | 13h 1minute        | 107                 |
+
+According to [flighttime-calculator](https://flighttime-calculator.com/) these are the true flight times between the cities:
+
+| City A   | City B | Exact flying distance (km) | Flight time          | Average speed(km/h) |
+|:--------:|:------:|:---------------------------:|:-------------------:|:-------------------:|
+| New York | Denver | 2629.72                     | 3h 31minutes        | 747.78              |
+| London   | Nice   | 1030.88                     | 1h 37minutes        | 637.65              |

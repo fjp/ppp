@@ -34,7 +34,7 @@ the scaffolding 25 times — that's a job for cut and paste or some similar
 "mechanical" technique. Do not fix problems by simply deleting a statement;
 repair them by changing, adding, or deleting a few characters.
 
-1. `Cout << "Success!\n”;`
+1. `Cout << "Success!\n”;`cpp
 2. `cout << "Success!\n;`
 3. `cout << "Success" << !\n"`
 4. `cout << success << '\n';`

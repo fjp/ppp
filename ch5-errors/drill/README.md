@@ -34,7 +34,34 @@ the scaffolding 25 times — that's a job for cut and paste or some similar
 "mechanical" technique. Do not fix problems by simply deleting a statement;
 repair them by changing, adding, or deleting a few characters.
 
-1. `Cout << "Success!\n”;`
+1. `Cout << "Success!\n";`
+
+The compiler output after inserting this into the scaffolding is the following: 
+
+```
+/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:10:5: error: use of undeclared identifier 'Cout'; did you mean 'cout'?
+    Cout << "Success!\n";
+    ^~~~
+    cout
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iostream:54:33: note: 'cout' declared here
+extern _LIBCPP_FUNC_VIS ostream cout;
+                                ^
+1 error generated.
+make[3]: *** [CMakeFiles/Ch5Drill.dir/scaffolding.cpp.o] Error 1
+make[2]: *** [CMakeFiles/Ch5Drill.dir/all] Error 2
+make[1]: *** [CMakeFiles/Ch5Drill.dir/rule] Error 2
+make: *** [Ch5Drill] Error 2
+```
+After fixing the fragment to `cout << "Success!\n";` the output is:
+
+```
+Success!
+Please enter a character to exit
+e
+
+Process finished with exit code 0
+```
+
 2. `cout << "Success!\n;`
 3. `cout << "Success" << !\n"`
 4. `cout << success << '\n';`

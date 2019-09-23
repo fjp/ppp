@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 project(Ch5Drill)
 
-add_executable(${PROJECT_NAME} loop01.cpp)
+add_executable(${PROJECT_NAME} scaffolding.cpp)
 
 target_include_directories(${PROJECT_NAME}
         PRIVATE

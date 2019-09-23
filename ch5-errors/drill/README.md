@@ -3,7 +3,7 @@ Below are 25 code fragments. Each is meant to be inserted into this
 
 
 ```cpp
-#include “std_lib_facilities.h”
+#include "std_lib_facilities.h"
 
 int main()
 try {
@@ -12,12 +12,12 @@ try {
     return 0;
 }
 catch (exception& e) {
-    cerr << “error: ” << e.what() << ʻ\n’;
+    cerr << "error: " << e.what() << '\n';
     keep_window_open();
     return 1;
 }
-catch (…) {
-    cerr << “Oops: unknown exception!\n”;
+catch (...) {
+    cerr << "Oops: unknown exception!\n";
     keep_window_open();
     return 2;
 }

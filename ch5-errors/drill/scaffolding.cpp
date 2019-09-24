@@ -17,6 +17,14 @@ try {
     // error: expected expression
     // Fixed
     cout << "Success!\n";
+
+
+    // Fragment 3 (Compile-time error)
+    // cout << "Success" << !\n"
+    // error: expected expression
+    // warning: missing terminating '"' character [-Winvalid-pp-token]
+    // Fixed
+    cout << "Success" << "!\n";
     
     keep_window_open();
     return 0;

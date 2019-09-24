@@ -7,6 +7,15 @@ try {
     // Fragment 1 (Compile-time error)
     // Cout << "Success!\n";
     // error: use of undeclared identifier 'Cout'; did you mean 'cout'?
+    // Fixed
+    cout << "Success!\n";
+
+
+    // Fragment 2 (Compile-time error)
+    // cout << "Success!\n;
+    // warning: missing terminating '"' character [-Winvalid-pp-token]
+    // error: expected expression
+    // Fixed
     cout << "Success!\n";
     
     keep_window_open();

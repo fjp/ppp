@@ -101,6 +101,21 @@ make: *** [Ch5Drill] Error 2
 In this case a `"` and terminating `;` is missing.
 
 4. `cout << success << '\n';`
+
+Again a compile-time error with the output:
+
+```
+/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:35:13: error: use of undeclared identifier 'success'
+    cout << success << '\n';
+            ^
+1 error generated.
+make[3]: *** [CMakeFiles/Ch5Drill.dir/scaffolding.cpp.o] Error 1
+make[2]: *** [CMakeFiles/Ch5Drill.dir/all] Error 2
+make[1]: *** [CMakeFiles/Ch5Drill.dir/rule] Error 2
+```
+
+Wrapping `success` into quotation marks (string) solves the issue.
+
 5. `string res = 7; vector<int> v(10); v[5] = res; cout << "Success!\n";`
 6. `vector<int> v(10); v(5) = 7; if (v(5)!=7) cout << "Success!\n";`
 7. `if (cond) cout << "Success!\n"; else cout << "Fail!\n";`

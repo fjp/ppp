@@ -63,6 +63,23 @@ Process finished with exit code 0
 ```
 
 2. `cout << "Success!\n;`
+
+The second fragment results also in a compile-time error:
+
+```
+/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:18:13: warning: missing terminating '"' character [-Winvalid-pp-token]
+    cout << "Success!\n;
+            ^
+/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:18:13: error: expected expression
+1 warning and 1 error generated.
+make[3]: *** [CMakeFiles/Ch5Drill.dir/scaffolding.cpp.o] Error 1
+make[2]: *** [CMakeFiles/Ch5Drill.dir/all] Error 2
+make[1]: *** [CMakeFiles/Ch5Drill.dir/rule] Error 2
+make: *** [Ch5Drill] Error 2
+```
+
+To fix this we add a `"` after `\n`.
+
 3. `cout << "Success" << !\n"`
 4. `cout << success << '\n';`
 5. `string res = 7; vector<int> v(10); v[5] = res; cout << "Success!\n";`

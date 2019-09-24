@@ -25,6 +25,13 @@ try {
     // warning: missing terminating '"' character [-Winvalid-pp-token]
     // Fixed
     cout << "Success" << "!\n";
+
+
+    // Fragment 4 (Compile-time error)
+    // cout << success << '\n';
+    // error: use of undeclared identifier 'success'
+    // Fixed
+    cout << "success" << '\n';
     
     keep_window_open();
     return 0;

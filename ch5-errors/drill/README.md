@@ -36,7 +36,7 @@ repair them by changing, adding, or deleting a few characters.
 
 1. `Cout << "Success!\n";`
 
-After inserting this fragment into the scaffolding, this results in a compile-time error with the following compiler output: 
+After inserting this fragment into the scaffolding and compiling the result is a compile-time error with the following output: 
 
 ```
 /Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:10:5: error: use of undeclared identifier 'Cout'; did you mean 'cout'?

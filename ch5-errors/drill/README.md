@@ -81,6 +81,25 @@ make: *** [Ch5Drill] Error 2
 To fix this we add a `"` after `\n`.
 
 3. `cout << "Success" << !\n"`
+
+Here the compile-time error is:
+
+```
+/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:27:27: error: expected expression
+    cout << "Success" << !\n"
+                          ^
+/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:27:29: warning: missing terminating '"' character [-Winvalid-pp-token]
+    cout << "Success" << !\n"
+                            ^
+1 warning and 1 error generated.
+make[3]: *** [CMakeFiles/Ch5Drill.dir/scaffolding.cpp.o] Error 1
+make[2]: *** [CMakeFiles/Ch5Drill.dir/all] Error 2
+make[1]: *** [CMakeFiles/Ch5Drill.dir/rule] Error 2
+make: *** [Ch5Drill] Error 2
+```
+
+In this case a `"` and terminating `;` is missing.
+
 4. `cout << success << '\n';`
 5. `string res = 7; vector<int> v(10); v[5] = res; cout << "Success!\n";`
 6. `vector<int> v(10); v(5) = 7; if (v(5)!=7) cout << "Success!\n";`

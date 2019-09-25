@@ -167,6 +167,30 @@ make: *** [Ch5Drill] Error 2
 The index operator `[]` is required to fix these two errors.
 
 7. `if (cond) cout << "Success!\n"; else cout << "Fail!\n";`
+
+Compile-time error with the result:
+
+```
+/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:60:9: error: use of undeclared identifier 'cond'; did you mean 'cend'?
+    if (cond)
+        ^~~~
+        cend
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iterator:1731:6: note: 'cend' declared here
+auto cend(const _Cp& __c) -> decltype(_VSTD::end(__c))
+     ^
+/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:60:9: error: reference to overloaded function could not be resolved; did you mean to call it?
+    if (cond)
+        ^~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iterator:1731:6: note: possible target for call
+auto cend(const _Cp& __c) -> decltype(_VSTD::end(__c))
+     ^
+2 errors generated.
+make[3]: *** [CMakeFiles/Ch5Drill.dir/scaffolding.cpp.o] Error 1
+make[2]: *** [CMakeFiles/Ch5Drill.dir/all] Error 2
+make[1]: *** [CMakeFiles/Ch5Drill.dir/rule] Error 2
+make: *** [Ch5Drill] Error 2
+```
+
 8. `bool c = false; if (c) cout << "Success!\n"; else cout << "Fail!\n";`
 9. `string s = "ape"; boo c = "fool"<s; if (c) cout << "Success!\n";`
 10. `string s = "ape"; if (s=="fool") cout << "Success!\n";`

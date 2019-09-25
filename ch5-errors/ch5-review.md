@@ -12,6 +12,15 @@
 
 2. What kinds of errors can we ignore in student programs?
 
+We will assume that your program 
+    1. Should produce the desired results for all legal inputs 
+    2. Should give reasonable error messages for all illegal inputs 
+    3. Need not worry about misbehaving hardware 
+    4. Need not worry about misbehaving system software 
+    5. Is allowed to terminate after finding an error
+
+Essentially all programs for which assumptions 3, 4, or 5 do not hold can be considered advanced and beyond the scope of this book. 
+However, assumptions 1 and 2 are included in the definition of basic professionalism.
 
 3. What guarantees should every completed project offer?
 

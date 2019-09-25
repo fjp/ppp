@@ -35,12 +35,14 @@ try {
 
     // Fragment 5 (Compile-time error)
     // string res = 7; vector<int> v(10); v[5] = res; cout << "Success!\n";
-    // error: use of undeclared identifier 'success'
+    // error: no viable conversion from 'int' to 'std::__1::string'
     // Fixed
     int res = 7;
     vector<int> v(10);
     v[5] = res;
     cout << "Success!\n";
+
+    
     
     keep_window_open();
     return 0;

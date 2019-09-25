@@ -62,6 +62,18 @@ try {
         cout << "Success!\n";
     else
         cout << "Fail!\n";
+
+
+    // Fragment 8 (No error)
+    // bool c = false; if (c) cout << "Success!\n"; else cout << "Fail!\n";
+    // No direct error but to print "Success!" bool c needs to be true;
+    // Fixed
+    bool c = true;
+    if (c)
+        cout << "Success!\n";
+    else
+        cout << "Fail!\n";
+
     
     keep_window_open();
     return 0;

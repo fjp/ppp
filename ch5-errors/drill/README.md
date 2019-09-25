@@ -147,6 +147,25 @@ make: *** [Ch5Drill] Error 2
 To fix this fragment a type change of the first assignment is required: `string res = 7` to `int res = 7`.
 
 6. `vector<int> v(10); v(5) = 7; if (v(5)!=7) cout << "Success!\n";`
+
+Compiling fragment 6 results in another compile-time error:
+
+```
+/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:51:5: error: type 'Vector<int>' does not provide a call operator
+    v6(5) = 7;
+    ^~
+/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:52:9: error: type 'Vector<int>' does not provide a call operator
+    if (v6(5)!=7)
+        ^~
+2 errors generated.
+make[3]: *** [CMakeFiles/Ch5Drill.dir/scaffolding.cpp.o] Error 1
+make[2]: *** [CMakeFiles/Ch5Drill.dir/all] Error 2
+make[1]: *** [CMakeFiles/Ch5Drill.dir/rule] Error 2
+make: *** [Ch5Drill] Error 2
+```
+
+The index operator `[]` is required to fix these two errors.
+
 7. `if (cond) cout << "Success!\n"; else cout << "Fail!\n";`
 8. `bool c = false; if (c) cout << "Success!\n"; else cout << "Fail!\n";`
 9. `string s = "ape"; boo c = "fool"<s; if (c) cout << "Success!\n";`

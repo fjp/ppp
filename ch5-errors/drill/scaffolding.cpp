@@ -51,6 +51,17 @@ try {
     v6[5] = 7;
     if (v6[5]!=7)
         cout << "Success!\n";
+
+
+    // Fragment 7 (Compile-time error)
+    // if (cond) cout << "Success!\n"; else cout << "Fail!\n";
+    // error: use of undeclared identifier 'cond';
+    // Fixed
+    bool cond {true};
+    if (cond)
+        cout << "Success!\n";
+    else
+        cout << "Fail!\n";
     
     keep_window_open();
     return 0;

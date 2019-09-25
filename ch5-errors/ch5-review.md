@@ -1,13 +1,13 @@
 1. Name four major types of errors and briefly define each one.
 
 - *Compile-time errors:* Errors found by the compiler. We can further classify compile-time errors based on which language rules they violate, for example: 
- - Syntax errors
- - Type errors
+    - Syntax errors
+    - Type errors
 - *Link-time errors:* Errors found by the linker when it is trying to combine object files into an executable program.
 - *Run-time errors:* Errors found by checks in a running program. We can further classify run-time errors as 
- - Errors detected by the computer (hardware and/or operating system) 
- - Errors detected by a library (e.g., the standard library) 
- - Errors detected by user code
+    - Errors detected by the computer (hardware and/or operating system) 
+    - Errors detected by a library (e.g., the standard library) 
+    - Errors detected by user code
 - *Logic errors:* Errors found by the programmer looking for the causes of erroneous results.
 
 2. What kinds of errors can we ignore in student programs?

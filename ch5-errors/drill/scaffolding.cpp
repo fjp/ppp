@@ -38,11 +38,19 @@ try {
     // error: no viable conversion from 'int' to 'std::__1::string'
     // Fixed
     int res = 7;
-    vector<int> v(10);
-    v[5] = res;
+    vector<int> v5(10);
+    v5[5] = res;
     cout << "Success!\n";
 
-    
+
+    // Fragment 6 (Compile-time error)
+    // vector<int> v(10); v(5) = 7; if (v(5)!=7) cout << "Success!\n";
+    // error: no viable conversion from 'int' to 'std::__1::string'
+    // Fixed
+    vector<int> v6(10);
+    v6[5] = 7;
+    if (v6[5]!=7)
+        cout << "Success!\n";
     
     keep_window_open();
     return 0;

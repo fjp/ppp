@@ -192,6 +192,19 @@ make: *** [Ch5Drill] Error 2
 ```
 
 8. `bool c = false; if (c) cout << "Success!\n"; else cout << "Fail!\n";`
+
+Running this code fragment results in the output:
+
+```
+Fail!
+Please enter a character to exit
+e
+
+Process finished with exit code 0
+```
+
+To print out `"Success!"` the `bool` `c` needs to be `true`.
+
 9. `string s = "ape"; boo c = "fool"<s; if (c) cout << "Success!\n";`
 10. `string s = "ape"; if (s=="fool") cout << "Success!\n";`
 11. `string s = "ape"; if (s=="fool") cout < "Success!\n";`

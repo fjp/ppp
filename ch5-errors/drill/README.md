@@ -117,6 +117,35 @@ make[1]: *** [CMakeFiles/Ch5Drill.dir/rule] Error 2
 Wrapping `success` into quotation marks (string) solves the issue.
 
 5. `string res = 7; vector<int> v(10); v[5] = res; cout << "Success!\n";`
+
+This fragment results in a compile-time error, in this case a type error because the `string` `res` cannot be assigned
+to the sixth `vector` element of type `int`.
+
+```
+/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:40:12: error: no viable conversion from 'int' to 'std::__1::string' (aka 'basic_string<char, char_traits<char>, allocator<char> >')
+    string res = 7;
+           ^     ~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string:793:5: note: candidate constructor not viable: no known conversion from 'int' to 'const std::__1::basic_string<char> &' for 1st argument
+    basic_string(const basic_string& __str);
+    ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string:798:5: note: candidate constructor not viable: no known conversion from 'int' to 'std::__1::basic_string<char> &&' for 1st argument
+    basic_string(basic_string&& __str)
+    ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string:811:5: note: candidate constructor template not viable: no known conversion from 'int' to 'const char *' for 1st argument
+    basic_string(const _CharT* __s) {
+    ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string:861:5: note: candidate constructor not viable: no known conversion from 'int' to 'initializer_list<char>' for 1st argument
+    basic_string(initializer_list<_CharT> __il);
+    ^
+1 error generated.
+make[3]: *** [CMakeFiles/Ch5Drill.dir/scaffolding.cpp.o] Error 1
+make[2]: *** [CMakeFiles/Ch5Drill.dir/all] Error 2
+make[1]: *** [CMakeFiles/Ch5Drill.dir/rule] Error 2
+make: *** [Ch5Drill] Error 2
+```
+
+To fix this fragment a type change of the first assignment is required: `string res = 7` to `int res = 7`.
+
 6. `vector<int> v(10); v(5) = 7; if (v(5)!=7) cout << "Success!\n";`
 7. `if (cond) cout << "Success!\n"; else cout << "Fail!\n";`
 8. `bool c = false; if (c) cout << "Success!\n"; else cout << "Fail!\n";`

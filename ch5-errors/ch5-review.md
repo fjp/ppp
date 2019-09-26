@@ -27,6 +27,29 @@ However, assumptions 1 and 2 are included in the definition of basic professiona
 
 4. List three approaches we can take to eliminate errors in programs and produce acceptable software.
 
+Make the program easy to read so that you have a chance of spotting the bugs:
+
+- Comment your code well. That doesn't simply mean "Add a lot of comments." You don't say in English what is better said in code. 
+Rather, you say in the comments — as clearly and briefly as you can — what can't be said clearly in code:
+    - The name of the program
+    - The purpose of the program
+    - Who wrote this code and when
+    - Version numbers
+    - What complicated code fragments are supposed to do
+    - What the general design ideas are
+    - How the source code is organized
+    - What assumptions are made about inputs
+    - What parts of the code are still missing and what cases are still not handled
+- Use meaningful names. 
+That doesn't simply mean “Use long names.”
+- Use a consistent layout of code. 
+Your IDE tries to help, but it can't do everything and you are the one responsible.
+- Break code into small functions, each expressing a logical action. 
+Try to avoid functions longer than a page or two; most functions will be much shorter.
+- Avoid complicated code sequences. Try to avoid nested loops, nested `if`-statements, complicated conditions, etc. 
+Unfortunately, you sometimes need those, but remember that complicated code is where bugs can most easily hide
+- Use library facilities rather than your own code when you can. 
+A library is likely to be better thought out and better tested than what you could produce as an alternative while busily solving your main problem.
 
 5. Why do we hate debugging?
 

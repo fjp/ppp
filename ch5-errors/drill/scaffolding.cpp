@@ -75,14 +75,23 @@ try {
         cout << "Fail!\n";
 
 
-    // Fragment 9 (No error)
+    // Fragment 9 (Compile-time error)
     // string s = "ape"; boo c = "fool"<s; if (c) cout << "Success!\n";
-    // No direct error but to print "Success!" bool c needs to be true;
+    // error: use of undeclared identifier 'boo'; did you mean 'bool'?
     // Fixed
     string s = "ape";
     bool c9 = "fool" < s;
     if (c9)
         cout << "Success!\n";
+
+
+    // Fragment 10 (No error)
+    // string s = "ape"; if (s=="fool") cout << "Success!\n";
+    // No direct error but to print "Success!" string s needs to be "fool";
+    // Fixed
+    string s10 = "fool";
+    if (s10=="fool")
+        cout << "10. Success!\n";
 
     
     keep_window_open();

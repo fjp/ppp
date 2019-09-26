@@ -74,6 +74,16 @@ try {
     else
         cout << "Fail!\n";
 
+
+    // Fragment 9 (No error)
+    // string s = "ape"; boo c = "fool"<s; if (c) cout << "Success!\n";
+    // No direct error but to print "Success!" bool c needs to be true;
+    // Fixed
+    string s = "ape";
+    bool c9 = "fool" < s;
+    if (c9)
+        cout << "Success!\n";
+
     
     keep_window_open();
     return 0;

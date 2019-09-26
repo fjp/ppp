@@ -228,6 +228,25 @@ As suggested by the compiler, changing `boo` to `bool` fixes the error.
 This fragment has a logic error. To print `"Success!\n"` the equal operator `==` needs to be changed to not equal `!=`.
 
 11. `string s = "ape"; if (s=="fool") cout < "Success!\n";`
+
+This fragment has a compile-time error and a logic error:
+
+```
+/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:104:14: warning: result of comparison against a string literal is unspecified (use strncmp instead) [-Wstring-compare]
+        cout < "Success!\n";
+             ^ ~~~~~~~~~~~~
+/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:104:14: error: invalid operands to binary expression ('std::__1::ostream' (aka 'basic_ostream<char>') and 'const char [10]')
+        cout < "Success!\n";
+        ~~~~ ^ ~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/system_error:306:1: note: candidate function not viable: no known conversion from 'std::__1::ostream' (aka 'basic_ostream<char>') to 'const std::__1::error_condition' for 1st argument
+operator<(const error_condition& __x, const error_condition& __y) _NOEXCEPT
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/system_error:383:1: note: candidate function not viable: no known conversion from 'std::__1::ostream' (aka 'basic_ostream<char>') to 'const std::__1::error_code' for 1st argument
+operator<(const error_code& __x, const error_code& __y) _NOEXCEPT
+^
+...
+```
+
 12. `string s = "ape"; if (s+"fool") cout < "Success!\n";`
 13. `vector<char> v(5); for (int i=0; 0<v.size(); ++i) ; cout << "Success!\n";`
 14. `vector<char> v(5); for (int i=0; i<=v.size(); ++i) ; cout << "Success!\n";`

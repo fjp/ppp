@@ -247,6 +247,8 @@ operator<(const error_code& __x, const error_code& __y) _NOEXCEPT
 ...
 ```
 
+To fix the logic error, we need to change the equal operator `==` to not equal `!=`.
+
 12. `string s = "ape"; if (s+"fool") cout < "Success!\n";`
 13. `vector<char> v(5); for (int i=0; 0<v.size(); ++i) ; cout << "Success!\n";`
 14. `vector<char> v(5); for (int i=0; i<=v.size(); ++i) ; cout << "Success!\n";`

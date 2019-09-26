@@ -206,6 +206,31 @@ Process finished with exit code 0
 To print out `"Success!"` the `bool` `c` needs to be `true`.
 
 9. `string s = "ape"; boo c = "fool"<s; if (c) cout << "Success!\n";`
+
+The compile-time error output here is:
+
+```
+/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:83:5: error: use of undeclared identifier 'boo'; did you mean 'bool'?
+    boo c = "fool" < s;
+    ^~~
+    bool
+/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:83:9: error: redefinition of 'c'
+    boo c = "fool" < s;
+        ^
+/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:71:10: note: previous definition is here
+    bool c = true;
+         ^
+2 errors generated.
+make[3]: *** [CMakeFiles/Ch5Drill.dir/scaffolding.cpp.o] Error 1
+make[2]: *** [CMakeFiles/Ch5Drill.dir/all] Error 2
+make[1]: *** [CMakeFiles/Ch5Drill.dir/rule] Error 2
+make: *** [Ch5Drill] Error 2
+```
+
+As suggested by the compiler, changing `boo` to `bool` fixes the error.
+
+
+
 10. `string s = "ape"; if (s=="fool") cout << "Success!\n";`
 11. `string s = "ape"; if (s=="fool") cout < "Success!\n";`
 12. `string s = "ape"; if (s+"fool") cout < "Success!\n";`

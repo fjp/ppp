@@ -223,9 +223,10 @@ make: *** [Ch5Drill] Error 2
 
 As suggested by the compiler, changing `boo` to `bool` fixes the error.
 
-
-
 10. `string s = "ape"; if (s=="fool") cout << "Success!\n";`
+
+This fragment has a logic error. To print `"Success!\n"` the equal operator `==` needs to be changed to not equal `!=`.
+
 11. `string s = "ape"; if (s=="fool") cout < "Success!\n";`
 12. `string s = "ape"; if (s+"fool") cout < "Success!\n";`
 13. `vector<char> v(5); for (int i=0; 0<v.size(); ++i) ; cout << "Success!\n";`

@@ -8,7 +8,7 @@ try {
     // Cout << "Success!\n";
     // error: use of undeclared identifier 'Cout'; did you mean 'cout'?
     // Fixed
-    cout << "Success!\n";
+    cout << "1. Success!\n";
 
 
     // Fragment 2 (Compile-time error)
@@ -16,7 +16,7 @@ try {
     // warning: missing terminating '"' character [-Winvalid-pp-token]
     // error: expected expression
     // Fixed
-    cout << "Success!\n";
+    cout << "2. Success!\n";
 
 
     // Fragment 3 (Compile-time error)
@@ -24,14 +24,14 @@ try {
     // error: expected expression
     // warning: missing terminating '"' character [-Winvalid-pp-token]
     // Fixed
-    cout << "Success" << "!\n";
+    cout << "3. Success" << "!\n";
 
 
     // Fragment 4 (Compile-time error)
     // cout << success << '\n';
     // error: use of undeclared identifier 'success'
     // Fixed
-    cout << "success" << '\n';
+    cout << "4. success" << '\n';
 
     // Fragment 5 (Compile-time error)
     // string res = 7; vector<int> v(10); v[5] = res; cout << "Success!\n";
@@ -40,7 +40,7 @@ try {
     int res = 7;
     vector<int> v5(10);
     v5[5] = res;
-    cout << "Success!\n";
+    cout << "5. Success!\n";
 
 
     // Fragment 6 (Compile-time error)
@@ -50,7 +50,7 @@ try {
     vector<int> v6(10);
     v6[5] = 7;
     if (v6[5]!=7)
-        cout << "Success!\n";
+        cout << "6. Success!\n";
 
 
     // Fragment 7 (Compile-time error)
@@ -59,38 +59,39 @@ try {
     // Fixed
     bool cond {true};
     if (cond)
-        cout << "Success!\n";
+        cout << "7. Success!\n";
     else
         cout << "Fail!\n";
 
 
-    // Fragment 8 (No error)
+    // Fragment 8 (Logical error)
     // bool c = false; if (c) cout << "Success!\n"; else cout << "Fail!\n";
     // No direct error but to print "Success!" bool c needs to be true;
     // Fixed
     bool c = true;
     if (c)
-        cout << "Success!\n";
+        cout << "8. Success!\n";
     else
         cout << "Fail!\n";
 
 
-    // Fragment 9 (Compile-time error)
+    // Fragment 9 (Compile-time error and logic error)
     // string s = "ape"; boo c = "fool"<s; if (c) cout << "Success!\n";
-    // error: use of undeclared identifier 'boo'; did you mean 'bool'?
+    // compile-time error: use of undeclared identifier 'boo'; did you mean 'bool'?
+    // logic error: "fool" is not less than "ape"
     // Fixed
     string s = "ape";
     bool c9 = "fool" < s;
-    if (c9)
-        cout << "Success!\n";
+    if (!c9)
+        cout << "9. Success!\n";
 
 
-    // Fragment 10 (No error)
+    // Fragment 10 (Logic error)
     // string s = "ape"; if (s=="fool") cout << "Success!\n";
-    // No direct error but to print "Success!" string s needs to be "fool";
+    // Logic error: "fool" is not equal to "ape";
     // Fixed
-    string s10 = "fool";
-    if (s10=="fool")
+    string s10 = "ape";
+    if (s10 == "fool")
         cout << "10. Success!\n";
 
     

@@ -27,6 +27,18 @@ However, assumptions 1 and 2 are included in the definition of basic professiona
 
 4. List three approaches we can take to eliminate errors in programs and produce acceptable software.
 
+Basically, we offer three approaches to producing acceptable software:
+- Organize software to minimize errors.
+- Eliminate most of the errors we made through debugging and testing.
+- Make sure the remaining errors are not serious.
+None of these approaches can completely eliminate errors by itself; we have to use all three. 
+
+Experience matters immensely when it comes to producing reliable programs, that is,
+programs that can be relied on to do what they are supposed to do with an acceptable error rate. 
+Please don't forget that the ideal is that our programs always do the right thing. 
+We are usually able only to approximate that ideal, but that's no excuse for not trying very hard.
+
+
 Start thinking about debugging before you write the first line of code. 
 Once you have a lot of code written it's too late to try to simplify debugging. 
 Decide how to report errors: "Use `error()` and catch exception in `main()`" will be your default answer in this book.

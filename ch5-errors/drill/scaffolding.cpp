@@ -94,6 +94,16 @@ try {
     if (s10 == "fool")
         cout << "10. Success!\n";
 
+
+    // Fragment 11 (Compile-time error and logic error)
+    // string s = "ape"; if (s=="fool") cout < "Success!\n";
+    // error: invalid operands to binary expression ('std::__1::ostream' (aka 'basic_ostream<char>') and 'const char [10]')
+    // Logic error: "fool" is not equal to "ape";
+    // Fixed
+    string s11 = "ape";
+    if (s11 != "fool")
+        cout << "11. Success!\n";
+
     
     keep_window_open();
     return 0;

@@ -211,16 +211,10 @@ The compile-time error output here is:
 
 ```
 /Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:83:5: error: use of undeclared identifier 'boo'; did you mean 'bool'?
-    boo c = "fool" < s;
+    boo c9 = "fool" < s;
     ^~~
     bool
-/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:83:9: error: redefinition of 'c'
-    boo c = "fool" < s;
-        ^
-/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:71:10: note: previous definition is here
-    bool c = true;
-         ^
-2 errors generated.
+1 error generated.
 make[3]: *** [CMakeFiles/Ch5Drill.dir/scaffolding.cpp.o] Error 1
 make[2]: *** [CMakeFiles/Ch5Drill.dir/all] Error 2
 make[1]: *** [CMakeFiles/Ch5Drill.dir/rule] Error 2

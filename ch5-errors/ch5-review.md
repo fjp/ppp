@@ -27,6 +27,10 @@ However, assumptions 1 and 2 are included in the definition of basic professiona
 
 4. List three approaches we can take to eliminate errors in programs and produce acceptable software.
 
+Start thinking about debugging before you write the first line of code. 
+Once you have a lot of code written it's too late to try to simplify debugging. 
+Decide how to report errors: "Use `error()` and catch exception in `main()`" will be your default answer in this book.
+
 Make the program easy to read so that you have a chance of spotting the bugs:
 
 - Comment your code well. That doesn't simply mean "Add a lot of comments." You don't say in English what is better said in code. 

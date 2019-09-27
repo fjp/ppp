@@ -129,6 +129,44 @@ string x5 = area(7); // error: wrong return type if area is returning an int. Th
 
 8. What is a linker error? Give three examples.
 
+A program consists of several separately compiled parts, called translation units. Every function
+in a program must be declared with exactly the same type in every translation unit in which it is
+used. We use header files to ensure that; see §8.3. Every function must also be defined exactly
+once in a program. If either of these rules is violated, the linker will give an error. 
+Here is an example of a program that might give a typical linker error:
+
+```cpp
+int area(int length, int width); // calculate area of a rectangle
+int main()
+{
+int x = area(2,3);
+}
+```
+
+Unless we somehow have defined area() in another source file and linked the code generated from that source file to this code, 
+the linker will complain that it didn't find a definition of `area()`.
+
+The definition of `area()` must have exactly the same types (both the return type and the argument types) as we used in our file, 
+that is:
+
+```cpp
+int area(int x, int y) { /* . . . */ } // "our" area()
+```
+
+Functions with the same name but different types will not match and will be ignored:
+
+```cpp
+double area(double x, double y) { /* . . . */ } // not "our" area()
+int area(int x, int y, char unit) { /* . . . */ } // not "our" area()
+```
+
+Note that a misspelled function name doesn't usually give a linker error. Instead, the compiler
+gives an error immediately when it sees a call to an undeclared function. Compile-time
+errors are found earlier than link-time errors and are typically easier to fix.
+The linkage rules for functions, as stated above, also hold for all other entities of a program,
+such as variables and types: there has to be exactly one definition of an entity with a given name,
+but there can be many declarations, and all have to agree exactly on its type. For more details,
+see §8.2–3.
 
 9. What is a logic error? Give three examples.
 

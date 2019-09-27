@@ -170,6 +170,11 @@ see §8.2–3.
 
 9. What is a logic error? Give three examples.
 
+Once we have removed the initial compiler and linker errors, the program runs. 
+Typically, what happens next is that no output is produced or that the output that the program produces is just wrong. 
+This can occur for a number of reasons. Maybe your understanding of the underlying program logic is flawed; 
+maybe you didn't write what you thought you wrote; or maybe you made some "silly error" in one of your if-statements, or whatever. 
+Logic errors are usually the most difficult to find and eliminate, because at this stage the computer does what you asked it to.
 
 10. List four potential sources of program errors discussed in the text.
 

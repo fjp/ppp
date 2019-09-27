@@ -114,6 +114,18 @@ also look at previous lines in the program.
 
 7. What is a type error? Give five examples.
 
+Type errors are mismatches between the types you declared (or forgot to declare) for your variables,
+functions, etc. and the types of values or expressions you assign to them, pass as function
+arguments, etc. For example:
+
+```cpp
+int x0 = arena(7); // error: undeclared function
+int x1 = area(7); // error: wrong number of arguments in case area requires two arguments
+int x2 = area("seven",2); // error: 1st argument has a wrong type
+int x3 = area("seven","three"); // error: both arguments have a wrong type
+int x4 = area(1,"three"); // error: 2nd argument has a wrong type
+string x5 = area(7); // error: wrong return type if area is returning an int. There is no direct conversion from int to string
+```
 
 8. What is a linker error? Give three examples.
 

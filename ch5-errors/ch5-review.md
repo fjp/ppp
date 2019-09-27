@@ -69,6 +69,17 @@ A library is likely to be better thought out and better tested than what you cou
 
 5. Why do we hate debugging?
 
+Debugging works roughly like this:
+    1. Get the program to compile.
+    2. Get the program to link.
+    3. Get the program to do what it is supposed to do.
+Basically, we go through this sequence again and again: hundreds of times, thousands of times,
+again and again for years for really large programs. Each time something doesn't work we have
+to find what caused the problem and fix it. I consider debugging the most tedious and timewasting
+aspect of programming and will go to great lengths during design and programming to
+minimize the amount of time spent hunting for bugs. Others find that hunt thrilling and the
+essence of programming — it can be as addictive as any video game and keep a programmer
+glued to the computer for days and nights (I can vouch for that from personal experience also).
 
 6. What is a syntax error? Give five examples.
 

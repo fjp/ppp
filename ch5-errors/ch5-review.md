@@ -97,6 +97,10 @@ int s1 = area(7; // error: ) missing
 int s2 = area(7) // error: ; missing
 Int s3 = area(7); // error: Int is not a type
 int s4 = area('7); // error: non-terminated character (' missing)
+int s5 = area(7): // error: semicolon missing
+
+string x1 = "5; // error: non-terminated string (" missing)
+vector<int> v(10); v(3) = 2; // error: wrong access operator () instead of []
 ```
 
 Each of those lines has a syntax error; that is, they are not well formed according to the C++ grammar, 

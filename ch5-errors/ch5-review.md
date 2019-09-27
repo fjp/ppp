@@ -92,6 +92,21 @@ glued to the computer for days and nights (I can vouch for that from personal ex
 
 6. What is a syntax error? Give five examples.
 
+```cpp
+int s1 = area(7; // error: ) missing
+int s2 = area(7) // error: ; missing
+Int s3 = area(7); // error: Int is not a type
+int s4 = area('7); // error: non-terminated character (' missing)
+```
+
+Each of those lines has a syntax error; that is, they are not well formed according to the C++ grammar, 
+so the compiler will reject them. Unfortunately, syntax errors are not always easy to report in a way that you, 
+the programmer, find easy to understand. That's because the compiler may have to read a bit further than the error to be 
+sure that there really is an error. The effect of this is that even though syntax errors tend to be completely trivial 
+(you'll often find it hard to believe you have made such a mistake once you find it), 
+the reporting is often cryptic and occasionally refers to a line further on in the program. 
+So, for syntax errors, if you don't see anything wrong with the line the compiler points to, 
+also look at previous lines in the program.
 
 7. What is a type error? Give five examples.
 

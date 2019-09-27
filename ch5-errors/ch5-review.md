@@ -176,6 +176,55 @@ This can occur for a number of reasons. Maybe your understanding of the underlyi
 maybe you didn't write what you thought you wrote; or maybe you made some "silly error" in one of your if-statements, or whatever. 
 Logic errors are usually the most difficult to find and eliminate, because at this stage the computer does what you asked it to.
 
+The following program would output nothing because variable `a` is assigned zero again in the parentheses of the `if`-statement
+instead of using the equal operator `==`.
+
+```cpp
+int a = 0;
+if (a = 0)
+    cout << "a is equal to zero\n";
+```
+
+Another mistake can happen when `<` and `>` are mistakenly swapped. 
+In the following example, the block of the `while`-loop would never be entered. 
+
+```cpp
+// initialize a
+int a = 0;
+while (a > 10)
+{   
+    // ... do something
+    ++a;
+}
+```
+
+The following function tries to find the minimum integer in a vector and return it:
+
+```cpp
+int findMinimum(vector<int> v)
+{
+    int minimum = 0;
+    for (int element : v)
+    {
+        if (element < minimum)
+            minimum = element;
+    }
+    return minimum;
+}
+``` 
+
+Calling this function with a vector that contains only positive numbers results in a wrong return value. 
+At least logically according to what the function was intended to do.
+
+```cpp
+int main()
+{
+    vector<int> v = {1, 5, 6, 1};
+    cout << "Minimum of v is: " << findMinimum(v) << '\n';
+}
+```
+
+
 10. List four potential sources of program errors discussed in the text.
 
 

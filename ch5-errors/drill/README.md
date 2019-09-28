@@ -148,7 +148,8 @@ To fix this fragment a type change of the first assignment is required: `string 
 
 6. `vector<int> v(10); v(5) = 7; if (v(5)!=7) cout << "Success!\n";`
 
-Compiling fragment 6 results in another compile-time error:
+Fragment 6 results in another compile-time error and has also a logic error which can be fixed after correcting the 
+compile-time error. The element at index `5` is equal to `7`.
 
 ```
 /Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:51:5: error: type 'Vector<int>' does not provide a call operator

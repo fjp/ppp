@@ -119,7 +119,6 @@ try {
     // vector<char> v(5); for (int i=0; 0<v.size(); ++i) ; cout << "Success!\n";
     // logic error: semicolon after the condition and control variable of the for statement
     // logic error: 0 is always smaller v.sizer() if vector v contains elements
-    // error: invalid operands to binary expression ('std::__1::ostream' (aka 'basic_ostream<char>') and 'const char [14]')
     // Fixed
     vector<char> v(5);
     for (int i=0; i < v.size(); ++i)
@@ -127,15 +126,22 @@ try {
 
 
 
-    // Fragment 14 (logic errors)
+    // Fragment 14 (logic error)
     // vector<char> v(5); for (int i=0; i<=v.size(); ++i) ; cout << "Success!\n";
     // logic error: semicolon after the condition and control variable of the for statement
-    // error: invalid operands to binary expression ('std::__1::ostream' (aka 'basic_ostream<char>') and 'const char [14]')
     // Fixed
     vector<char> v14(5);
     for (int i=0; i<=v14.size(); ++i)
         cout << "14. Success!\n";
 
+
+    // Fragment 15 (logic error)
+    // string s = "Success!\n"; for (int i=0; i<6; ++i) cout << s[i];
+    // logic error: the magic number six does not completely print "Success!\n".
+    // Fixed
+    string s15 = "15. Success!\n";
+    for (int i=0; i < s15.size(); ++i)
+        cout << s15[i];
     
     keep_window_open();
     return 0;

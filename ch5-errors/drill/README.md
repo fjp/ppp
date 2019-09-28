@@ -312,6 +312,15 @@ Success!
 ```
 
 15. `string s = "Success!\n"; for (int i=0; i<6; ++i) cout << s[i];`
+
+Running this program we don't get the complete `Success!\n` `string`. Instead:
+
+```
+SuccesPlease enter a character to exit
+```
+
+This logic error is fixed when using the `v.size()` instead of the magic number `6` in the condition of the `for`-statement.
+
 16. `if (true) then cout << "Success!\n"; else cout << "Fail!\n";`
 17. `int x = 2000; char c = x; if (c==2000) cout << "Success!\n";`
 18. `string s = "Success!\n"; for (int i=0; i<10; ++i) cout << s[i];`

@@ -43,13 +43,13 @@ try {
     cout << "5. Success!\n";
 
 
-    // Fragment 6 (Compile-time error)
+    // Fragment 6 (Compile-time error and logic error)
     // vector<int> v(10); v(5) = 7; if (v(5)!=7) cout << "Success!\n";
     // error: no viable conversion from 'int' to 'std::__1::string'
     // Fixed
     vector<int> v6(10);
     v6[5] = 7;
-    if (v6[5]!=7)
+    if (v6[5] == 7)
         cout << "6. Success!\n";
 
 

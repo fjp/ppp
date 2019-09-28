@@ -285,7 +285,7 @@ the `<<` (the output operator).
 13. `vector<char> v(5); for (int i=0; 0<v.size(); ++i) ; cout << "Success!\n";`
 
 Output of this fragment is `Success!` but there are two logic errors:
-- The semicolon after the condition of the for statement ends this loop statement and executes the following statement `cout << "Success!\n";`. To fix this the semecolon needs to be removed.
+- The semicolon after the condition and control variable `i` of the for statement ends this loop statement and executes the following statement `cout << "Success!\n";`. To fix this the semecolon needs to be removed.
 - The logical comparison of `0<v.size()` is always true if `vector` `v` contains elements. Here the solution is to use the iterator variable `i` instead of `0`.
 
 After fixing these logic errors, the output is five times `Success!`:
@@ -299,6 +299,18 @@ Success!
 ```
 
 14. `vector<char> v(5); for (int i=0; i<=v.size(); ++i) ; cout << "Success!\n";`
+
+Similar to the previous fragment 13 with one logic error. The semicolon after the condition and control variable `i` of the `for`-statement needs to be removed in order to get the following output:
+
+```
+Success!
+Success!
+Success!
+Success!
+Success!
+Success!
+```
+
 15. `string s = "Success!\n"; for (int i=0; i<6; ++i) cout << s[i];`
 16. `if (true) then cout << "Success!\n"; else cout << "Fail!\n";`
 17. `int x = 2000; char c = x; if (c==2000) cout << "Success!\n";`

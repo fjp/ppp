@@ -104,6 +104,17 @@ try {
     if (s11 != "fool")
         cout << "11. Success!\n";
 
+
+    // Fragment 12 (2 compile-time errors)
+    // string s = "ape"; if (s+"fool") cout < "Success!\n";
+    // error: no viable conversion from 'std::__1::basic_string<char>' to 'bool'
+    // error: invalid operands to binary expression ('std::__1::ostream' (aka 'basic_ostream<char>') and 'const char [14]')
+    // Fixed
+    string s12 = "ape";
+    if (s12 != "fool")
+        cout << "12. Success!\n";
+
+
     
     keep_window_open();
     return 0;

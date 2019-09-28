@@ -250,6 +250,37 @@ operator<(const error_code& __x, const error_code& __y) _NOEXCEPT
 To fix the logic error, we need to change the equal operator `==` to not equal `!=` or compare two `string`s that are equal.
 
 12. `string s = "ape"; if (s+"fool") cout < "Success!\n";`
+
+This fragment results in two compile-time errors:
+
+```
+/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:114:9: error: no viable conversion from 'std::__1::basic_string<char>' to 'bool'
+    if (s12+"fool")
+        ^~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string:869:5: note: candidate function
+    operator __self_view() const _NOEXCEPT { return __self_view(data(), size()); }
+    ^
+/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:115:14: warning: result of comparison against a string literal is unspecified (use strncmp instead) [-Wstring-compare]
+        cout < "12. Success!\n";
+             ^ ~~~~~~~~~~~~~~~~
+/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:115:14: error: invalid operands to binary expression ('std::__1::ostream' (aka 'basic_ostream<char>') and 'const char [14]')
+        cout < "12. Success!\n";
+        ~~~~ ^ ~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/system_error:306:1: note: candidate function not viable: no known conversion from 'std::__1::ostream' (aka 'basic_ostream<char>') to 'const std::__1::error_condition' for 1st argument
+operator<(const error_condition& __x, const error_condition& __y) _NOEXCEPT
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/system_error:383:1: note: candidate function not viable: no known conversion from 'std::__1::ostream' (aka 'basic_ostream<char>') to 'const std::__1::error_code' for 1st argument
+operator<(const error_code& __x, const error_code& __y) _NOEXCEPT
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/utility:594:1: note: candidate template ignored: could not match 'pair' against 'basic_ostream'
+operator< (const pair<_T1,_T2>& __x, const pair<_T1,_T2>& __y)
+^
+...
+```
+
+To fix the first compile-time error we have to replace `+` with `!=` because comparison of a string literal in a condition of an `if`-statement is unspecified. The second error is that we use `<` (the less-than operator) rather than 
+the `<<` (the output operator).  
+
 13. `vector<char> v(5); for (int i=0; 0<v.size(); ++i) ; cout << "Success!\n";`
 14. `vector<char> v(5); for (int i=0; i<=v.size(); ++i) ; cout << "Success!\n";`
 15. `string s = "Success!\n"; for (int i=0; i<6; ++i) cout << s[i];`

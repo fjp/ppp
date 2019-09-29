@@ -344,6 +344,13 @@ The compiler assumes that `then` is a type and `cout` a variable name, which is 
 To fix this fragment, we only have to remove `then` which is sometimes used in other languages.
 
 17. `int x = 2000; char c = x; if (c==2000) cout << "Success!\n";`
+
+This fragment compiles and runs but gives no output because of a narrowing error.
+The conversion from an `int` that is too large to fit into a `char` (`2000` in this case) leads to 
+a different `char` value and therefore `false` in the condition of the `if`-statement, when comparing 
+the literal `2000` to the `char` `c`. To fix this error `c` needs to be of type `int` instead of `char`.
+
+
 18. `string s = "Success!\n"; for (int i=0; i<10; ++i) cout << s[i];`
 19. `vector v(5); for (int i=0; i<=v.size(); ++i) ; cout << "Success!\n";`
 20. `int i=0; int j = 9; while (i<10) ++j; if (j<i) cout << "Success!\n";`

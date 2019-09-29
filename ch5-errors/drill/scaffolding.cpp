@@ -4,14 +4,14 @@ int main()
 try {
     //<<your code here>>
 
-    // Fragment 1 (Compile-time error)
+    // Fragment 1 (compile-time error)
     // Cout << "Success!\n";
     // error: use of undeclared identifier 'Cout'; did you mean 'cout'?
     // Fixed
     cout << "1. Success!\n";
 
 
-    // Fragment 2 (Compile-time error)
+    // Fragment 2 (compile-time error)
     // cout << "Success!\n;
     // warning: missing terminating '"' character [-Winvalid-pp-token]
     // error: expected expression
@@ -19,7 +19,7 @@ try {
     cout << "2. Success!\n";
 
 
-    // Fragment 3 (Compile-time error)
+    // Fragment 3 (compile-time error)
     // cout << "Success" << !\n"
     // error: expected expression
     // warning: missing terminating '"' character [-Winvalid-pp-token]
@@ -27,13 +27,13 @@ try {
     cout << "3. Success" << "!\n";
 
 
-    // Fragment 4 (Compile-time error)
+    // Fragment 4 (compile-time error)
     // cout << success << '\n';
     // error: use of undeclared identifier 'success'
     // Fixed
     cout << "4. success" << '\n';
 
-    // Fragment 5 (Compile-time error)
+    // Fragment 5 (compile-time error)
     // string res = 7; vector<int> v(10); v[5] = res; cout << "Success!\n";
     // error: no viable conversion from 'int' to 'std::__1::string'
     // Fixed
@@ -43,7 +43,7 @@ try {
     cout << "5. Success!\n";
 
 
-    // Fragment 6 (Compile-time error and logic error)
+    // Fragment 6 (compile-time error and logic error)
     // vector<int> v(10); v(5) = 7; if (v(5)!=7) cout << "Success!\n";
     // error: no viable conversion from 'int' to 'std::__1::string'
     // Fixed
@@ -53,7 +53,7 @@ try {
         cout << "6. Success!\n";
 
 
-    // Fragment 7 (Compile-time error)
+    // Fragment 7 (compile-time error)
     // if (cond) cout << "Success!\n"; else cout << "Fail!\n";
     // error: use of undeclared identifier 'cond';
     // Fixed
@@ -64,7 +64,7 @@ try {
         cout << "Fail!\n";
 
 
-    // Fragment 8 (Logical error)
+    // Fragment 8 (logical error)
     // bool c = false; if (c) cout << "Success!\n"; else cout << "Fail!\n";
     // No direct error but to print "Success!" bool c needs to be true;
     // Fixed
@@ -75,7 +75,7 @@ try {
         cout << "Fail!\n";
 
 
-    // Fragment 9 (Compile-time error and logic error)
+    // Fragment 9 (compile-time error and logic error)
     // string s = "ape"; boo c = "fool"<s; if (c) cout << "Success!\n";
     // compile-time error: use of undeclared identifier 'boo'; did you mean 'bool'?
     // logic error: "fool" is not less than "ape"
@@ -86,7 +86,7 @@ try {
         cout << "9. Success!\n";
 
 
-    // Fragment 10 (Logic error)
+    // Fragment 10 (logic error)
     // string s = "ape"; if (s=="fool") cout << "Success!\n";
     // Logic error: "fool" is not equal to "ape";
     // Fixed
@@ -95,7 +95,7 @@ try {
         cout << "10. Success!\n";
 
 
-    // Fragment 11 (Compile-time error and logic error)
+    // Fragment 11 (compile-time error and logic error)
     // string s = "ape"; if (s=="fool") cout < "Success!\n";
     // error: invalid operands to binary expression ('std::__1::ostream' (aka 'basic_ostream<char>') and 'const char [10]')
     // Logic error: "fool" is not equal to "ape";
@@ -142,6 +142,19 @@ try {
     string s15 = "15. Success!\n";
     for (int i=0; i < s15.size(); ++i)
         cout << s15[i];
+
+
+
+    // Fragment 16 (compile-time error)
+    // if (true) then cout << "Success!\n"; else cout << "Fail!\n";
+    // error: unknown type name 'then'
+    // Fixed
+    if (true)
+        cout << "16. Success!\n";
+    else
+        cout << "Fail!\n";
+
+
     
     keep_window_open();
     return 0;

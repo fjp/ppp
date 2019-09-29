@@ -322,6 +322,27 @@ SuccesPlease enter a character to exit
 This logic error is fixed when using the `v.size()` instead of the magic number `6` in the condition of the `for`-statement.
 
 16. `if (true) then cout << "Success!\n"; else cout << "Fail!\n";`
+
+This results in two compile-time errors:
+
+```
+/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:152:15: error: unknown type name 'then'
+    if (true) then 
+              ^
+/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:153:13: error: expected ';' at end of declaration
+        cout << "16. Success!\n";
+            ^
+            ;
+2 errors generated.
+make[3]: *** [CMakeFiles/Ch5Drill.dir/scaffolding.cpp.o] Error 1
+make[2]: *** [CMakeFiles/Ch5Drill.dir/all] Error 2
+make[1]: *** [CMakeFiles/Ch5Drill.dir/rule] Error 2
+make: *** [Ch5Drill] Error 2
+```
+
+The compiler assumes that `then` is a type and `cout` a variable name, which is why the compiler expects a `;` after `cout`.
+To fix this fragment, we only have to remove `then` which is sometimes used in other languages.
+
 17. `int x = 2000; char c = x; if (c==2000) cout << "Success!\n";`
 18. `string s = "Success!\n"; for (int i=0; i<10; ++i) cout << s[i];`
 19. `vector v(5); for (int i=0; i<=v.size(); ++i) ; cout << "Success!\n";`

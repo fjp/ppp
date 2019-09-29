@@ -155,6 +155,17 @@ try {
         cout << "Fail!\n";
 
 
+
+    // Fragment 17 (narrowing error)
+    // int x = 2000; char c = x; if (c==2000) cout << "Success!\n";
+    // narrowing error: conversion from an int that is too large to fit into a char leads
+    // to false in the condition of the if-statement
+    // Fixed
+    int x17 = 2000;
+    int c17 = x17;
+    if (c17 == 2000)
+        cout << "17. Success!\n";
+
     
     keep_window_open();
     return 0;

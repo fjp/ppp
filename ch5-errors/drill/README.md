@@ -352,6 +352,12 @@ the literal `2000` to the `char` `c`. To fix this error `c` needs to be of type 
 
 
 18. `string s = "Success!\n"; for (int i=0; i<10; ++i) cout << s[i];`
+
+Executing this fragment can lead to a runtime error or in a strange output becaues with the magic number 10 in the 
+conditon check of the `for`-statement we output too many characters of the `string` `Success!\n` which has 9 characters.
+
+To fix this fragment, the `size()` operator of `string` should be used.
+
 19. `vector v(5); for (int i=0; i<=v.size(); ++i) ; cout << "Success!\n";`
 20. `int i=0; int j = 9; while (i<10) ++j; if (j<i) cout << "Success!\n";`
 21. `int x = 2; double d = 5/(x–2); if (d==2*x+0.5) cout << "Success!\n";`

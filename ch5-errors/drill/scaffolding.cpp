@@ -169,12 +169,22 @@ try {
 
     // Fragment 18 (logic error)
     // string s = "Success!\n"; for (int i=0; i<10; ++i) cout << s[i];
-    // logic error: string "Success!\n" has size 9 instead of the magic number 10.
+    // logic error: string "Success!\n" has size 9 instead of the magic number 10
     // Fixed
     string s18 = "18. Success!\n";
     for (int i=0; i < s18.size(); ++i)
         cout << s18[i];
 
+
+
+    // Fragment 19 (compile-time error and logic error)
+    // vector v(5); for (int i=0; i<=v.size(); ++i) ; cout << "Success!\n";
+    // error: no viable constructor or deduction guide for deduction of template arguments of 'Vector'
+    // logic error: semicolon after the condition and control variable of the for statement
+    // Fixed
+    vector<int> v19(5);
+    for (int i=0; i<=v19.size(); ++i)
+        cout << "19. Success!\n";
     
     keep_window_open();
     return 0;

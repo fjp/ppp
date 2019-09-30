@@ -359,6 +359,38 @@ conditon check of the `for`-statement we output too many characters of the `stri
 To fix this fragment, the `size()` operator of `string` should be used.
 
 19. `vector v(5); for (int i=0; i<=v.size(); ++i) ; cout << "Success!\n";`
+
+Trying to compile this fragment results in the following compile-time error:
+
+```
+/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:184:12: error: no viable constructor or deduction guide for deduction of template arguments of 'Vector'
+    vector v(5); 
+           ^
+/Users/fjp/git/ppp/PPP2code/std_lib_facilities.h:70:27: note: candidate template ignored: could not match 'Vector<T>' against 'int'
+template< class T> struct Vector : public std::vector<T> {
+                          ^
+/Users/fjp/git/ppp/PPP2code/std_lib_facilities.h:70:27: note: candidate function template not viable: requires 0 arguments, but 1 was provided
+1 error generated.
+make[3]: *** [CMakeFiles/Ch5Drill.dir/scaffolding.cpp.o] Error 1
+make[2]: *** [CMakeFiles/Ch5Drill.dir/all] Error 2
+make[1]: *** [CMakeFiles/Ch5Drill.dir/rule] Error 2
+make: *** [Ch5Drill] Error 2
+```
+
+`vector` requires a template argument, which describes its underlying type used. In this case `int` is missing: `vector<int>`.
+The fragment contains also a logic error. The semicolon after the control variable and the condition of the `for`-statement needs to be removed.
+
+After fixing those errors the output is:
+
+```
+Success!
+Success!
+Success!
+Success!
+Success!
+Success!
+```
+
 20. `int i=0; int j = 9; while (i<10) ++j; if (j<i) cout << "Success!\n";`
 21. `int x = 2; double d = 5/(x–2); if (d==2*x+0.5) cout << "Success!\n";`
 22. `string<char> s = "Success!\n"; for (int i=0; i<=10; ++i) cout << s[i];`

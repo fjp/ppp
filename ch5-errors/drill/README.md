@@ -392,6 +392,11 @@ Success!
 ```
 
 20. `int i=0; int j = 9; while (i<10) ++j; if (j<i) cout << "Success!\n";`
+
+The fragment contains an endless loop because of a logic error. Instead of `j` being incremented inside the block of
+the `while`-statement, `i`, the control variable should be incremented. Fixing this logic error results in the 
+desired output `Success!`.
+
 21. `int x = 2; double d = 5/(x–2); if (d==2*x+0.5) cout << "Success!\n";`
 22. `string<char> s = "Success!\n"; for (int i=0; i<=10; ++i) cout << s[i];`
 23. `int i=0; while (i<10) ++j; if (j<i) cout << "Success!\n";`

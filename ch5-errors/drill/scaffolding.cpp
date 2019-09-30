@@ -166,6 +166,15 @@ try {
     if (c17 == 2000)
         cout << "17. Success!\n";
 
+
+    // Fragment 18 (logic error)
+    // string s = "Success!\n"; for (int i=0; i<10; ++i) cout << s[i];
+    // logic error: string "Success!\n" has size 9 instead of the magic number 10.
+    // Fixed
+    string s18 = "18. Success!\n";
+    for (int i=0; i < s18.size(); ++i)
+        cout << s18[i];
+
     
     keep_window_open();
     return 0;

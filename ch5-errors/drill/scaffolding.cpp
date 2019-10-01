@@ -185,6 +185,37 @@ try {
     vector<int> v19(5);
     for (int i=0; i<=v19.size(); ++i)
         cout << "19. Success!\n";
+
+
+    // Fragment 20 (logic error)
+    // vector v(5); for (int i=0; i<=v.size(); ++i) ; cout << "Success!\n";
+    // logic error: endless while loop because instead of j being incremented inside the block of the while loop,
+    // i should be incremented.
+    // Fixed
+    int i=0;
+    int j = 9;
+    while (i<10)
+        ++i;
+    if (j<i)
+        cout << "20. Success!\n";
+
+
+    // Fragment 21 (run-time error, narrowing error and logic error)
+    // int x = 2; double d = 5/(x–2); if (d==2*x+0.5) cout << "Success!\n";
+    // run-time error: the line double d = 5/(x-2) should result in a run-time error because we divide by zero.
+    // However, on mac osx the value inf is assigned to d.
+    // narrowing error: to get a double from this statement, the constants need to be floating-point precision numbers:
+    // double d = 5.0/(x–2)
+    // To get Success! printed the condition of the `if`-statement needs to be true which can be achieved the following way.
+    // Although this is a quadratic equation it is not possible to enter the value for x percise enough so that the
+    // equality check evaulates to true.
+    // Fixed
+    int x21 = 2;
+    double d = 5.0/x21 + 2;
+    //cout << "d: " << d << '\n';
+    //cout << "2*x+0.5: " << 2*x21+0.5 << '\n';
+    if (d==2*x21+0.5)
+        cout << "21. Success!\n";
     
     keep_window_open();
     return 0;

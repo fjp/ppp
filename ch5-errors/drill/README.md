@@ -398,6 +398,12 @@ the `while`-statement, `i`, the control variable should be incremented. Fixing t
 desired output `Success!`.
 
 21. `int x = 2; double d = 5/(x–2); if (d==2*x+0.5) cout << "Success!\n";`
+
+This fragment contains multiple errors. Because `int x = 2` we would divide by zero in the next statement: `double d = 5/(x-2)`. However, on mac osx `d` results in `inf`. To fix this we have to use either a different value for `x` or use another
+equation for `d`. This is a quadratic equation that has the solutions: `x1 = 7/8 + sqrt(241)/8` and `x2 = 7/8 - sqrt(241)/8` (https://www.wolframalpha.com/input/?i=4*x%5E2+-+7*x+-+12+%3D+0). However, to get the equality check condition of the `if`-statement evaluate to true, we would have to use epsilon (small value) and work with something like `abs(d - 2*x+0.5) < eps`. Because `abs` was not introduced, I changed the line `double d = 5/(x-2)` to `double d = 5.0/x + 2.0`. 
+Using floating-point precision in this equation also solves the narrowing error which was another error. 
+
+
 22. `string<char> s = "Success!\n"; for (int i=0; i<=10; ++i) cout << s[i];`
 23. `int i=0; while (i<10) ++j; if (j<i) cout << "Success!\n";`
 24. `int x = 4; double d = 5/(x–2); if (d=2*x+0.5) cout << "Success!\n";`

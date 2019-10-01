@@ -216,6 +216,20 @@ try {
     //cout << "2*x+0.5: " << 2*x21+0.5 << '\n';
     if (d==2*x21+0.5)
         cout << "21. Success!\n";
+
+
+
+    // Fragment 22 (compile-time error and run-time error)
+    // string<char> s = "Success!\n"; for (int i=0; i<=10; ++i) cout << s[i];
+    // error: error: expected unqualified-id string<char> s = "Success!\n"; for (int i=0; i<=10; ++i) cout << s[i];
+    // run-time error: instead of the magic number 10 in the condition of the for loop the size of string s should be used.
+    // Otherwise characters outside of string s are read which can lead to a run-time error.
+    // Another problem is the less than equal check in the condition of the for loop. This need to be less than check.
+    // Fixed
+    string s22 = "22. Success!\n";
+    for (int i=0; i< s22.size(); ++i)
+        cout << s22[i];
+
     
     keep_window_open();
     return 0;

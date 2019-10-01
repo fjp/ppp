@@ -221,7 +221,7 @@ try {
 
     // Fragment 22 (compile-time error and run-time error)
     // string<char> s = "Success!\n"; for (int i=0; i<=10; ++i) cout << s[i];
-    // error: error: expected unqualified-id string<char> s = "Success!\n"; for (int i=0; i<=10; ++i) cout << s[i];
+    // error: expected unqualified-id string<char> s = "Success!\n"; for (int i=0; i<=10; ++i) cout << s[i];
     // run-time error: instead of the magic number 10 in the condition of the for loop the size of string s should be used.
     // Otherwise characters outside of string s are read which can lead to a run-time error.
     // Another problem is the less than equal check in the condition of the for loop. This need to be less than check.
@@ -230,6 +230,18 @@ try {
     for (int i=0; i< s22.size(); ++i)
         cout << s22[i];
 
+
+
+    // Fragment 23 (2 compile-time errors and logic error)
+    // int i=0; while (i<10) ++j; if (j<i) cout << "Success!\n";
+    // error: use of undeclared identifier 'j23'; did you mean 'i23'?
+    // Fixed
+    int j23 = 0;
+    int i23 = 0;
+    while (i23 < 10)
+        ++i23;
+    if (j23<i)
+        cout << "23. Success!\n";
     
     keep_window_open();
     return 0;

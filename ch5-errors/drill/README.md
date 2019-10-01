@@ -405,6 +405,22 @@ Using floating-point precision in this equation also solves the narrowing error 
 
 
 22. `string<char> s = "Success!\n"; for (int i=0; i<=10; ++i) cout << s[i];`
+
+Compile-time error output of this fragment is:
+
+```
+/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:227:11: error: expected unqualified-id
+    string<char> s = "Success!\n"; for (int i=0; i<=10; ++i) cout << s[i];
+          ^
+1 error generated.
+make[3]: *** [CMakeFiles/Ch5Drill.dir/scaffolding.cpp.o] Error 1
+make[2]: *** [CMakeFiles/Ch5Drill.dir/all] Error 2
+make[1]: *** [CMakeFiles/Ch5Drill.dir/rule] Error 2
+make: *** [Ch5Drill] Error 2
+```
+
+After fixing the compile-time error by removing the wrong template argument `<char>` the fragment outputs to many characters of the `string` `Success!\n` which has length 9 instead of 10. To fix this we should use the `size()` of the `string` instead of the magic number 9 inside the condition of the `for`-statement. 
+
 23. `int i=0; while (i<10) ++j; if (j<i) cout << "Success!\n";`
 24. `int x = 4; double d = 5/(x–2); if (d=2*x+0.5) cout << "Success!\n";`
 25. `cin << "Success!\n";`

@@ -423,6 +423,35 @@ After fixing the compile-time error by removing the wrong template argument `<ch
 Another problem is the less than equal `<=` check in the condition of the for loop. This needs to be a check using less than `<` because C++ uses zero based indices.
 
 23. `int i=0; while (i<10) ++j; if (j<i) cout << "Success!\n";`
+
+Output of this fragment results in two compile-time errors:
+
+```
+/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:244:11: error: use of undeclared identifier 'j'; did you mean 'i'?
+        ++j;
+          ^~~
+          i
+/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:242:9: note: 'i' declared here
+    int i = 0;
+        ^
+/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:242:9: error: use of undeclared identifier 'j'; did you mean 'i'?
+    if (j<i)
+        ^~~
+        i
+/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:239:9: note: 'i' declared here
+    int i = 0;
+        ^
+2 errors generated.
+make[3]: *** [CMakeFiles/Ch5Drill.dir/scaffolding.cpp.o] Error 1
+make[2]: *** [CMakeFiles/Ch5Drill.dir/all] Error 2
+make[1]: *** [CMakeFiles/Ch5Drill.dir/rule] Error 2
+make: *** [Ch5Drill] Error 2
+```
+
+After defining `j` the result is an endless loop because of a logic error inside the block of the `while`-statement. Fixing this logic error by incrementing `i` instead of `j` the output is: `Sucess!\n`.
+
+
+
 24. `int x = 4; double d = 5/(x–2); if (d=2*x+0.5) cout << "Success!\n";`
 25. `cin << "Success!\n";`
 

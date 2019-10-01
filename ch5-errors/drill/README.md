@@ -420,6 +420,7 @@ make: *** [Ch5Drill] Error 2
 ```
 
 After fixing the compile-time error by removing the wrong template argument `<char>` the fragment outputs to many characters of the `string` `Success!\n` which has length 9 instead of 10. To fix this we should use the `size()` of the `string` instead of the magic number 9 inside the condition of the `for`-statement. 
+Another problem is the less than equal `<=` check in the condition of the for loop. This needs to be a check using less than `<` because C++ uses zero based indices.
 
 23. `int i=0; while (i<10) ++j; if (j<i) cout << "Success!\n";`
 24. `int x = 4; double d = 5/(x–2); if (d=2*x+0.5) cout << "Success!\n";`

@@ -253,6 +253,13 @@ try {
     double d23 = 5.0/x23 + 2;
     if (d23==2*x23+0.5)
         cout << "24. Success!\n";
+
+
+    // Fragment 25 (logic error)
+    // cin << "Success!\n";
+    // error: invalid operands to binary expression ('std::__1::istream' (aka 'basic_istream<char>') and 'const char [10]') cin << "Success!\n";
+    // Fixed
+    cout << "25. Success!\n";
     
     keep_window_open();
     return 0;

@@ -245,14 +245,14 @@ try {
 
 
 
-    // Fragment 23 (logic error)
+    // Fragment 24 (logic error)
     // int x = 4; double d = 5/(x-2); if (d=2*x+0.5) cout << "Success!\n";
     // logic error: works at first try but only because the condition of the if statement is an assignment, which is probably wrong
     // Fixed
-    int x23 = 4;
+    int x23 = 2;
     double d23 = 5.0/x23 + 2;
-    if (d==2*x23+0.5)
-        cout << "23. Success!\n";
+    if (d23==2*x23+0.5)
+        cout << "24. Success!\n";
     
     keep_window_open();
     return 0;

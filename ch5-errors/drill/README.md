@@ -460,3 +460,22 @@ which is probably wrong. After changing this to an equality `==` check, it is th
 
 25. `cin << "Success!\n";`
 
+This fragment ends in a compile-time error output and the compiler output of this is:
+
+```
+/Users/fjp/git/ppp/ch5-errors/drill/scaffolding.cpp:259:9: error: invalid operands to binary expression ('std::__1::istream' (aka 'basic_istream<char>') and 'const char [10]')
+    cin << "Success!\n";
+    ~~~ ^  ~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/type_traits:4830:3: note: candidate function template not viable: no known conversion from 'std::__1::istream' (aka 'basic_istream<char>') to 'std::byte' for 1st argument
+  operator<< (byte  __lhs, _Integer __shift) noexcept
+  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/ostream:748:1: note: candidate template ignored: could not match 'basic_ostream' against 'basic_istream'
+operator<<(basic_ostream<_CharT, _Traits>& __os, _CharT __c)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/ostream:755:1: note: candidate template ignored: could not match 'basic_ostream' against 'basic_istream'
+operator<<(basic_ostream<_CharT, _Traits>& __os, char __cn)
+^
+...
+```
+
+The compiler thinks we try to compare `cin` against `string` `"Success!\n"` using the less than operator `<` and finds that the operands are invalid. To fix this logic error, we have to use `cout` instead of `cin`.  

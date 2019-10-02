@@ -452,6 +452,11 @@ After defining `j` the result is an endless loop because of a logic error inside
 
 
 
-24. `int x = 4; double d = 5/(x–2); if (d=2*x+0.5) cout << "Success!\n";`
+24. `int x = 4; double d = 5/(x-2); if (d=2*x+0.5) cout << "Success!\n";`
+
+This fragment works at first try but only because the condition of the `if`-statement is an assignment, 
+which is probably wrong. After changing this to an equality `==` check, it is the same as fragment 21.
+
+
 25. `cin << "Success!\n";`
 

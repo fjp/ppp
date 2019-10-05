@@ -244,6 +244,25 @@ No program is complete until we have considered all of these potential sources o
 
 11. How do you know if a result is plausible? What techniques do you have to answer such questions?
 
+The point is that
+unless we have some idea of what a correct answer will be like — even ever so
+approximately — we don’t have a clue whether our result is reasonable. Always
+ask yourself this question:
+    1. Is this answer to this particular problem plausible?
+You should also ask the more general (and often far harder) question:
+    2. How would I recognize a plausible result?
+    
+Here, we are not asking, “What’s the exact answer?” or “What’s the correct
+answer?” That’s what we are writing the program to tell us. All we want is to
+know that the answer is not ridiculous. Only when we know that we have a
+plausible answer does it make sense to proceed with further work.
+Estimation is a noble art that combines common sense and some very simple
+arithmetic applied to a few facts. Some people are good at doing estimates in
+their heads, but we prefer scribbles “on the back of an envelope” because we
+find we get confused less often that way. What we call estimation here is an
+informal set of techniques that are sometimes (humorously) called guesstimation
+because they combine a bit of guessing with a bit of calculation.
+
 
 12. Compare and contrast having the caller of a function handle a run-time error vs. the called function's handling 
 the run-time error.

@@ -293,7 +293,23 @@ each other, passing information along more or less unchanged.
 So what should you do? Check your arguments in a function unless you have a
 good reason not to.
 
-13. Why is using exceptions a better idea than returning an “error value”?
+We can have the called function do the detailed checking, while letting
+each caller handle the error as desired. This approach seems like it could work,
+but it has a couple of problems that make it unusable in many cases:
+- Now both the called function and all callers must test. The caller has only
+a simple test to do but must still write that test and decide what to do if it
+fails.
+- A caller can forget to test. That can lead to unpredictable behavior further
+along in the program.
+- Many functions do not have an "extra" return value that they can use to
+indicate an error. For example, a function that reads an integer from input
+(such as `cin`'s operator `>>`) can obviously return any int value, so there is
+no int that it could return to indicate failure.
+The second case above — a caller forgetting to test — can easily lead to
+surprises.
+
+13. Why is using exceptions a better idea than returning an "error value"?
+
 
 
 14. How do you test if an input operation succeeded?

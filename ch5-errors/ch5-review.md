@@ -310,7 +310,18 @@ surprises.
 
 13. Why is using exceptions a better idea than returning an "error value"?
 
+The fundamental idea is to separate detection of an
+error (which should be done in a called function) from the handling of an error
+(which should be done in the calling function) while ensuring that a detected
+error cannot be ignored;
 
+The basic idea is that if a function finds an error that it cannot handle, it does
+not `return` normally; instead, it `throw`s an exception indicating what went
+wrong. Any direct or indirect caller can `catch` the exception, that is, specify
+what to do if the called code used `throw`. A function expresses interest in
+exceptions by using a `try`-block (as described in the following subsections)
+listing the kinds of exceptions it wants to handle in the `catch` parts of the `try`-block.
+If no caller catches an exception, the program terminates.
 
 14. How do you test if an input operation succeeded?
 

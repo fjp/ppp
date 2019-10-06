@@ -267,6 +267,31 @@ because they combine a bit of guessing with a bit of calculation.
 12. Compare and contrast having the caller of a function handle a run-time error vs. the called function's handling 
 the run-time error.
 
+Checking arguments in the function seems so simple, so why don't people do
+that always? Inattention to error handling is one answer, sloppiness is another,
+but there are also respectable reasons:
+- We can't modify the function definition: The function is in a library that for
+some reason can’t be changed. Maybe it’s used by others who don’t share
+your notions of what constitutes good error handling. Maybe it’s owned by
+someone else and you don’t have the source code. Maybe it’s in a library
+where new versions come regularly so that if you made a change, you’d
+have to change it again for each new release of the library.
+- The called function doesn't know what to do in case of error: This is
+typically the case for library functions. The library writer can detect the
+error, but only you know what is to be done when an error occurs.
+- The called function doesn't know where it was called from: When you get
+an error message, it tells you that something is wrong, but not how the
+executing program got to that point. Sometimes, you want an error
+message to be more specific.
+- Performance: For a small function the cost of a check can be more than
+the cost of calculating the result. For example, that’s the case with area(),
+where the check also more than doubles the size of the function (that is, the
+number of machine instructions that need to be executed, not just the
+length of the source code). For some programs, that can be critical,
+especially if the same information is checked repeatedly as functions call
+each other, passing information along more or less unchanged.
+So what should you do? Check your arguments in a function unless you have a
+good reason not to.
 
 13. Why is using exceptions a better idea than returning an “error value”?
 

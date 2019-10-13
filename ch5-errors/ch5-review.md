@@ -357,10 +357,10 @@ Any direct or indirect caller can `catch` the exception, that is, specify what t
 A function expresses interest in exceptions by using a `try`-block listing the kinds of exceptions it wants to handle 
 in the `catch` parts of the `try`-block. If no caller catches an exception, the program terminates.
 
-16. Why, with a vector called v, is v[v.size()] a range error? What would be the result of calling this?
+16. Why, with a `vector` called `v`, is `v[v.size()]` a range error? What would be the result of calling this?
 
 
-17. Define pre-condition and post-condition; give an example (that is not the area() function from this chapter), 
+17. Define pre-condition and post-condition; give an example (that is not the `area()` function from this chapter), 
 preferably a computation that requires a loop.
 
 

@@ -325,6 +325,29 @@ If no caller catches an exception, the program terminates.
 
 14. How do you test if an input operation succeeded?
 
+Once bad input is detected, it is dealt with using the same techniques and language features as argument errors and 
+range errors. Here, we’ll just show how you can tell if your input operations succeeded. 
+Consider reading a floatingpoint number:
+
+```cpp
+double d = 0;
+cin >> d;
+```
+
+We can test if the last input operation succeeded by testing `cin`:
+
+```cpp
+if (cin) {
+// all is well, and we can try reading again
+}
+else {
+// the last read didn’t succeed, so we take some other action
+}
+```
+
+There are several possible reasons for that input operation's failure. 
+The one that should concern you right now is that there wasn't a double for `>>` to read.
+
 
 15. Describe the process of how exceptions are thrown and caught.
 

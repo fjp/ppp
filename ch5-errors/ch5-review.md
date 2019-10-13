@@ -351,6 +351,11 @@ The one that should concern you right now is that there wasn't a double for `>>`
 
 15. Describe the process of how exceptions are thrown and caught.
 
+The basic idea is that if a function finds an error that it cannot handle, it does not `return` normally; 
+instead, it `throw`s an exception indicating what went wrong. 
+Any direct or indirect caller can `catch` the exception, that is, specify what to do if the called code used `throw`. 
+A function expresses interest in exceptions by using a `try`-block listing the kinds of exceptions it wants to handle 
+in the `catch` parts of the `try`-block. If no caller catches an exception, the program terminates.
 
 16. Why, with a vector called v, is v[v.size()] a range error? What would be the result of calling this?
 

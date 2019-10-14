@@ -359,12 +359,18 @@ in the `catch` parts of the `try`-block. If no caller catches an exception, the 
 
 16. Why, with a `vector` called `v`, is `v[v.size()]` a range error? What would be the result of calling this?
 
+The `size()` method of a `vector` returns the number of elements in that `vector`. C++ uses [zero-based numbering](https://en.wikipedia.org/wiki/Zero-based_numbering) which means that the first index of a `vector` or array is zero.
+The last element is indexed using `v.size()-1`. 
+
+Accessing `v[v.size()]` results in a range error because we try to access memory that we aren't allowed to read or write. It lies outside the allocated memory of the `vector` `v`.
 
 17. Define pre-condition and post-condition; give an example (that is not the `area()` function from this chapter), 
 preferably a computation that requires a loop.
 
 
 18. When would you not test a pre-condition?
+
+
 
 
 19. When would you not test a post-condition?

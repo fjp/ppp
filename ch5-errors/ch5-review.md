@@ -367,6 +367,33 @@ Accessing `v[v.size()]` results in a range error because we try to access memory
 17. Define pre-condition and post-condition; give an example (that is not the `area()` function from this chapter), 
 preferably a computation that requires a loop.
 
+To deal with bad arguments to a function, the call of a function is basically the best point 
+to think about correct code and to catch errors: this is where a logically separate computation starts
+(and ends on the return).
+
+A requirement of a function upon its argument is often called a pre-condition: 
+it must be true for the function to perform its action correctly.
+
+The following example shows a function that uses a pre-condition to check if the argument is positive,
+which is documented after the function signature.
+
+
+```
+double positive_sqrt(double a)
+// the argument is positive
+{
+    if (!(0<a)) // ! means "not"
+        error("bad arguments for positive_sqrt");
+
+    return sqrt(a);
+}
+```
+
+This example checks for bad arguments and reports them by throwing the string `bad arguments for positive_sqrt`
+Another way to deal with bad arguments would be to ignore it and hope/assume that all callers give correct arguments.
+
+With post-conditions we can check the return value, which is useful because we know the type that is returned from a function.
+
 
 18. When would you not test a pre-condition?
 

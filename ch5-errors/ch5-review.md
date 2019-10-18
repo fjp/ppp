@@ -380,7 +380,7 @@ which is documented after the function signature.
 
 ```
 double positive_sqrt(double a)
-// the argument is positive
+// check that the argument is positive
 {
     if (!(0<a)) // ! means "not"
         error("bad arguments for positive_sqrt");
@@ -394,6 +394,18 @@ Another way to deal with bad arguments would be to ignore it and hope/assume tha
 
 With post-conditions we can check the return value, which is useful because we know the type that is returned from a function.
 
+```
+double rectangle_circumference(double height, double width)
+// check that the arguments are positive
+{
+    if (!(0<height && 0<width)) // ! means "not" and && means "and"
+        error("bad arguments for rectangle_circumference");
+        
+    double circumference = 2*height + 2*width;
+    if (circumference <= 0) error("rectangle_circumference() post-condition");
+    return circumference;
+}
+```
 
 18. When would you not test a pre-condition?
 

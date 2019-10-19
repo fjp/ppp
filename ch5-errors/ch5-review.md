@@ -409,7 +409,24 @@ double rectangle_circumference(double height, double width)
 
 18. When would you not test a pre-condition?
 
+The reasons most often given for not checking pre-conditions are:
 
+- Nobody would give bad arguments.
+- It would slow down my code.
+- It is too complicated to check.
+
+The first reason can be reasonable only when we happen to know "who" calls a function - 
+and in real-world code that can be very hard to know.
+
+The second reason is valid far less often than people think and should most
+often be ignored as an example of "premature optimization." You can always
+remove checks if they really turn out to be a burden. You cannot easily gain the
+correctness they ensure or get back the nights' sleep you lost looking for bugsthose tests could have caught.
+
+The third reason is the serious one. It is easy (once you are an experienced programmer) 
+to find examples where checking a pre-condition would take significantly more work than executing the function. 
+An example is a lookup in a dictionary: a pre-condition is that the dictionary entries are sorted - and
+verifying that a dictionary is sorted can be far more expensive than a lookup.
 
 
 19. When would you not test a post-condition?

@@ -431,6 +431,27 @@ verifying that a dictionary is sorted can be far more expensive than a lookup.
 
 19. When would you not test a post-condition?
 
+Similar to the previous answer, here are two reasons not to test post-conditions:
+
+- It would slow down my code.
+- It is too complicated to check.
+
+For example:
+
+```cpp
+int area(int length, int width)
+// calculate area of a rectangle;
+// pre-conditions: length and width are positive
+// post-condition: returns a positive value that is the area
+{
+    if (length<=0 || width <=0) error(“area() pre-condition”);
+    int a = length*width;
+    if (a<=0) error(“area() post-condition”);
+    return a;
+}
+```
+
+We couldn't check the complete post-condition, but we checked the part that said that it should be positive.
 
 20. What are the steps in debugging a program?
 

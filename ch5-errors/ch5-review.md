@@ -455,6 +455,16 @@ We couldn't check the complete post-condition, but we checked the part that said
 
 20. What are the steps in debugging a program?
 
+The activity of deliberately searching for errors and removing them is called debugging.
+
+Debugging works roughly like this:
+    1. Get the program to compile.
+    2. Get the program to link.
+    3. Get the program to do what it is supposed to do.
+    
+Basically, we go through this sequence again and again: hundreds of times, thousands of times, 
+again and again for years for really large programs. 
+Each time something doesn't work we have to find what caused the problem and fix it.
 
 21. Why does commenting help when debugging?
 

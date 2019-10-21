@@ -468,6 +468,19 @@ Each time something doesn't work we have to find what caused the problem and fix
 
 21. Why does commenting help when debugging?
 
+It makes the program easy to read so that you have a chance of spotting the bugs.
+Here are some advices for commenting:
+- Comment your code well. That doesn't simply mean "Add a lot of comments." 
+You don't say in English what is better said in code. Rather, you say in the comments - as clearly and briefly as you can - what can't be said clearly in code:
+- The name of the program
+- The purpose of the program
+- Who wrote this code and when
+- Version numbers
+- What complicated code fragments are supposed to do
+- What the general design ideas are
+- How the source code is organized
+- What assumptions are made about inputs
+- What parts of the code are still missing and what cases are still not handled
 
 22. How does testing differ from debugging?
 

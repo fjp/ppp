@@ -484,3 +484,20 @@ You don't say in English what is better said in code. Rather, you say in the com
 
 22. How does testing differ from debugging?
 
+In addition to debugging we need a systematic way to search for errors. This
+is called testing. Basically, testing is executing a program with a large and
+systematically selected set of inputs and comparing the results to what was
+expected. A run with a given set of inputs is called a test case. Realistic
+programs can require millions of test cases. Basically, systematic testing cannot
+be done by humans typing in one test after another. Instead we use tools necessary to properly approach testing.
+Remember that we have to approach testing with the attitude that finding errors is good. Consider:
+
+- Attitude 1: I'm smarter than any program! I'll break that @#$%^ code!
+- Attitude 2: I polished this code for two weeks. It's perfect!
+
+Who do you think will find more errors? Of course, the very best is an experienced person with a bit of "attitude 1"
+who coolly, calmly, patiently, and systematically works through the possible failings of the program. 
+Good testers are worth their weight in gold.
+
+We try to be systematic in choosing our test cases and always try both correct
+and incorrect inputs.
